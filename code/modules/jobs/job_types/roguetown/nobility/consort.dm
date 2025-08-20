@@ -14,7 +14,6 @@
 	/obj/effect/proc_holder/spell/self/grant_nobility)
 	outfit = /datum/outfit/job/roguetown/lady
 
-	display_order = JDO_LADY
 	give_bank_account = 50
 	noble_income = 22
 	min_pq = 5
@@ -28,11 +27,9 @@
 	faction = "Station"
 	total_positions = 0
 	spawn_positions = 0
-	display_order = JDO_LADY
 	give_bank_account = TRUE
 
 /datum/outfit/job/roguetown/lady
-	job_bitflag = BITFLAG_ROYALTY
 
 /datum/outfit/job/roguetown/lady/pre_equip(mob/living/carbon/human/H)
 	. = ..()

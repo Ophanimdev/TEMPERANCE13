@@ -123,3 +123,44 @@
 	"...your arm tires from the toils of practice. Swinging rapidly has left your arm numb. With weary eyes, you glance aside to witness a hunter practice their craft with a brief overhand toss. Absorbing the technique, you mimic it, and effortlessly cast a powerful stone square onto the target..."
 	)
 	expert_name = "Slinger"
+
+/datum/skill/combat/rifles
+	name = "Rifles"
+	desc = "Influences how fast you can aim a rifle."
+	dreams = list(
+	"...the rifle is completely foreign. He tells you to pull the bolt back...",
+	"...you lock the bolt forward, and aim towards the next soldier. You don't feel right...",
+	"...you load in another round. When will the nightmare end?"
+	)
+	expert_name = "Rifleman"
+
+/datum/skill/combat/revolvers
+	name = "Revolvers"
+	desc = "Influences how fast you can aim a revolver."
+	dreams = list(
+	"...a complex machine, made by another machine...",
+	"...you fuck around with the cylinder. Click...",
+	"Bang."
+	)
+	expert_name = "Gunslinger"
+
+/datum/skill/combat/pistols
+	name = "Pistols"
+	desc = "Influences how fast you can aim a pistol."
+	dreams = list(
+	"...There's rumors of a magazine-fed, completely automatic pistol.",
+	"...Held in one hand, with a strong caliber.",
+	"..People call it 'HOPE'."
+	)
+	expert_name = "Gunman"
+
+/datum/skill/combat/shotguns
+	name = "Shotguns"
+	desc = "Influences how fast you can aim a shotgun."
+	dreams = list(
+	"...Pointman.",
+	"...Scattering buckshot.",
+	"..Blast."
+	)
+	expert_name = "Shotgunner"
+

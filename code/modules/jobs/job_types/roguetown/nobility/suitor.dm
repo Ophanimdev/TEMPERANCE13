@@ -13,7 +13,6 @@
 
 	outfit = /datum/outfit/job/roguetown/suitor
 
-	display_order = JDO_SUITOR
 	give_bank_account = 40
 	noble_income = 20
 	min_pq = 3
@@ -30,7 +29,6 @@
 		Q.become_blind("advsetup")
 
 /datum/outfit/job/roguetown/suitor
-	job_bitflag = BITFLAG_ROYALTY
 
 /datum/advclass/suitor/envoy
 	name = "Envoy"

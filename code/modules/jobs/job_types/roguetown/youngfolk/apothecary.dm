@@ -15,7 +15,6 @@
 
 	cmode_music = 'sound/music/combat_physician.ogg'
 
-	display_order = JDO_APOTHECARY
 	give_bank_account = 30
 
 	min_pq = 0

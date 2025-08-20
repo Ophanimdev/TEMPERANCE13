@@ -103,8 +103,8 @@
 /obj/item/ammo_box/attack_self(mob/user)
 	var/obj/item/ammo_casing/A = get_round()
 	if(A)
-		A.forceMove(drop_location())
-		if(!user.is_holding(src) || !user.put_in_hands(A))	//incase they're using TK
+		A.forceMove(user.loc)
+		if(!user.put_in_hands(A))	//incase they're using TK
 			A.bounce_away(FALSE, NONE)
 		playsound(src, 'sound/blank.ogg', 60, TRUE)
 		to_chat(user, "<span class='notice'>I remove a round from [src]!</span>")

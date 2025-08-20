@@ -79,9 +79,9 @@
 	salvage_result = /obj/item/natural/hide/cured
 
 // Eastern gloves
-/obj/item/clothing/gloves/roguetown/eastgloves1
+/obj/item/clothing/gloves/roguetown/eastgloves1 //modified for temp13
 	name = "black gloves"
-	desc = "Sleek gloves typically used by swordsmen."
+	desc = "Universal shooting gloves."
 	icon_state = "eastgloves1"
 	item_state = "eastgloves1"
 	armor = ARMOR_GLOVES_LEATHER

@@ -170,7 +170,7 @@
 			return
 		bolt_locked = FALSE
 	if (user)
-		to_chat(user, "<span class='notice'>I rack the [bolt_wording] of \the [src].</span>")
+		to_chat(user, "<span class='notice'>I work the [src]'s [bolt_wording].</span>")
 	process_chamber(!chambered, FALSE)
 	if (bolt_type == BOLT_TYPE_LOCKING && !chambered)
 		bolt_locked = TRUE

@@ -14,7 +14,6 @@
 		in the field alongside your friends, swordfighting with sticks, chasing rabbits with grain flail, and helping around the house lifting heavy \
 		bags of grain. The Knight took notice of your potential and brought you on as his personal ward. You're going to be something someday."
 	outfit = /datum/outfit/job/roguetown/squire
-	display_order = JDO_SQUIRE
 	give_bank_account = TRUE
 	min_pq = -5 //squires aren't great but they can do some damage
 	max_pq = null
@@ -28,8 +27,7 @@
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/storage/keyring/guardcastle
 	cloak = /obj/item/clothing/cloak/stabard/surcoat/guard
-	id = /obj/item/scomstone/bad/garrison
-	job_bitflag = BITFLAG_GARRISON		//Move this role to garrison section later. Shouldn't be under youngroles for transparancy they are garrison.
+	id = /obj/item/scomstone/bad/garrison	//Move this role to garrison section later. Shouldn't be under youngroles for transparancy they are garrison.
 
 /datum/job/roguetown/squire/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	. = ..()

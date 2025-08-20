@@ -12,7 +12,6 @@
 	gracefully as knight of his royal majesty, and now you've grown into a role which many men can only dream of becoming. \
 	Veteran among knights, you lead the crown's knights to battle and organize the training squires. Obey the Marshal and the Crown. \
 	Lead your men to victory--and keep them in line--and you will see this realm prosper under a thousand suns."
-	display_order = JDO_GUARD_CAPTAIN
 	advclass_cat_rolls = list(CTAG_CAPTAIN = 20)
 
 	spells = list(/obj/effect/proc_holder/spell/self/convertrole/guard)
@@ -36,7 +35,6 @@
 	belt = /obj/item/storage/belt/rogue/leather/plaquesilver
 	cloak = /obj/item/clothing/cloak/stabard
 	id = /obj/item/scomstone/garrison
-	job_bitflag = BITFLAG_ROYALTY | BITFLAG_GARRISON
 
 /datum/job/roguetown/captain/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	. = ..()

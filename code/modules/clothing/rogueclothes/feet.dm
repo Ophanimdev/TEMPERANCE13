@@ -442,3 +442,36 @@
 	item_state = "eastsandals"
 	sleeved = 'icons/roguetown/clothing/onmob/helpers/stonekeep_merc.dmi'
 	armor = ARMOR_BOOTS
+
+// temperance13
+
+/obj/item/clothing/shoes/roguetown/armor/ebboots
+	name = "trench boots"
+	desc = "A pair of mass produced warboots."
+	icon_state = "EB_boots_high"
+	item_state = "EB_boots_high"
+	sleeved = 'icons/roguetown/clothing/onmob/helpers/stonekeep_merc.dmi'
+	armor = ARMOR_BOOTS
+	sewrepair = TRUE
+	resistance_flags = FIRE_PROOF
+
+/obj/item/clothing/shoes/roguetown/armor/ebboots/wrapped
+	name = "wrapped trench boots"
+	desc = "A pair of mass produced warboots with cloth wraps."
+	icon_state = "EB_boots_wrapped"
+	item_state = "EB_boots_wrapped"
+	sleeved = 'icons/roguetown/clothing/onmob/helpers/stonekeep_merc.dmi'
+	armor = ARMOR_BOOTS
+	sewrepair = TRUE
+	resistance_flags = FIRE_PROOF
+
+/obj/item/clothing/shoes/roguetown/armor/ebboots/armored
+	name = "armored trench boots"
+	desc = "A pair of mass produced warboots with steel plating."
+	icon_state = "EB_boots_armored"
+	item_state = "EB_boots_armored"
+	sleeved = 'icons/roguetown/clothing/onmob/helpers/stonekeep_merc.dmi'
+	armor = ARMOR_BOOTS_PLATED
+	anvilrepair = /datum/skill/craft/armorsmithing
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
+	sewrepair = FALSE

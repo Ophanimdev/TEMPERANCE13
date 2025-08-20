@@ -14,7 +14,6 @@
 	selection_color = JCOLOR_INQUISITION
 
 	outfit = /datum/outfit/job/roguetown/puritan
-	display_order = JDO_PURITAN
 	advclass_cat_rolls = list(CTAG_PURITAN = 20)
 	give_bank_account = 30
 	min_pq = 10
@@ -24,7 +23,6 @@
 /datum/outfit/job/roguetown/puritan
 	name = "Inquisitor"
 	jobtype = /datum/job/roguetown/puritan
-	job_bitflag = BITFLAG_CHURCH	//Counts as church.
 	allowed_patrons = list(/datum/patron/old_god)
 
 /datum/job/roguetown/puritan/after_spawn(mob/living/L, mob/M, latejoin = TRUE)

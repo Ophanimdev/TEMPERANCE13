@@ -15,7 +15,7 @@
 #define ARMOR_INT_HELMET_STEEL 300 
 #define ARMOR_INT_HELMET_IRON 225
 #define ARMOR_INT_HELMET_HARDLEATHER 250
-#define ARMOR_INT_HELMET_LEATHER 200
+#define ARMOR_INT_HELMET_LEATHER 25
 #define ARMOR_INT_HELMET_CLOTH 100
 
 // Chest / Armor Pieces 
@@ -24,15 +24,15 @@
 #define ARMOR_INT_CHEST_PLATE_ANTAG 700
 #define ARMOR_INT_CHEST_PLATE_BLACKSTEEL 600
 #define ARMOR_INT_CHEST_PLATE_STEEL 500
-#define ARMOR_INT_CHEST_PLATE_BRIGANDINE 350
+#define ARMOR_INT_CHEST_PLATE_BRIGANDINE 100
 #define ARMOR_INT_CHEST_PLATE_PSYDON 400 // You get free training, less int
-#define ARMOR_INT_CHEST_PLATE_IRON 375
+#define ARMOR_INT_CHEST_PLATE_IRON 250
 #define ARMOR_INT_CHEST_PLATE_DECREPIT 250
 
 // MEDIUM
-#define ARMOR_INT_CHEST_MEDIUM_STEEL 300
+#define ARMOR_INT_CHEST_MEDIUM_STEEL 200
 #define ARMOR_INT_CHEST_MEDIUM_HATANGA 250
-#define ARMOR_INT_CHEST_MEDIUM_IRON 225
+#define ARMOR_INT_CHEST_MEDIUM_IRON 125 //adjusted 4 temp13
 #define ARMOR_INT_CHEST_MEDIUM_SCALE 200 // More coverage, less integrity
 #define ARMOR_INT_CHEST_FENCER_STEEL 170
 #define ARMOR_INT_CHEST_MEDIUM_DECREPIT 150
@@ -146,7 +146,7 @@
 #define ARMOR_SPELLSINGER list("blunt" = 70, "slash" = 70, "stab" = 50, "piercing" = 30, "fire" = 0, "acid" = 0)
 #define ARMOR_GRUDGEBEARER list("blunt" = 40, "slash" = 200, "stab" = 200, "piercing" = 100, "fire" = 0, "acid" = 0)
 #define ARMOR_ZIZOCONCSTRUCT list("blunt" = 60, "slash" = 70, "stab" = 70, "piercing" = 60, "fire" = 40, "acid" = 10)
-
+#define ARMOR_EBARMOR list("blunt" = 100, "slash" = 100, "stab" = 100, "piercing" = 100, "fire" = 0, "acid" = 0)
 // Weapon balance defines
 #define WBALANCE_NORMAL 0
 #define WBALANCE_HEAVY -1
@@ -429,6 +429,10 @@ GLOBAL_LIST_EMPTY(round_join_times)
 #define CTAG_GUILDSMASTER 	"CAT_GUILDSMASTER"	// Guildsmaster class - Handles Guildsmaster class selector 
 #define CTAG_GUILDSMEN 		"CAT_GUILDSMEN"		// Guildsmen class - Handles Guildsmen class selector
 #define CTAG_NIGHTMAIDEN	"CAT_NIGHTMAIDEN"	// Bathhouse Attendant's aesthetic choices.
+
+#define CTAG_AUXILIARIST 	"CAT_AUXILIARIST"		// Auxiliary classes - Handles Auxiliar class selector
+#define CTAG_SERVICU 	"CAT_SERVICUS"		// Servicus classes 
+
 /*
 	Defines for the triumph buy datum categories
 */
@@ -446,3 +450,40 @@ GLOBAL_LIST_EMPTY(round_join_times)
 #define BAD_GUARD_FATIGUE_DRAIN 20 //Percentage of your green bar lost on letting a guard expire.
 #define GUARD_PEEL_REDUCTION 2	//How many Peel stacks to lose if a Guard is hit.
 #define BAIT_PEEL_REDUCTION 1	//How many Peel stacks to lose if we perfectly bait.
+
+
+
+//             	defines that temperance 13 uses
+
+// var-lists for the different types of gun sounds for weapons
+// eg: fire_sound = fire_sounds_rifle for /obj/item/ballistic/rifle/repeater/perserdun
+
+#define RIFLESHOT list('sound/combat/ranged/la_fire.ogg', 'sound/combat/ranged/la_fire2.ogg', 'sound/combat/ranged/la_fire3.ogg', 'sound/combat/ranged/la_fire4.ogg')
+#define PISTOLSHOT list('sound/combat/ranged/pistol1.ogg', 'sound/combat/ranged/pistol2.ogg', 'sound/combat/ranged/pistol3.ogg', 'sound/combat/ranged/pistol4.ogg', 'sound/combat/ranged/pistol5.ogg')
+#define SHOTGUNSHOT list('sound/combat/ranged/shotgun1.ogg')
+#define SMGSHOT "smg" 
+#define REVOLVERSHOT list('sound/combat/ranged/revolverfire1.ogg', 'sound/combat/ranged/revolverfire2.ogg', 'sound/combat/ranged/revolverfire3.ogg')
+
+#define SHOTGUNINSERT list('sound/combat/ranged/shell_insert1.ogg', 'sound/combat/ranged/shell_insert2.ogg')
+#define REVOLVERINSERT list('sound/combat/ranged/revolverload1.ogg', 'sound/combat/ranged/revolverload2.ogg', 'sound/combat/ranged/revolverload3.ogg')
+
+// used for var/bullet_bounce_sound
+#define RIFLEFALL list('sound/combat/ranged/casingfall1.ogg', 'sound/combat/ranged/casingfall2.ogg', 'sound/combat/ranged/casingfall3.ogg')
+#define SHOTGUNFALL list('sound/combat/ranged/shotgun_fall.ogg')
+
+//casing types
+///as of temp13 release, primarily used for calling casing falls - used for var/bullet_type
+#define RIFLECASING 1
+#define SHOTGUNCASING 2
+#define PISTOLCASING 3
+#define SMGCASING 4
+
+
+//var-lists for gasmask breathing
+
+#define PERSERDUN_MASK list('sound/items/gasmask/per1.ogg', 'sound/items/gasmask/per2.ogg', 'sound/items/gasmask/per3.ogg', 'sound/items/gasmask/per4.ogg', 'sound/items/gasmask/per5.ogg', 'sound/items/gasmask/per6.ogg', 'sound/items/gasmask/per7.ogg', 'sound/items/gasmask/per8.ogg', 'sound/items/gasmask/per9.ogg', 'sound/items/gasmask/per10.ogg', 'sound/items/gasmask/per11.ogg')
+#define RISVON_MASK list('sound/items/gasmask/ris1.ogg', 'sound/items/gasmask/ris2.ogg', 'sound/items/gasmask/ris3.ogg', 'sound/items/gasmask/ris4.ogg', 'sound/items/gasmask/ris5.ogg', 'sound/items/gasmask/ris6.ogg', 'sound/items/gasmask/ris7.ogg', 'sound/items/gasmask/ris8.ogg', 'sound/items/gasmask/ris9.ogg', 'sound/items/gasmask/ris10.ogg', 'sound/items/gasmask/ris11.ogg')
+#define GRAND_MASK list('sound/items/gasmask/grand1.ogg', 'sound/items/gasmask/grand2.ogg')
+
+//used for when an armor layer is broken
+#define ARMORBREAK list('sound/combat/armorblock.ogg'. 'sound/combat/armorblock2.ogg', 'sound/combat/armorblock3.ogg')

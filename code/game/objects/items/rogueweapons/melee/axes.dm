@@ -161,8 +161,8 @@
 	force = 30
 	force_wielded = 40
 	possible_item_intents = list(/datum/intent/axe/cut/battle, /datum/intent/axe/chop/battle, /datum/intent/axe/bash)
-	name = "oath"
-	desc = "A hefty, steel-forged axe marred by the touch of countless Wardens. Despite it's weathered etchings and worn grip, the blade has been honed to a razor's edge and you can see your reflection in the finely polished metal."
+	name = "WILL"
+	desc = "A freakish axe carved out of walls ripped from broken LOVE MACHINES. Crush the Ziggurate."
 	icon_state = "oath"
 	icon = 'icons/roguetown/weapons/64.dmi'
 	max_blade_int = 500

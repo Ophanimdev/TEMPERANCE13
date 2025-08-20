@@ -1,7 +1,6 @@
 /datum/job/roguetown/adventurer/courtagent
 	title = "Court Agent"
 	flag = COURTAGENT
-	display_order = JDO_COURTAGENT
 	total_positions = 2
 	spawn_positions = 2
 	round_contrib_points = 2

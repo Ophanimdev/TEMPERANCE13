@@ -8,3 +8,10 @@
 	flag = "piercing"
 	hitsound_wall = "ricochet"
 	impact_effect_type = /obj/effect/temp_visual/impact_effect
+	hitscan = TRUE
+	nodamage = FALSE
+	range = 20
+	woundclass = BCLASS_PIERCE
+	speed = 1
+	muzzle_type = /obj/effect/projectile/muzzle/bullet
+	tracer_type = /obj/effect/projectile/tracer/bullet

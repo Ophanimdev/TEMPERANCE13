@@ -15,7 +15,6 @@
 	total_positions = 4
 	spawn_positions = 4
 	advclass_cat_rolls = list(CTAG_TEMPLAR = 20)
-	display_order = JDO_TEMPLAR
 
 	give_bank_account = TRUE
 
@@ -23,7 +22,6 @@
 	virtue_restrictions = list(/datum/virtue/utility/noble)
 
 /datum/outfit/job/roguetown/templar
-	job_bitflag = BITFLAG_CHURCH
 	has_loadout = TRUE
 	allowed_patrons = ALL_DIVINE_PATRONS
 

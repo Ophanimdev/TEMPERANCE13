@@ -42,7 +42,9 @@
 	check_cremation()
 
 	if(stat != DEAD)
-		return 1
+		return 1	
+
+
 
 /mob/living/carbon/DeadLife()
 	set invisibility = 0

@@ -362,3 +362,45 @@
 	detail_tag = "_detail"
 	detail_color = COLOR_SILVER
 	sewrepair = TRUE
+
+/obj/item/clothing/mask/rogue/gasmask
+	body_parts_covered = NECK|MOUTH|FACE|EYES
+	slot_flags = ITEM_SLOT_MASK
+	flags_inv = HIDEFACE|HIDESNOUT|HIDEEARS
+	sewrepair = TRUE
+	equip_sound = 'sound/items/gasmask/gasmask_on.ogg'
+	var/worn = FALSE
+
+/obj/item/clothing/mask/rogue/gasmask/equipped(mob/living/carbon/human/user, slot)
+	. = ..()
+	if(user.wear_mask == src)
+		worn = TRUE
+
+/obj/item/clothing/mask/rogue/gasmask/dropped(mob/user)
+	. = ..()
+	if(worn)
+		playsound(user, 'sound/items/gasmask/gasmask_off.ogg', 80)
+		worn = FALSE
+
+/obj/item/clothing/mask/rogue/gasmask/risvonmask
+	name = "clothed gas mask"
+	desc = "The Risvon Standard. Pretty old."
+	icon_state = "redmask"
+
+
+/obj/item/clothing/mask/rogue/gasmask/perserdunmask
+	name = "tubed gas mask"
+	desc = "The Perserdunian Standard. Still dogshit."
+	icon_state = "fullgas"
+
+
+/obj/item/clothing/mask/rogue/gasmask/sgmask
+	name = "safety mask"
+	desc = "A filter-ready, generation three gas mask produced by the WAR MACHINE."
+	icon_state = "sgmask"
+
+/obj/item/clothing/mask/rogue/gasmask/grandmask
+	name = "tubed mask"
+	desc = "A long-tube. This one's been hand crafted. Probably a commissioned piece."
+	icon_state = "grandmask"
+

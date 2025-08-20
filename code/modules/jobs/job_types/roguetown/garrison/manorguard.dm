@@ -12,7 +12,6 @@
 	tutorial = "Having proven yourself loyal and capable, you are entrusted to defend the town and enforce its laws. \
 				Trained regularly in combat and siege warfare, you deal with threats - both within and without. \
 				Obey your Sergeant-at-Arms, the Marshal, and the Crown. Show the nobles and knights your respect, so that you may earn it in turn. Not as a commoner, but as a soldier.."
-	display_order = JDO_CASTLEGUARD
 	whitelist_req = TRUE
 
 	outfit = /datum/outfit/job/roguetown/manorguard
@@ -26,7 +25,6 @@
 	cmode_music = 'sound/music/combat_ManAtArms.ogg'
 
 /datum/outfit/job/roguetown/manorguard
-	job_bitflag = BITFLAG_GARRISON
 
 /datum/job/roguetown/manorguard/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	. = ..()

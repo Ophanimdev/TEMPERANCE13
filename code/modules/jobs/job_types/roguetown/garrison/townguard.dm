@@ -10,7 +10,6 @@
 	allowed_races = RACES_ALL_KINDS // same as town guard
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 	tutorial = "Responsible for the safety of the town and the enforcement of the Grand Duke's law, you are the vanguard of the city faced with punishing those who defy his Royal Majesty. Though you've many lords to obey, as both the Church and the Bailiff have great sway over your life."
-	display_order = JDO_TOWNGUARD
 	whitelist_req = TRUE
 
 	outfit = /datum/outfit/job/roguetown/guardsman
@@ -24,7 +23,6 @@
 	cmode_music = 'sound/music/combat_ManAtArms.ogg'
 
 /datum/outfit/job/roguetown/guardsman
-	job_bitflag = BITFLAG_GARRISON
 
 /datum/job/roguetown/guardsman/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	. = ..()

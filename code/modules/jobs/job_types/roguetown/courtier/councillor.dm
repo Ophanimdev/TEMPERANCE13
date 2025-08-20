@@ -8,7 +8,6 @@
 	allowed_ages = ALL_AGES_LIST
 	allowed_races = RACES_NO_CONSTRUCT		//Nobility, so no constructs.
 	allowed_sexes = list(MALE, FEMALE)
-	display_order = JDO_COUNCILLOR
 	tutorial = "You may have inherited this position, bought your way into it, or were appointed to it by merit--perish the thought! Whatever the case though, you work as an assistant and agent of the crown in matters of state. Whether this be aiding the steward, the sheriff, or the crown itself, or simply enjoying the free food of the keep, your duties vary day by day. You may be the lowest rung of the ladder, but that rung still towers over everyone else in town."
 	whitelist_req = FALSE
 	outfit = /datum/outfit/job/roguetown/councillor
@@ -21,7 +20,6 @@
 	cmode_music = 'sound/music/combat_noble.ogg'
 
 /datum/outfit/job/roguetown/councillor
-	job_bitflag = BITFLAG_ROYALTY
 
 /datum/outfit/job/roguetown/councillor/pre_equip(mob/living/carbon/human/H)
 	..()

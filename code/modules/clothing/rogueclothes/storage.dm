@@ -228,7 +228,7 @@
 	item_state = "backpack"
 	icon = 'icons/roguetown/clothing/storage.dmi'
 	w_class = WEIGHT_CLASS_BULKY
-	slot_flags = ITEM_SLOT_BACK_L
+	slot_flags = ITEM_SLOT_BACK
 	resistance_flags = FIRE_PROOF
 	max_integrity = 300
 	sellprice = 15
@@ -442,3 +442,37 @@
 	anvilrepair = /datum/skill/craft/blacksmithing
 	smeltresult = /obj/item/ingot/bronze
 	component_type = /datum/component/storage/concrete/grid/headhook/bronze
+
+
+// 													!!!	TEMPERANCE 13 !!!
+
+/obj/item/storage/belt/rogue/pouch/stim
+	name = "carebag"
+	desc = "A leather carebag that's meant to clip to a belt or to a pair of pants, freeing the shoulders from any weight."
+	icon_state = "medsatchel"
+	item_state = "medsatchel"
+	component_type = /datum/component/storage/concrete/grid/stimbag
+	populate_contents = list(
+		/obj/item/reagent_containers/glass/bottle/rogue/healthpotnew = 2,
+		/obj/item/reagent_containers/glass/bottle/rogue/healthpot = 2,
+	)
+
+/obj/item/storage/belt/rogue/pouch/ammobag
+	name = "ammobox"
+	desc = "A tin ammobox that clips to someone's belt."
+	icon_state = "ammobox"
+	item_state = "satchelshort"
+	component_type = /datum/component/storage/concrete/grid/ammobag
+	slot_flags = ITEM_SLOT_HIP
+
+/obj/item/storage/backpack/rogue/backpack/perserdun
+	name = "ruckbag"
+	desc = "Product of the Empire's vast industry."
+	icon_state = "WU_backpack"
+	item_state = "WU_backpack"
+
+/obj/item/storage/backpack/rogue/backpack/risvon
+	name = "bagsack"
+	desc = "Product of the Ziggurate's national WAR MACHINE."
+	icon_state = "EB_backpack"
+	item_state = "EB_backpack"

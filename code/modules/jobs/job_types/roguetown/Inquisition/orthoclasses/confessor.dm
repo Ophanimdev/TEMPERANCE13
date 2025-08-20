@@ -8,7 +8,6 @@
 	cmode_music = 'sound/music/cmode/antag/combat_deadlyshadows.ogg'
 
 /datum/outfit/job/roguetown/confessor
-	job_bitflag = BITFLAG_CHURCH
 
 /datum/outfit/job/roguetown/confessor/pre_equip(mob/living/carbon/human/H)
 	..()

@@ -7,7 +7,7 @@
 	smooth = SMOOTH_TRUE
 	canSmoothWith = list(/turf/open/floor/carpet)
 	flags_1 = NONE
-	bullet_bounce_sound = null
+	bullet_bounce_sound = 'sound/blank.ogg'
 	footstep = FOOTSTEP_CARPET
 	barefootstep = FOOTSTEP_SOFT_BAREFOOT
 	clawfootstep = FOOTSTEP_SOFT_BAREFOOT

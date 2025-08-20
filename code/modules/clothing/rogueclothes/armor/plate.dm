@@ -105,13 +105,6 @@
 	strip_delay = 6 SECONDS
 	smelt_bar_num = 4
 
-/obj/item/clothing/suit/roguetown/armor/plate/full/iron
-	name = "iron plate armor"
-	icon_state = "iplate"
-	desc = "Full iron plate armor. Slow to don and doff without the aid of a good squire."
-	smeltresult = /obj/item/ingot/iron
-	max_integrity = ARMOR_INT_CHEST_PLATE_IRON
-
 /obj/item/clothing/suit/roguetown/armor/plate/full/fluted
 	name = "fluted plate"
 	desc = "A sturdily made fluted full-plate. Supposedly made to deflect blows from blades and arrows."

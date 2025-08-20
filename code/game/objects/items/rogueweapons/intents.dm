@@ -395,10 +395,10 @@
 	tranged = 1
 	warnie = "aimwarn"
 	item_d_type = "stab"
-	chargetime = 0.1
+	chargetime = 0.5
 	no_early_release = FALSE
 	noaa = TRUE
-	charging_slowdown = 3
+	charging_slowdown = 1
 	warnoffset = 20
 	var/strength_check = FALSE //used when we fire HEAVY bows
 
@@ -415,7 +415,7 @@
 	chargetime = 0
 	no_early_release = FALSE
 	noaa = TRUE
-	charging_slowdown = 3
+	charging_slowdown = 1
 	warnoffset = 20
 	var/strength_check = FALSE //used when we fire HEAVY bows
 	

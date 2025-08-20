@@ -7,7 +7,6 @@
 	category_tags = list(CTAG_INQUISITION)
 
 /datum/outfit/job/roguetown/disciple
-	job_bitflag = BITFLAG_CHURCH
 
 /datum/outfit/job/roguetown/disciple/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -39,7 +38,6 @@
 	belt = /obj/item/storage/belt/rogue/leather/rope
 	pants = /obj/item/clothing/under/roguetown/tights/black
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/mid
-	cloak = /obj/item/clothing/cloak/psydontabard/alt
 	H.adjust_skillrank(/datum/skill/misc/athletics, 5, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/unarmed, 5, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
@@ -67,7 +65,6 @@
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 	belt = /obj/item/storage/belt/rogue/leather/black
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/mid
-	cloak = /obj/item/clothing/cloak/psydontabard/alt
 	H.adjust_skillrank(/datum/skill/combat/unarmed, 5, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE) 
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)

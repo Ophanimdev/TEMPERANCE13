@@ -91,6 +91,8 @@
 	//Update our name based on whether our face is obscured/disfigured
 	name = get_visible_name()
 
+	handle_gas_mask_sound()
+
 	if(sexcon)
 		sexcon.process_sexcon(1 SECONDS)
 
@@ -196,6 +198,40 @@
 //			add_stress(/datum/stressevent/coldfeet)
 
 //END FIRE CODE
+
+/mob/living/carbon/human/proc/handle_gas_mask_sound()
+	if(!istype(wear_mask, /obj/item/clothing/mask/rogue/gasmask))
+		if(breathe_tick)
+			breathe_tick = 0
+		return
+	if(stat == DEAD)
+		return
+	if(HAS_TRAIT(src, TRAIT_NOBREATH))
+		return
+	breathe_tick++
+	var/mask_sound
+	if(istype(wear_mask, /obj/item/clothing/mask/rogue/gasmask/perserdunmask)) //you can probably do the oggs as a #define list but i cbf'd to do it - zera
+		if(breathe_tick>=rand(3,5))
+			breathe_tick = 0
+			mask_sound = pick('sound/items/gasmask/per1.ogg', 'sound/items/gasmask/per2.ogg', 'sound/items/gasmask/per3.ogg', 'sound/items/gasmask/per4.ogg', 'sound/items/gasmask/per5.ogg', 'sound/items/gasmask/per6.ogg', 'sound/items/gasmask/per7.ogg', 'sound/items/gasmask/per8.ogg', 'sound/items/gasmask/per9.ogg', 'sound/items/gasmask/per10.ogg', 'sound/items/gasmask/per11.ogg')
+			playsound(src, mask_sound, 90, FALSE, 4, 0)
+			return
+	else if(istype(wear_mask, /obj/item/clothing/mask/rogue/gasmask/risvonmask))
+		if(breathe_tick>=rand(3,5))
+			breathe_tick = 0
+			mask_sound = pick('sound/items/gasmask/ris1.ogg', 'sound/items/gasmask/ris2.ogg', 'sound/items/gasmask/ris3.ogg', 'sound/items/gasmask/ris4.ogg', 'sound/items/gasmask/ris5.ogg', 'sound/items/gasmask/ris6.ogg', 'sound/items/gasmask/ris7.ogg', 'sound/items/gasmask/ris8.ogg', 'sound/items/gasmask/ris9.ogg', 'sound/items/gasmask/ris10.ogg', 'sound/items/gasmask/ris11.ogg')
+			playsound(src, mask_sound, 90, FALSE, 4, 0)
+			return
+	else if(istype(wear_mask, /obj/item/clothing/mask/rogue/gasmask/grandmask))
+		if(breathe_tick>=rand(4,6))
+			breathe_tick = 0
+			mask_sound = pick('sound/items/gasmask/grand1.ogg', 'sound/items/gasmask/grand2.ogg')
+			playsound(src, mask_sound, 90, FALSE, 4, 0)
+			return
+	else if (istype(wear_mask, /obj/item/clothing/mask/rogue/gasmask/sgmask))
+		if(breathe_tick>=rand(4/6))
+			breathe_tick = 0
+			mask_sound = pick('sound/items/gasmask/sg1.ogg', 'sound/items/gasmask/sg2.ogg')
 
 
 //This proc returns a number made up of the flags for body parts which you are protected on. (such as HEAD, CHEST, GROIN, etc. See setup.dm for the full list)

@@ -16,7 +16,6 @@
 
 	outfit = /datum/outfit/job/roguetown/guildsman
 	selection_color = JCOLOR_YEOMAN
-	display_order = JDO_GUILDSMAN
 	give_bank_account = 15
 	min_pq = 0
 	max_pq = null

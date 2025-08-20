@@ -26,7 +26,6 @@ GLOBAL_LIST_EMPTY(heretical_players)
 
 	spells = list(/obj/effect/proc_holder/spell/invoked/cure_rot, /obj/effect/proc_holder/spell/self/convertrole/templar, /obj/effect/proc_holder/spell/self/convertrole/monk, /obj/effect/proc_holder/spell/invoked/projectile/divineblast)
 	outfit = /datum/outfit/job/roguetown/priest
-	display_order = JDO_PRIEST
 	give_bank_account = 115
 	min_pq = 5 // You should know the basics of things if you're going to lead the town's entire religious sector
 	max_pq = null
@@ -36,7 +35,6 @@ GLOBAL_LIST_EMPTY(heretical_players)
 	virtue_restrictions = list(/datum/virtue/utility/noble)
 
 /datum/outfit/job/roguetown/priest
-	job_bitflag = BITFLAG_CHURCH
 	allowed_patrons = list(/datum/patron/divine/astrata)	//We lock this cus head of church, acktully
 
 /datum/outfit/job/roguetown/priest/pre_equip(mob/living/carbon/human/H)

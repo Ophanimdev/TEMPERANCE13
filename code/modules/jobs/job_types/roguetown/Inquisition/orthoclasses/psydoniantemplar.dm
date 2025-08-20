@@ -8,7 +8,6 @@
 	cmode_music = 'sound/music/templarofpsydonia.ogg'
 
 /datum/outfit/job/roguetown/psydoniantemplar
-	job_bitflag = BITFLAG_CHURCH
 
 /datum/outfit/job/roguetown/psydoniantemplar/pre_equip(mob/living/carbon/human/H)
 	..()

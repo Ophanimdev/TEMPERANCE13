@@ -438,7 +438,6 @@
 	round_contrib_points = 4
 	total_positions = 1
 	spawn_positions = 1
-	display_order = JDO_MARTYR
 	
 	give_bank_account = TRUE
 
@@ -450,7 +449,6 @@
 	virtue_restrictions = list(/datum/virtue/utility/noble, /datum/virtue/combat/rotcured, /datum/virtue/utility/deadened, /datum/virtue/utility/deathless, /datum/virtue/combat/dualwielder, /datum/virtue/heretic/zchurch_keyholder)
 
 /datum/outfit/job/roguetown/martyr
-	job_bitflag = BITFLAG_CHURCH
 
 /datum/outfit/job/roguetown/martyr/pre_equip(mob/living/carbon/human/H)
 	..()

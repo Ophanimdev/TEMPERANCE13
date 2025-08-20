@@ -13,7 +13,6 @@
 	tutorial = "Typically a denizen of the sparsely populated Azure woods, you volunteered up with the wardens--a group of ranger types who keep a vigil over the untamed wilds. \
 				While Wardens have no higher authority, operating as a fraternity of rangers, you will be called upon as members of the garrison by the Marshal or the Crown. \
 				Serve their will and recieve what a ranger craves the most - freedom and safety."
-	display_order = JDO_TOWNGUARD
 	whitelist_req = TRUE
 
 	outfit = /datum/outfit/job/roguetown/bogguardsman
@@ -35,7 +34,6 @@
 	backr = /obj/item/storage/backpack/rogue/satchel
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	id = /obj/item/scomstone/bad/garrison
-	job_bitflag = BITFLAG_GARRISON
 
 /datum/job/roguetown/bogguardsman/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	..()

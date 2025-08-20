@@ -23,7 +23,7 @@
 	var/obj/effect/overlay/water/water_overlay
 	var/obj/effect/overlay/water/top/water_top_overlay
 	bullet_sizzle = TRUE
-	bullet_bounce_sound = null //needs a splashing sound one day.
+	bullet_bounce_sound = 'sound/blank.ogg'
 	smooth = SMOOTH_MORE
 	canSmoothWith = list(/turf/closed/mineral,/turf/closed/wall/mineral/rogue, /turf/open/floor/rogue)
 	footstep = null

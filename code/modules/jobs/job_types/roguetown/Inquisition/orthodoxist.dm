@@ -11,7 +11,6 @@
 	selection_color = JCOLOR_INQUISITION
 	outfit = null
 	outfit_female = null
-	display_order = JDO_ORTHODOXIST
 	min_pq = 5 // We need you to be atleast kinda competent to do this. This is a soft antaggy sorta role. Also needs to know wtf a PSYDON is
 	max_pq = null
 	round_contrib_points = 2

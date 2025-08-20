@@ -10,7 +10,6 @@
 	tutorial = "Somewhere in your lyfe, you fell to the wrong side of civilization. Hounded by the consequences of your actions, you now threaten the peace of those who still heed the authority that condemned you."
 	outfit = null
 	outfit_female = null
-	display_order = JDO_WRETCH
 	show_in_credits = FALSE
 	min_pq = 20
 	max_pq = null

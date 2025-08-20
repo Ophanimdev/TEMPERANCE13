@@ -14,7 +14,6 @@
 
 	obsfuscated_job = TRUE
 
-	display_order = JDO_BANDIT
 	announce_latejoin = FALSE
 	min_pq = 3
 	max_pq = null

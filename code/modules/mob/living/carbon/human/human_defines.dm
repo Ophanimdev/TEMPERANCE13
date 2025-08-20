@@ -48,6 +48,7 @@
 	var/marking = "None"
 
 	var/shavelevel = 0
+	var/breathe_tick = 0 // used 4 gasmask delay sounds
 
 	var/socks = "Nude" //Which socks the player wants
 	var/backpack = DBACKPACK		//Which backpack type the player has chosen.

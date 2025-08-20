@@ -31,3 +31,9 @@
 
 /obj/effect/projectile/muzzle/pointline
 	icon_state = "point"
+
+/obj/effect/projectile/muzzle/bullet
+	icon_state = "muzzle_bullet"
+	light_power = 1
+	light_inner_range = 1
+	light_color = LIGHT_COLOR_ORANGE

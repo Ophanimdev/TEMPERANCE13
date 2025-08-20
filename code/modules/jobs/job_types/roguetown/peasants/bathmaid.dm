@@ -16,7 +16,6 @@
 
 	outfit = /datum/outfit/job/roguetown/nightmaiden
 	advclass_cat_rolls = list(CTAG_NIGHTMAIDEN = 20)
-	display_order = JDO_WENCH
 	give_bank_account = TRUE
 	can_random = FALSE
 	min_pq = -10

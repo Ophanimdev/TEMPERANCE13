@@ -13,7 +13,6 @@
 	tutorial = "Clerk, tax-collector, blessed fool. You help the Steward with anything they need and perform their tasks when they are unavailable. Although you aren't a noble, it's not the worst position. The caveat? If money is misplaced or goes missing, a noble could probably weasel out of the stockades as punishment. You? Eh...well, Etrusca is lovely this time of year."
 
 	outfit = /datum/outfit/job/roguetown/clerk
-	display_order = JDO_CLERK
 	give_bank_account = TRUE
 	min_pq = -10
 	max_pq = null

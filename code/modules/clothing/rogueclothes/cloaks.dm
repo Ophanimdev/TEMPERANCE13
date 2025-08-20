@@ -81,9 +81,9 @@
 	user.update_inv_cloak()
 	user.update_inv_armor()
 
-/obj/item/clothing/cloak/psydontabard
-	name = "psydonian tabard"
-	desc = "A tabard worn by Psydon's disciples. Delicate stitchwork professes the psycross with pride."
+/obj/item/clothing/cloak/perserduntabard
+	name = "perserdunian colors"
+	desc = "A tabard worn by Perserdunian warriors It's just brown."
 	color = null
 	icon_state = "psydontabard"
 	item_state = "psydontabard"
@@ -107,76 +107,6 @@
 		var/list/things = STR.contents()
 		for(var/obj/item/I in things)
 			STR.remove_from_storage(I, get_turf(src))
-
-
-/obj/item/clothing/cloak/psydontabard/alt
-	name = "opened psydonian tabard"
-	desc = "A tabard worn by Psydon's disciples, peeled back to reveal its enduring innards."
-	body_parts_covered = GROIN
-	icon_state = "psydontabardalt"
-	item_state = "psydontabardalt"
-	flags_inv = HIDECROTCH
-	open_wear = TRUE
-
-
-/obj/item/clothing/cloak/psydontabard/MiddleClick(mob/user) 
-	overarmor = !overarmor
-	to_chat(user, span_info("I [overarmor ? "wear the tabard over my armor" : "wear the tabard under my armor"]."))
-	if(overarmor)
-		alternate_worn_layer = TABARD_LAYER
-	else
-		alternate_worn_layer = UNDER_ARMOR_LAYER
-	user.update_inv_cloak()
-	user.update_inv_armor()
-	user.update_inv_shirt()
-
-/obj/item/clothing/cloak/psydontabard/attack_right(mob/user)
-	switch(open_wear)
-		if(FALSE)
-			name = "opened psydonian tabard"
-			desc = "A tabard worn by Psydon's disciples, peeled back to reveal its enduring innards."
-			body_parts_covered = GROIN
-			icon_state = "psydontabardalt"
-			item_state = "psydontabardalt"
-			open_wear = TRUE
-			flags_inv = HIDECROTCH // BARE YOUR CHEST, NOT YOUR WEEN!
-			to_chat(usr, span_warning("ENDURING, like the MARTYRS who'll guide the faithful-and-pious to PARADISE."))
-		if(TRUE)
-			name = "psydonian tabard"
-			desc = "A tabard worn by Psydon's disciples. Delicate stitchwork professes the psycross with pride."
-			body_parts_covered = CHEST|GROIN
-			icon_state = "psydontabard"
-			item_state = "psydontabard"
-			flags_inv = HIDECROTCH|HIDEBOOB
-			open_wear = FALSE
-			to_chat(usr, span_warning("VEILED, like the CORPSES who've been shepherded by your steel to the AFTERLYFE."))
-	update_icon()
-	if(user)
-		if(ishuman(user))
-			var/mob/living/carbon/H = user
-			H.update_inv_cloak()
-			H.update_inv_armor()
-
-/obj/item/clothing/cloak/tabard/update_icon()
-	cut_overlays()
-	if(get_detail_tag())
-		var/mutable_appearance/pic = mutable_appearance(icon(icon, "[icon_state][detail_tag]"))
-		pic.appearance_flags = RESET_COLOR
-		if(get_detail_color())
-			pic.color = get_detail_color()
-		add_overlay(pic)
-
-/obj/item/clothing/cloak/tabard/MiddleClick(mob/user)
-	overarmor = !overarmor
-	to_chat(user, span_info("I [overarmor ? "wear the tabard over my armor" : "wear the tabard under my armor"]."))
-	if(overarmor)
-		alternate_worn_layer = TABARD_LAYER
-	else
-		alternate_worn_layer = UNDER_ARMOR_LAYER
-	user.update_inv_cloak()
-	user.update_inv_armor()
-
-
 
 /obj/item/clothing/cloak/tabard/attack_right(mob/user)
 	if(picked)

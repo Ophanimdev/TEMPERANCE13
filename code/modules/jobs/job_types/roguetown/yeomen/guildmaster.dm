@@ -15,7 +15,6 @@
 
 	outfit = /datum/outfit/job/roguetown/guildmaster
 	selection_color = JCOLOR_YEOMAN
-	display_order = JDO_GUILDMASTER
 	give_bank_account = 25
 	min_pq = 5 // Higher PQ requirement as it is a leadership role. Not for total newbie.
 	max_pq = null

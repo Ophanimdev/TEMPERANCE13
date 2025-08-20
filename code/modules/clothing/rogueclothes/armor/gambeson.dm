@@ -22,6 +22,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/gambeson/lord
 	name = "arming jacket"
+	desc = "A militarized jacket. Most MACHINE-afflicted nations use this as an undershirt."
 	icon_state = "dgamb"
 	body_parts_covered = COVERAGE_ALL_BUT_LEGS
 	allowed_sex = list(MALE, FEMALE)

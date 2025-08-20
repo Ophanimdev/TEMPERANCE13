@@ -1,5 +1,6 @@
 /obj/item/ammo_casing
 	name = "bullet casing"
+	icon = 'icons/roguetown/weapons/gunammo.dmi'
 	desc = ""
 	icon_state = "s-casing"
 	flags_1 = CONDUCT_1
@@ -19,6 +20,7 @@
 	var/firing_effect_type = null	//the visual effect appearing when the ammo is fired.
 	var/heavy_metal = TRUE
 	var/harmful = TRUE //pacifism check for boolet, set to FALSE if bullet is non-lethal
+	var/bullet_type = RIFLECASING //defined in roguetown.dm, used for what kind of sound plays when the casing is dropped
 
 /obj/item/ammo_casing/spent
 	name = "spent bullet casing"
@@ -81,7 +83,8 @@
 	update_icon()
 	SpinAnimation(10, 1)
 	var/turf/T = get_turf(src)
-	if(still_warm && T && T.bullet_sizzle)
-		addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(playsound), src, 'sound/blank.ogg', 20, 1), bounce_delay) //If the turf is made of water and the shell casing is still hot, make a sizzling sound when it's ejected.
-	else if(T && T.bullet_bounce_sound)
-		addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(playsound), src, T.bullet_bounce_sound, 20, 1), bounce_delay) //Soft / non-solid turfs that shouldn't make a sound when a shell casing is ejected over them.
+	if(bullet_type == 1 && T && T.bullet_bounce_sound)
+		addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(playsound), src, RIFLEFALL, 20, 1), bounce_delay) //if its a rifle casing, play riflefall when it's ejected.
+	else if(bullet_type == 2 && T.bullet_bounce_sound)
+		addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(playsound), src, SHOTGUNFALL, 20, 1), bounce_delay) //if its a shotgun casing, play shotgun fall when ejected.
+

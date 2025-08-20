@@ -14,7 +14,6 @@
 
 	outfit = /datum/outfit/job/roguetown/wapprentice
 
-	display_order = JDO_MAGEAPPRENTICE
 	give_bank_account = TRUE
 
 	min_pq = 0

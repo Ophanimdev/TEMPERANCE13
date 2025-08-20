@@ -18,8 +18,7 @@
 	item_flags = NEEDS_PERMIT
 	attack_verb = list("struck", "hit", "bashed")
 
-	var/fire_sound = 'sound/blank.ogg'
-	var/vary_fire_sound = TRUE
+	var/list/fire_sound = list('sound/blank.ogg')
 	var/fire_sound_volume = 50
 	var/dry_fire_sound = 'sound/blank.ogg'
 	var/recoil = 0						//boom boom shake the room
@@ -59,7 +58,7 @@
 	return TRUE
 
 /obj/item/gun/proc/shoot_with_empty_chamber(mob/living/user as mob|obj)
-	to_chat(user, "<span class='danger'>*click*</span>")
+	to_chat(user, "<span class='danger'>*FUCK!*</span>")
 	playsound(src, dry_fire_sound, 30, TRUE)
 
 
@@ -67,7 +66,7 @@
 	if(recoil)
 		shake_camera(user, recoil + 1, recoil)
 
-	playsound(user, fire_sound, fire_sound_volume, vary_fire_sound)
+	playsound(user, pick(fire_sound), fire_sound_volume)
 	if(message)
 		user.visible_message("<span class='danger'>[user] shoots [src]!</span>", \
 						"<span class='danger'>I shoot [src]!</span>", \

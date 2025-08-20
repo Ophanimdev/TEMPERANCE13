@@ -196,3 +196,39 @@
 /datum/component/storage/concrete/grid/headhook/bronze
 	screen_max_rows = 8
 	screen_max_columns = 6
+
+/datum/component/storage/concrete/grid/stimbag
+	max_w_class = WEIGHT_CLASS_SMALL
+	screen_max_rows = 4
+	screen_max_columns = 4
+	click_gather = TRUE
+	collection_mode = COLLECT_EVERYTHING
+	dump_time = 0
+	allow_quick_gather = TRUE
+	allow_quick_empty = TRUE
+	allow_dump_out = TRUE
+	insert_preposition = "in"
+
+/datum/component/storage/concrete/grid/stimbag/New(datum/P, ...)
+	. = ..()
+	set_holdable(/obj/item/reagent_containers/glass/bottle/rogue)
+
+/datum/component/storage/concrete/grid/ammobag
+	max_w_class = WEIGHT_CLASS_SMALL
+	screen_max_rows = 3
+	screen_max_columns = 2
+	click_gather = TRUE
+	collection_mode = COLLECT_EVERYTHING
+	dump_time = 0
+	allow_quick_gather = TRUE
+	allow_quick_empty = TRUE
+	allow_dump_out = TRUE
+	insert_preposition = "in"
+
+/datum/component/storage/concrete/grid/ammobag/New(datum/P, ...)
+	. = ..()
+	set_holdable(list(
+		/obj/item/ammo_box/clip,
+		/obj/item/ammo_box/handfuls,
+		/obj/item/ammo_box/speedloader,
+	))

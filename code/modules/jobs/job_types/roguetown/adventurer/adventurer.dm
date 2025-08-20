@@ -17,7 +17,6 @@ GLOBAL_VAR_INIT(adventurer_hugbox_duration_still, 3 MINUTES)
 	outfit = null
 	outfit_female = null
 
-	display_order = JDO_ADVENTURER
 	show_in_credits = FALSE
 	min_pq = 0
 	max_pq = null
