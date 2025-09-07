@@ -22,6 +22,19 @@
 
 	cmode_music = 'sound/music/combat_veterano.ogg'
 
+/datum/job/roguetown/veterano/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
+	..()
+	if(ishuman(L))
+		var/mob/living/carbon/human/H = L
+		if(istype(H.wear_ring, /obj/item/roguekey/risvon))
+			var/obj/item/clothing/S = H.wear_ring
+			var/index = findtext(H.real_name, " ")
+			if(index)
+				index = copytext(H.real_name, 1,index)
+			if(!index)
+				index = H.real_name
+			S.name = " [index]'s nailtag"
+
 /datum/outfit/job/roguetown/veterano/pre_equip(mob/living/carbon/human/H)
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/lord
 	shoes = /obj/item/clothing/shoes/roguetown/boots
@@ -34,13 +47,15 @@
 	belt = /obj/item/storage/belt/rogue/leather/black
 	beltl = /obj/item/flashlight/flare/torch/lantern
 	beltr = /obj/item/storage/belt/rogue/pouch/ammobag
+	wrists = /obj/item/scomstone
 	gloves = /obj/item/clothing/gloves/roguetown/eastgloves1
 	backl = /obj/item/gun/ballistic/shotgun/risvon
 	backr = /obj/item/storage/backpack/rogue/backpack/risvon
+	id = /obj/item/roguekey/risvon
 	backpack_contents = list(
 		/obj/item/ammo_box/handfuls/shotgun/buckshot = 4,
 		/obj/item/rogueweapon/huntingknife/idagger/steel,
-		/obj/item/storage/keyring/guardcastle,
+		/obj/item/storage/belt/rogue/pouch/coins/mid,
 	)
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/crafting, 3, TRUE)

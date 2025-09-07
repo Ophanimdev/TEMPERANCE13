@@ -3,6 +3,17 @@
 	icon_state = "bullet_proj"
 	damage = 70
 
+/obj/projectile/bullet/a577
+	name = ".577 bullet"
+	icon_state = "bullet_proj"
+	damage = 120
+
+/obj/projectile/bullet/a50
+	name = ".50 caliber bullet"
+	icon_state = "bullet_proj"
+	damage = 100 
+	armor_penetration = 100 //might be super broken, watch during playtests
+
 /obj/projectile/bullet/a9mm
 	name = "9mm bullet"
 	icon_state = "bullet_proj"

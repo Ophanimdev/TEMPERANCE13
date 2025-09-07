@@ -22,8 +22,8 @@
 	experimental_onhip = FALSE
 	experimental_onback = FALSE
 	possible_item_intents = list(
-		/datum/intent/shoot/,
-		/datum/intent/arc/,
+		/datum/intent/shoot/rifle,
+		/datum/intent/arc/rifle,
 		INTENT_GENERIC,
 		)
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/
@@ -46,9 +46,17 @@
 		return FALSE
 	return !!chambered?.BB
 
-/obj/item/gun/ballistic/process_chamber(empty_chamber = TRUE, from_firing = TRUE, chamber_next_round = TRUE)
+/obj/item/gun/ballistic/rifle/process_chamber(empty_chamber = TRUE, from_firing = TRUE, chamber_next_round = TRUE)
 	if(!semi_auto && from_firing)
 		return
+	if(semi_auto && chambered)
+		chambered.forceMove(drop_location())//Eject casing
+		chambered.bounce_away()
+		chambered = null
+		update_icon()
+		if (chamber_next_round && (magazine?.max_ammo > 1))
+			chamber_round()
+			update_icon()
 
 /obj/item/gun/ballistic/rifle/attack_self(mob/living/user)
 	if(recentpump > world.time)
@@ -135,7 +143,7 @@
 	else
 		return chargetime
 
-/obj/item/gun/ballistic/rifle/postfire_empty_checks(last_shot_succeeded)
+/obj/item/gun/ballistic/rifle/repeater/postfire_empty_checks(last_shot_succeeded)
     if(last_shot_succeeded && !semi_auto)
         needs_pump = TRUE
     ..()
@@ -158,7 +166,7 @@
 
 /obj/item/gun/ballistic/rifle/repeater/perserdun
 	name = "SKT 'Order'"
-	desc = "A piece of shit reproduction rifle, trying to replicate those spat out by the WAR MACHINE. Used by Perserdunian forces."
+	desc = "A piece of shit reproduction rifle, trying to replicate those spat out by the WAR MACHINE. Made by Perserdunian forces."
 	icon_state = "karabiner"
 	item_state = "karabiner"
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/perserdun
@@ -182,3 +190,29 @@
 	load_sound = 'sound/combat/ranged/leveractioninsert.ogg'
 	recoil = 0.15
 
+/obj/item/gun/ballistic/rifle/repeater/rattlesnake
+	name = "BRH 'Rattlesnake'"
+	desc = "A one-shot, breech-loaded rifle gifted by one of the Ziggurate's few allies. Comes with a cloth, tucked in the RIGHT SIDE of the stock."
+	icon = 'icons/roguetown/weapons/64guns.dmi'
+	icon_state = "rattlesnake"
+	item_state = "rattlesnake"
+	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/rattlesnake
+	slowdown = 0.15
+	spread = 0.5
+	pump_sound = 'sound/combat/ranged/bolt-work.ogg'
+	fire_sound = RATTLESHOT
+	load_sound = 'sound/combat/ranged/rattleload.ogg'
+	recoil = 2
+	possible_item_intents = list(
+		/datum/intent/shoot/rifle,
+		/datum/intent/arc/rifle,
+		/datum/intent/stab/militia,
+		INTENT_GENERIC,
+		)
+
+/obj/item/gun/ballistic/rifle/repeater/rattlesnake/rmb_self(mob/user)
+	user.changeNext_move(CLICK_CD_MELEE)
+	playsound(user, "clothwipe", 100, TRUE)
+	SEND_SIGNAL(src, COMSIG_COMPONENT_CLEAN_ACT, CLEAN_STRONG)
+	user.visible_message(span_warning("[user] wipes [src] down with its cloth."),span_notice("I wipe [src] down with its cloth."))
+	return

@@ -90,7 +90,7 @@
 ///////////////////
 
 /obj/item/gun/ballistic/revolver/grandmaster
-	name = "'Grace' Service Revolver"
+	name = "'Garland' Service Revolver"
 	desc = "A very, very expensive revolver used by the Grandmaster."
 	w_class = WEIGHT_CLASS_SMALL
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/revolver

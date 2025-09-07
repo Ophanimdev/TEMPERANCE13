@@ -487,6 +487,7 @@
 
 /turf/closed/wall/mineral/rogue/stone/red_moss
     icon = 'icons/turf/walls/red_mossy.dmi'
+
 /turf/closed/wall/mineral/rogue/decostone/mossy
     name = "decorated mossy stone wall"
     desc = "There was much effort put into this wall a long time ago."
@@ -526,3 +527,44 @@
 
 /turf/closed/wall/mineral/rogue/decostone/mossy/red/cand
     icon_state = "decostone-cand-red"
+
+//												TEMPERANCE 13!!!
+/turf/closed/wall/mineral/rogue/warmachine
+	name = "strange metal wall"
+	desc = "You can see the electirified veins, through the missing panels."
+	icon = 'icons/turf/roguewall.dmi'
+	icon_state = "rwall-b"
+	smooth = SMOOTH_MORE
+	blade_dulling = DULLING_BASH
+	max_integrity = 5000 // good lucj
+	sheet_type = /obj/item/natural/stone
+	break_sound = 'sound/combat/hits/onstone/stonedeath.ogg'
+	attacked_sound = list('sound/combat/hits/onmetal/attackpipewall (1).ogg', 'sound/combat/hits/onmetal/attackpipewall (2).ogg', 'sound/combat/hits/onmetal/grille (2).ogg')
+	above_floor = /turf/open/floor/rogue/blocks
+	baseturfs = list(/turf/open/floor/rogue/blocks)
+	neighborlay = "dirtedge"
+	climbdiff = 3
+
+/turf/closed/wall/mineral/rogue/warmachine/long
+	icon_state = "rwall-l"
+
+/turf/closed/wall/mineral/rogue/warmachine/long/east_west
+	dir = 1
+
+/turf/closed/wall/mineral/rogue/warmachine/center
+	icon_state = "rwall-c"
+
+/turf/closed/wall/mineral/rogue/warmachine/end
+	icon_state = "rwall-e"
+
+/turf/closed/wall/mineral/rogue/warmachine/end/north
+	dir = 1
+
+/turf/closed/wall/mineral/rogue/warmachine/end/east
+	dir = 4
+
+/turf/closed/wall/mineral/rogue/warmachine/end/west
+	dir = 8
+
+/turf/closed/wall/mineral/rogue/warmachine/cand
+	icon_state = "rwall-cand"

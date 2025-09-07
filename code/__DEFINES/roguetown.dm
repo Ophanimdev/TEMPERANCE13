@@ -461,7 +461,7 @@ GLOBAL_LIST_EMPTY(round_join_times)
 #define RIFLESHOT list('sound/combat/ranged/la_fire.ogg', 'sound/combat/ranged/la_fire2.ogg', 'sound/combat/ranged/la_fire3.ogg', 'sound/combat/ranged/la_fire4.ogg')
 #define PISTOLSHOT list('sound/combat/ranged/pistol1.ogg', 'sound/combat/ranged/pistol2.ogg', 'sound/combat/ranged/pistol3.ogg', 'sound/combat/ranged/pistol4.ogg', 'sound/combat/ranged/pistol5.ogg')
 #define SHOTGUNSHOT list('sound/combat/ranged/shotgun1.ogg')
-#define SMGSHOT "smg" 
+#define RATTLESHOT list('sound/combat/ranged/newrifle1.ogg', 'sound/combat/ranged/newrifle2.ogg', 'sound/combat/ranged/newrifle3.ogg') 
 #define REVOLVERSHOT list('sound/combat/ranged/revolverfire1.ogg', 'sound/combat/ranged/revolverfire2.ogg', 'sound/combat/ranged/revolverfire3.ogg')
 
 #define SHOTGUNINSERT list('sound/combat/ranged/shell_insert1.ogg', 'sound/combat/ranged/shell_insert2.ogg')

@@ -773,7 +773,10 @@
 						/turf/open/floor/rogue/grasscold,
 						/turf/open/floor/rogue/snowpatchy,
 						/turf/open/floor/rogue/snow,
-						/turf/open/floor/rogue/snowrough,)
+						/turf/open/floor/rogue/snowrough,
+						/turf/open/floor/rogue/warfloor1,
+						/turf/open/floor/rogue/warfloor2,
+						/turf/open/floor/rogue/warfloor3)
 
 /turf/open/floor/rogue/blocks/Initialize()
 	. = ..()
@@ -1464,3 +1467,114 @@
 
 /turf/open/floor/rogue/naturalstone/cardinal_smooth(adjacencies)
 	roguesmooth(adjacencies)
+
+
+// temperance 13
+
+/turf/open/floor/rogue/mainwarfloor
+	name = "metal floor"
+	desc = "These floors feel foreign, underneath your boots."
+	icon_state = "mainwarfloor"
+	footstep = FOOTSTEP_PLATING
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+	tiled_dirt = FALSE
+	smooth = SMOOTH_MORE
+	landsound = 'sound/foley/jumpland/metalland.wav'
+	canSmoothWith = list(/turf/open/floor/rogue/warfloor1,/turf/open/floor/rogue/warfloor2,/turf/open/floor/rogue/warfloor3)
+
+/turf/open/floor/rogue/mainwarfloor/nosmooth
+	name = "metal floor"
+	desc = "These floors feel foreign, underneath your boots."
+	icon_state = "mainwarfloor"
+	smooth = SMOOTH_MORE
+	canSmoothWith = list(/turf/open/floor/rogue/warfloor1,/turf/open/floor/rogue/warfloor2,/turf/open/floor/rogue/warfloor3)
+
+/turf/open/floor/rogue/warfloor1
+	icon_state = "warfloor1"
+	footstep = FOOTSTEP_PLATING
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+	tiled_dirt = FALSE
+	smooth = SMOOTH_TRUE
+	landsound = 'sound/foley/jumpland/metalland.wav'
+	canSmoothWith = list(/turf/open/floor/rogue/warfloor2,/turf/open/floor/rogue/warfloor3,/turf/open/floor/rogue/mainwarfloor)
+
+/turf/open/floor/rogue/warfloor1/nosmooth
+	name = "metal floor"
+	desc = "These floors feel foreign, underneath your boots."
+	icon_state = "warfloor1"
+	smooth = SMOOTH_MORE
+	canSmoothWith = list(/turf/open/floor/rogue/mainwarfloor,/turf/open/floor/rogue/warfloor2,/turf/open/floor/rogue/warfloor3)
+
+/turf/open/floor/rogue/warfloor2
+	icon_state = "warfloor2"
+	footstep = FOOTSTEP_PLATING
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+	tiled_dirt = FALSE
+	smooth = SMOOTH_TRUE
+	landsound = 'sound/foley/jumpland/metalland.wav'
+	canSmoothWith = list(/turf/open/floor/rogue/warfloor1,/turf/open/floor/rogue/warfloor3,/turf/open/floor/rogue/mainwarfloor)
+
+/turf/open/floor/rogue/warfloor2/nosmooth
+	name = "metal floor"
+	desc = "These floors feel foreign, underneath your boots."
+	icon_state = "warfloor2"
+	smooth = SMOOTH_MORE
+	canSmoothWith = list(/turf/open/floor/rogue/mainwarfloor,/turf/open/floor/rogue/warfloor1,/turf/open/floor/rogue/warfloor3)
+
+/turf/open/floor/rogue/warfloor3
+	icon_state = "warfloor3"
+	footstep = FOOTSTEP_PLATING
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+	tiled_dirt = FALSE
+	smooth = SMOOTH_TRUE
+	landsound = 'sound/foley/jumpland/metalland.wav'
+	canSmoothWith = list(/turf/open/floor/rogue/warfloor1,/turf/open/floor/rogue/warfloor2,/turf/open/floor/rogue/mainwarfloor)
+
+/turf/open/floor/rogue/warfloor3/nosmooth
+	name = "metal floor"
+	desc = "These floors feel foreign, underneath your boots."
+	icon_state = "warfloor3"
+	smooth = SMOOTH_MORE
+	canSmoothWith = list(/turf/open/floor/rogue/mainwarfloor,/turf/open/floor/rogue/warfloor2,/turf/open/floor/rogue/warfloor1)
+
+/turf/open/floor/rogue/bluelight
+	name = "floorlights"
+	desc = "Neat lights, covered by a layer of lattices."
+	icon_state = "warlightsb"
+	gender = PLURAL //"That's some floorlights."
+
+	light_outer_range =  4
+	light_power = 0.75
+	light_color = LIGHT_COLOR_DARK_BLUE
+
+	footstep = FOOTSTEP_PLATING
+	barefootstep = FOOTSTEP_PLATING
+	clawfootstep = FOOTSTEP_PLATING
+	heavyfootstep = FOOTSTEP_PLATING
+	smooth = SMOOTH_TRUE
+	canSmoothWith = list(/turf/open/floor/rogue/warfloor1,/turf/open/floor/rogue/warfloor2,/turf/open/floor/rogue/warfloor3,/turf/open/floor/rogue/mainwarfloor)
+
+/turf/open/floor/rogue/redlight
+	name = "floorlights"
+	desc = "Red lights, covered by some lattices."
+	icon_state = "warlightsr"
+	gender = PLURAL //"That's some floorlights."
+
+	light_outer_range =  4
+	light_power = 0.75
+	light_color = LIGHT_COLOR_DARK_BLUE
+
+	footstep = FOOTSTEP_PLATING
+	barefootstep = FOOTSTEP_PLATING
+	clawfootstep = FOOTSTEP_PLATING
+	heavyfootstep = FOOTSTEP_PLATING
+	smooth = SMOOTH_TRUE
+	canSmoothWith = list(/turf/open/floor/rogue/warfloor1,/turf/open/floor/rogue/warfloor2,/turf/open/floor/rogue/warfloor3,/turf/open/floor/rogue/mainwarfloor)

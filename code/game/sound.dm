@@ -386,9 +386,9 @@
 							)
 			if(SFX_PLATE_STEP)
 				soundin = pick(
-							'sound/foley/footsteps/armor/plate (1).ogg',
-							'sound/foley/footsteps/armor/plate (2).ogg',
-							'sound/foley/footsteps/armor/plate (3).ogg',
+							'sound/foley/footsteps/armor/heavy1.ogg',
+							'sound/foley/footsteps/armor/heavy2.ogg',
+							'sound/foley/footsteps/armor/heavy3.ogg',
 							)
 			if(SFX_PLATE_COAT_STEP)
 				soundin = pick(
@@ -408,5 +408,12 @@
 							'sound/foley/footsteps/armor/woodarmor (1).ogg',
 							'sound/foley/footsteps/armor/woodarmor (2).ogg',
 							'sound/foley/footsteps/armor/woodarmor (3).ogg',
+							)
+			if(SFX_GEAR_STEP)
+				soundin = pick(
+							'sound/foley/footsteps/armor/gear1.ogg',
+							'sound/foley/footsteps/armor/gear2.ogg',
+							'sound/foley/footsteps/armor/gear3.ogg',
+							'sound/foley/footsteps/armor/gear4.ogg',
 							)
 	return soundin

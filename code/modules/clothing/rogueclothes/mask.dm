@@ -363,6 +363,8 @@
 	detail_color = COLOR_SILVER
 	sewrepair = TRUE
 
+// t13 masks
+
 /obj/item/clothing/mask/rogue/gasmask
 	body_parts_covered = NECK|MOUTH|FACE|EYES
 	slot_flags = ITEM_SLOT_MASK
@@ -387,12 +389,20 @@
 	desc = "The Risvon Standard. Pretty old."
 	icon_state = "redmask"
 
+/obj/item/clothing/mask/rogue/gasmask/risvonmask/commandant
+	name = "tubed mask"
+	desc = "A long-tube. This one's been hand crafted. Probably a commissioned piece."
+	icon_state = "commandant"
+
+/obj/item/clothing/mask/rogue/gasmask/eb_gasmask
+	name = "old gas mask"
+	desc = "A locally-produced gas mask. Comes with a tube, and box."
+	icon_state = "EB_gasmask"
 
 /obj/item/clothing/mask/rogue/gasmask/perserdunmask
 	name = "tubed gas mask"
 	desc = "The Perserdunian Standard. Still dogshit."
 	icon_state = "fullgas"
-
 
 /obj/item/clothing/mask/rogue/gasmask/sgmask
 	name = "safety mask"

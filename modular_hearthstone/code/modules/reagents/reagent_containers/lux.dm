@@ -1,9 +1,9 @@
 /obj/item/reagent_containers/lux
-	name = "lux"
-	desc = "The stuff of life and souls, retrieved from within a hopefully-willing donor. It's a bit clammy and squishy, like a half-fried egg."
-	icon = 'icons/roguetown/items/produce.dmi'
-	icon_state = "lux"
-	item_state = "lux"
+	name = "REVIVER"
+	desc = "This ugly little thing latches onto someone's heart, and produces life."
+	icon = 'icons/obj/surgery.dmi'
+	icon_state = "voice_of_god"
+	item_state = "voice_of_god"
 	possible_transfer_amounts = list()
 	volume = 15
 	list_reagents = list(/datum/reagent/vitae = 5)

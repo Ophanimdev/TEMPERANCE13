@@ -1,4 +1,5 @@
 #define GARRISON_SCOM_COLOR "#FF4242"
+#define RADIO_SOUNDS 
 
 /obj/structure/roguemachine/scomm
 	name = "SCOM"
@@ -323,15 +324,15 @@
 //SCOMSTONE                 SCOMSTONE
 
 /obj/item/scomstone
-	name = "scomstone"
-	icon_state = "ring_scom"
-	desc = "A heavy ring made of metal. There is a gem embedded in the center - dim, but alive."
+	name = "communication piece"
+	icon_state = "scomstone1"
+	desc = "A wrist-mounted communication device. Used by the Zigs."
 	gripped_intents = null
 	dropshrink = 0.75
 	possible_item_intents = list(INTENT_GENERIC)
 	force = 10
 	throwforce = 10
-	slot_flags = ITEM_SLOT_MOUTH|ITEM_SLOT_HIP|ITEM_SLOT_NECK|ITEM_SLOT_RING
+	slot_flags = ITEM_SLOT_WRISTS
 	obj_flags = null
 	icon = 'icons/roguetown/items/misc.dmi'
 	w_class = WEIGHT_CLASS_SMALL
@@ -339,7 +340,7 @@
 	muteinmouth = TRUE
 	var/listening = TRUE
 	var/speaking = TRUE
-	var/messagereceivedsound = 'sound/misc/scom.ogg'
+	var/messagereceivedsound = 'sound/misc/ris_radio.ogg'
 	var/hearrange = 1 // change to 0 if you want your special scomstone to be only hearable by wearer
 	drop_sound = 'sound/foley/coinphy (1).ogg'
 	sellprice = 100
@@ -348,7 +349,7 @@
 //wip
 /obj/item/scomstone/attack_right(mob/living/carbon/human/user)
 	user.changeNext_move(CLICK_CD_INTENTCAP)
-	visible_message(span_notice ("[user] presses their ring against their mouth."))
+	visible_message(span_notice ("[user] presses their radio against their mouth."))
 	var/input_text = input(user, "Enter your message:", "Message")
 	if(!input_text)
 		return
@@ -370,10 +371,10 @@
 	if(.)
 		return
 	user.changeNext_move(CLICK_CD_INTENTCAP)
-	playsound(loc, 'sound/misc/beep.ogg', 100, FALSE, -1)
+	playsound(loc, 'sound/misc/radiomute.ogg', 100, FALSE, -1)
 	listening = !listening
 	speaking = !speaking
-	to_chat(user, span_info("I [speaking ? "unmute" : "mute"] the scomstone."))
+	to_chat(user, span_info("I [speaking ? "unmute" : "mute"] the communication device."))
 	update_icon()
 
 /obj/item/scomstone/Destroy()
@@ -492,18 +493,18 @@
 
 	return
 
-// MATTHIAN SCOMCOIN
+// perserdunian radio
 
 /obj/item/mattcoin
-	name = "rontz ring"
-	icon_state = "mattcoin"
-	desc = "A faded coin with a ruby laid into its center."
+	name = "communication device"
+	icon_state = "scomstoner1"
+	desc = "A wrist-mounted device used by the Empire."
 	gripped_intents = null
 	dropshrink = 0.75
 	possible_item_intents = list(INTENT_GENERIC)
 	force = 10
 	throwforce = 10
-	slot_flags = ITEM_SLOT_MOUTH|ITEM_SLOT_HIP|ITEM_SLOT_NECK|ITEM_SLOT_RING
+	slot_flags = ITEM_SLOT_WRISTS
 	obj_flags = null
 	icon = 'icons/roguetown/items/misc.dmi'
 	w_class = WEIGHT_CLASS_SMALL
@@ -515,27 +516,6 @@
 	grid_width = 32
 	grid_height = 32
 
-/obj/item/mattcoin/Initialize()
-	. = ..()
-	become_hearing_sensitive()
-	update_icon()
-	SSroguemachine.scomm_machines += src
-	name = pick("rontz ring", "gold ring")
-
-/obj/item/mattcoin/pickup(mob/living/user)
-	if(!HAS_TRAIT(user, TRAIT_COMMIE))
-		to_chat(user, "The coin turns to ash in my hands!")
-		playsound(loc, 'sound/items/firesnuff.ogg', 100, FALSE, -1)
-		qdel(src)
-	..()
-
-/obj/item/mattcoin/doStrip(mob/stripper, mob/owner)
-	if(!(stripper?.mind.has_antag_datum(/datum/antagonist/bandit))) //You're not a bandit, you can't strip the bandit coin
-		to_chat(stripper, "[src] turns to ash in my hands!")
-		playsound(stripper.loc, 'sound/items/firesnuff.ogg', 100, FALSE, -1)
-		qdel(src)
-		return FALSE
-	. = ..()
 
 /obj/item/mattcoin/attack_right(mob/living/carbon/human/user)
 	user.changeNext_move(CLICK_CD_INTENTCAP)
@@ -554,10 +534,10 @@
 	if(.)
 		return
 	user.changeNext_move(CLICK_CD_INTENTCAP)
-	playsound(loc, 'sound/misc/coindispense.ogg', 100, FALSE, -1)
+	playsound(loc, 'sound/misc/radiomute.ogg', 100, FALSE, -1)
 	listening = !listening
 	speaking = !speaking
-	to_chat(user, span_info("I [speaking ? "unmute" : "mute"] the Matthian-SCOMstone"))
+	to_chat(user, span_info("I [speaking ? "unmute" : "mute"] the communication device."))
 	update_icon()
 
 /obj/item/mattcoin/Destroy()
@@ -573,7 +553,7 @@
 	if(tcolor)
 		voicecolor_override = tcolor
 	if(speaking && message)
-		playsound(loc, 'sound/foley/coins1.ogg', 20, TRUE, -1)
+		playsound(loc, 'sound/misc/per_radio.ogg', 20, TRUE, -1)
 		say(message, language = message_language)
 	voicecolor_override = null
 

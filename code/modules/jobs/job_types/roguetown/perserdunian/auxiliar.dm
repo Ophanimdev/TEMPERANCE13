@@ -10,7 +10,7 @@
 	allowed_ages = list(AGE_ADULT)
 	advclass_cat_rolls = list(CTAG_AUXILIARIST = 20)
 
-	tutorial = "You are a supporter of the Perserdun's war effort. \
+	tutorial = "You are a supporter of Perserdun's war effort. \
 				Whenever you are a leech or an ingeniare, you still carry a gun and know how to use it." 
 
 	outfit = /datum/outfit/job/roguetown/auxiliarist
@@ -19,16 +19,31 @@
 	min_pq = 0
 	max_pq = null
 
-	cmode_music = 'sound/music/combat_auxiliar.ogg' //change to tense unit
+	cmode_music = 'sound/music/combat_auxiliar.ogg'
+
+/datum/job/roguetown/auxiliar/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
+	..()
+	if(ishuman(L))
+		var/mob/living/carbon/human/H = L
+		if(istype(H.wear_ring, /obj/item/roguekey/perserdun))
+			var/obj/item/clothing/S = H.wear_ring
+			var/index = findtext(H.real_name, " ")
+			if(index)
+				index = copytext(H.real_name, 1,index)
+			if(!index)
+				index = H.real_name
+			S.name = " [index]'s dogtag"
 
 /datum/outfit/job/roguetown/auxiliarist
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/lord
 	shoes = /obj/item/clothing/shoes/roguetown/boots
-	beltl = /obj/item/storage/keyring/guardcastle
+	beltl = /obj/item/flashlight/flare/torch/lantern
+	id = /obj/item/roguekey/perserdun
 	armor = /obj/item/clothing/suit/roguetown/armor/brigandine/light
 	cloak = /obj/item/clothing/cloak/perserduntabard
 	pants = /obj/item/clothing/under/roguetown/trou/artipants
 	mask = /obj/item/clothing/mask/rogue/gasmask/perserdunmask
+	wrists = /obj/item/mattcoin
 	neck = /obj/item/clothing/neck/roguetown/chaincoif
 	belt = /obj/item/storage/belt/rogue/leather/black
 
@@ -48,7 +63,6 @@
 	category_tags = list(CTAG_AUXILIARIST)
 
 /datum/outfit/job/roguetown/auxiliarist/leech/pre_equip(mob/living/carbon/human/H)
-	beltl = /obj/item/flashlight/flare/torch/lantern
 	beltr = /obj/item/storage/belt/rogue/pouch/stim
 	head = /obj/item/clothing/head/roguetown/helmet/sallet/visored/iron
 	gloves = /obj/item/clothing/gloves/roguetown/leather/latex
@@ -57,6 +71,7 @@
 	backpack_contents = list(
 		/obj/item/reagent_containers/glass/bottle/rogue/healthpotnew = 2,
 		/obj/item/ammo_box/handfuls/rifle = 4,
+		/obj/item/storage/belt/rogue/pouch/coins/poor,
 	)
 	H.adjust_skillrank(/datum/skill/misc/medicine, 5, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
@@ -81,7 +96,6 @@
 	category_tags = list(CTAG_AUXILIARIST)
 
 /datum/outfit/job/roguetown/auxiliarist/ingeniare/pre_equip(mob/living/carbon/human/H)
-	beltl = /obj/item/flashlight/flare/torch/lantern
 	beltr = /obj/item/storage/belt/rogue/pouch/ammobag
 	gloves = /obj/item/clothing/gloves/roguetown/leather/latex
 	backr = /obj/item/storage/backpack/rogue/backpack/perserdun
@@ -91,6 +105,7 @@
 	backpack_contents = list(
 		/obj/item/ammo_box/handfuls/rifle = 4,
 		/obj/item/natural/bundle/stick = 2,
+		/obj/item/storage/belt/rogue/pouch/coins/poor,
 	)
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/crafting, 3, TRUE)

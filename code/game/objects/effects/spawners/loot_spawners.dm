@@ -422,7 +422,46 @@
 		/obj/item/reagent_containers/food/snacks/rogue/meat/salami = 1,
 	)
 
-//x3 of the above
+/obj/effect/spawner/lootdrop/hightierguns
+	name = "high tier gun spawner"
+	icon_state = "highgun"
+	lootcount = 1
+	loot = list(
+		/obj/item/gun/ballistic/shotgun/eternal = 1,
+		/obj/item/gun/ballistic/rifle/repeater/patience	= 1,
+		/obj/item/gun/ballistic/rifle/reaper = 1,
+	)
+
+/obj/effect/spawner/lootdrop/hightierammo
+	name = "high tier ammo spawner"
+	icon_state = "highammo"
+	lootcount = 1
+	loot = list(
+		/obj/item/ammo_box/boxes/amr = 1,
+		/obj/item/ammo_box/clip/reaper = 3,
+	)
+
+/obj/effect/spawner/lootdrop/ammo
+	name = "ammo spawner"
+	icon_state = "ammo"
+	lootcount = 1
+	loot = list(
+		/obj/item/ammo_box/handfuls/leveraction = 1,
+		/obj/item/ammo_box/clip/pistol = 2,
+		/obj/item/ammo_box/handfuls/rifle = 2,
+		/obj/item/ammo_box/handfuls/shotgun = 1,
+		/obj/item/ammo_box/handfuls/shotgun/buckshot = 1,
+		/obj/item/ammo_box/handfuls/rattlesnake = 1,
+	)
+
+/obj/effect/spawner/lootdrop/medicines
+	name = "medicines"
+	icon_state = "meds"
+	lootcount = 3
+	loot = list(
+		/obj/item/reagent_containers/glass/bottle/rogue/healthpotnew = 1,
+		/obj/item/reagent_containers/glass/bottle/rogue/healthpot = 2,
+	)
 
 /obj/effect/spawner/lootdrop/general_loot_low/x3
 	name = "low tier general loot spawnerx3"

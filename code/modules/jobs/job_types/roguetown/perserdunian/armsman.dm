@@ -3,8 +3,8 @@
 	flag = ARMSMAN
 	department_flag = PERSERDUN
 	faction = "Station"
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 8
+	spawn_positions = 8
 	allowed_races = RACES_ALL_KINDS
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT)
@@ -21,6 +21,19 @@
 
 	cmode_music = 'sound/music/combat_armsman.ogg'
 
+/datum/job/roguetown/armsman/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
+	..()
+	if(ishuman(L))
+		var/mob/living/carbon/human/H = L
+		if(istype(H.wear_ring, /obj/item/roguekey/perserdun))
+			var/obj/item/clothing/S = H.wear_ring
+			var/index = findtext(H.real_name, " ")
+			if(index)
+				index = copytext(H.real_name, 1,index)
+			if(!index)
+				index = H.real_name
+			S.name = " [index]'s dogtag"
+
 /datum/outfit/job/roguetown/armsman/pre_equip(mob/living/carbon/human/H)
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/lord
 	shoes = /obj/item/clothing/shoes/roguetown/boots
@@ -34,12 +47,14 @@
 	beltl = /obj/item/flashlight/flare/torch/lantern
 	beltr = /obj/item/storage/belt/rogue/pouch/ammobag
 	backl = /obj/item/gun/ballistic/rifle/repeater/perserdun
+	wrists = /obj/item/mattcoin
 	gloves = /obj/item/clothing/gloves/roguetown/eastgloves1
 	backr = /obj/item/storage/backpack/rogue/backpack/perserdun
+	id = /obj/item/roguekey/perserdun
 	backpack_contents = list(
 		/obj/item/ammo_box/handfuls/rifle = 4,
 		/obj/item/rogueweapon/huntingknife/idagger/steel,
-		/obj/item/storage/keyring/guardcastle,
+		/obj/item/storage/belt/rogue/pouch/coins/poor,
 	)
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/crafting, 3, TRUE)

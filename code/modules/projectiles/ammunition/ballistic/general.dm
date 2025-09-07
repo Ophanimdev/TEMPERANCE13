@@ -7,6 +7,23 @@
 	caliber = "a762"
 	projectile_type = /obj/projectile/bullet/a762
 	bullet_type = RIFLECASING
+
+/obj/item/ammo_casing/a577
+	name = ".577 blackout bullet piece"
+	desc = "A .577 casing used for blowing heads off."
+	icon_state = "spent-casing_QT_rifle"
+	caliber = "a577"
+	projectile_type = /obj/projectile/bullet/a577
+	bullet_type = RIFLECASING
+
+/obj/item/ammo_casing/a50
+	name = ".50 caliber bullet"
+	desc = "An ugly bullet that breaks hearts."
+	icon_state = "amrcasing-spent"
+	caliber = "a50"
+	projectile_type = /obj/projectile/bullet/a50
+	bullet_type = RIFLECASING
+
 // handguns
 
 /obj/item/ammo_casing/a9mm
@@ -15,6 +32,7 @@
 	icon_state = "spent-casing_QT_pistol"
 	caliber = "a9mm"
 	projectile_type = /obj/projectile/bullet/a9mm
+	bullet_type = RIFLECASING
 
 /obj/item/ammo_casing/a44
 	name = ".44 bullet casing"
@@ -37,7 +55,7 @@
 	name = "buckshot shell"
 	desc = "A plastic piece that shoots buckshot."
 	icon_state = "spent-casing_shotgun"
-	icon_state = "gshell"
+	icon_state = "spent-casing_shotgun"
 	caliber = "shotgun"
 	projectile_type = /obj/projectile/bullet/pellet/shotgun_buckshot
 	pellets = 6

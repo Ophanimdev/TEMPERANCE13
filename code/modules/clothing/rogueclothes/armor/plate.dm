@@ -20,7 +20,9 @@
 
 /obj/item/clothing/suit/roguetown/armor/plate/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/item_equipped_movement_rustle, SFX_PLATE_STEP)
+	var/datum/component/item_equipped_movement_rustle/comp = AddComponent(/datum/component/item_equipped_movement_rustle, SFX_PLATE_STEP)
+	if (comp)
+		comp.move_delay = 2
 
 /obj/item/clothing/suit/roguetown/armor/plate/iron
 	name = "iron half-plate"
@@ -341,6 +343,10 @@
 	max_integrity = ARMOR_INT_CHEST_MEDIUM_IRON
 	smeltresult = /obj/item/ingot/iron
 	smelt_bar_num = 2
+
+/obj/item/clothing/suit/roguetown/armor/plate/half/iron/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, SFX_GEAR_STEP)
 
 /obj/item/clothing/suit/roguetown/armor/plate/half/copper
 	name = "heart protector"

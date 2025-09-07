@@ -1446,7 +1446,7 @@
 
 
 /atom/movable/screen/gameover/hog
-	icon_state = "hog"
+	icon_state = "banish"
 	alpha = 0
 
 /atom/movable/screen/gameover/hog/Fade(out = FALSE, qdel_after = FALSE)

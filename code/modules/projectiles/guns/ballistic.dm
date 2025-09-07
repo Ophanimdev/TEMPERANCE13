@@ -139,16 +139,17 @@
 /obj/item/gun/ballistic/process_chamber(empty_chamber = TRUE, from_firing = TRUE, chamber_next_round = TRUE)
 	if(!semi_auto && from_firing)
 		return
-	var/obj/item/ammo_casing/AC = chambered //Find chambered round
-	if(istype(AC)) //there's a chambered round
-		if(casing_ejector || !from_firing)
-			AC.forceMove(drop_location()) //Eject casing onto ground.
-			AC.bounce_away(TRUE)
-			chambered = null
-		else if(empty_chamber)
-			chambered = null
-	if (chamber_next_round && (magazine?.max_ammo > 1))
-		chamber_round()
+	if(semi_auto)
+		var/obj/item/ammo_casing/AC = chambered //Find chambered round
+		if(istype(AC)) //there's a chambered round
+			if(casing_ejector || !from_firing)
+				AC.forceMove(drop_location()) //Eject casing onto ground.
+				AC.bounce_away(TRUE)
+				chambered = null
+			else if(empty_chamber)
+				chambered = null
+		if (chamber_next_round && (magazine?.max_ammo > 1))
+			chamber_round()
 
 ///Used to chamber a new round and eject the old one
 /obj/item/gun/ballistic/proc/chamber_round(keep_bullet = FALSE)
@@ -304,6 +305,11 @@
 	if(!internal_magazine && magazine)
 		if(!magazine.ammo_count())
 			eject_magazine(user)
+			magazine.update_icon()
+			if(magazine.ammo_count())
+				playsound('sound/combat/ranged/smg_magout.ogg', 70, 1)
+			magazine = null
+			to_chat(user, "<span class='notice'>You pull the magazine out of \the [src].</span>")
 			return
 	if(bolt_type == BOLT_TYPE_NO_BOLT)
 		chambered = null

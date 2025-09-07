@@ -985,3 +985,73 @@
 
 /obj/structure/mineral_door/wood/bath/courtesan
 	resident_advclass = list(/datum/advclass/nightmaiden/concubine, /datum/advclass/nightmaiden/courtesan)
+
+
+
+/obj/structure/mineral_door/perserdoor
+	name = "reinforced door"
+	desc = "A funny door that lets you see through the other side. Pretty strong."
+	icon_state = "perdoor"
+	openSound = 'sound/foley/doors/waropen.ogg'
+	closeSound = 'sound/foley/doors/warclose.ogg'
+	resistance_flags = null
+	max_integrity = 2000
+	damage_deflection = 15
+	layer = ABOVE_MOB_LAYER
+	keylock = TRUE
+	icon = 'icons/roguetown/misc/doors.dmi'
+	blade_dulling = DULLING_BASH
+	opacity = FALSE
+	windowed = TRUE
+	locksound = 'sound/foley/doors/warlock.ogg'
+	unlocksound = 'sound/foley/doors/warunlock.ogg'
+	rattlesound = 'sound/foley/doors/warrattle.ogg'
+	attacked_sound = list("sound/combat/hits/onmetal/metalimpact (1).ogg", "sound/combat/hits/onmetal/metalimpact (2).ogg")
+	ridethrough = TRUE
+	swing_closed = FALSE
+	lock_strength = 150
+	repairable = TRUE
+	repair_cost_first = /obj/item/ingot/iron
+	repair_cost_second = /obj/item/ingot/iron
+	repair_skill = /datum/skill/craft/blacksmithing
+	
+
+/obj/structure/mineral_door/perserdoor
+	name = "reinforced door"
+	desc = "A funny door that lets you see through the other side. Pretty strong."
+	icon_state = "perdoor"
+	openSound = 'sound/foley/doors/waropen.ogg'
+	closeSound = 'sound/foley/doors/warclose.ogg'
+	resistance_flags = null
+	max_integrity = 2000
+	damage_deflection = 15
+	layer = ABOVE_MOB_LAYER
+	keylock = TRUE
+	blade_dulling = DULLING_BASH
+	opacity = FALSE
+	windowed = TRUE
+	locksound = 'sound/foley/doors/warlock.ogg'
+	unlocksound = 'sound/foley/doors/warunlock.ogg'
+	rattlesound = 'sound/foley/doors/warrattle.ogg'
+	attacked_sound = list("sound/combat/hits/onmetal/metalimpact (1).ogg", "sound/combat/hits/onmetal/metalimpact (2).ogg")
+	ridethrough = TRUE
+	swing_closed = FALSE
+	lock_strength = 150
+	repairable = TRUE
+	repair_cost_first = /obj/item/ingot/iron
+	repair_cost_second = /obj/item/ingot/iron
+	repair_skill = /datum/skill/craft/blacksmithing
+	lockid = "perserdun"
+
+/obj/structure/mineral_door/wood/wardoor
+	name = "strange door"
+	desc = "A door with strange markings on it."
+	icon_state = "wardoor"
+	locksound = 'sound/foley/doors/warlock.ogg'
+	unlocksound = 'sound/foley/doors/warunlock.ogg'
+	rattlesound = 'sound/foley/doors/warrattle.ogg'
+	openSound = 'sound/foley/doors/waropen.ogg'
+	closeSound = 'sound/foley/doors/warclose.ogg'
+	attacked_sound = list("sound/combat/hits/onmetal/metalimpact (1).ogg", "sound/combat/hits/onmetal/metalimpact (2).ogg")
+	repairable = FALSE
+	keylock = FALSE

@@ -77,12 +77,6 @@
 	)
 	categories_gamer = list()
 
-/obj/structure/roguemachine/goldface/public/examine()
-	. = ..()
-	. += "<span class='info'>A public version of the GOLDFACE. The guild charges a hefty fee for its usage. When locked, can be used to browse the inventory a merchant has.</span>"
-	. += "<span class='info'>An agreement between the Guild of Craft and the Merchant's Guild mandates that certain protected goods are sold in a separate vendor that can be locked by the guildmembers.</span>"
-	. += "<span class='info'>The vendor can be locked by a key. The merchant make no profit whatsoever from the public vendor as the guild charges an exorbitant markup for automated handling.</span>"
-
 /obj/structure/roguemachine/goldface/public/smith
 	name = "Smithy's SILVERFACE"
 	lockid = "crafterguild"
@@ -245,11 +239,11 @@
 		to_chat(user, span_warning("It's locked. Of course."))
 		return
 	user.changeNext_move(CLICK_CD_INTENTCAP)
-	playsound(loc, 'sound/misc/gold_menu.ogg', 100, FALSE, -1)
+	playsound(loc, 'sound/misc/clear1.ogg', 100, FALSE, -1)
 	var/canread = user.can_read(src, TRUE)
 	var/contents
 	if(is_public)
-		contents = "<center>SILVERFACE - In the name of greed.<BR>"
+		contents = "<center>DEATH - IN THE NAME OF SERVICE.<BR>"
 	else
 		contents = "<center>GOLDFACE - In the name of greed.<BR>"
 	contents += "<a href='?src=[REF(src)];change=1'>MAMMON LOADED:</a> [budget]<BR>"

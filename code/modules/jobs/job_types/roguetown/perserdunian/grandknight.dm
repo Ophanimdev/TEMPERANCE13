@@ -22,6 +22,21 @@
 
 	cmode_music = 'sound/music/combat_grandknight.ogg'
 
+/datum/job/roguetown/grandknight/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
+	..()
+	if(ishuman(L))
+		var/mob/living/carbon/human/H = L
+		if(istype(H.wear_ring, /obj/item/roguekey/perserdun))
+			var/obj/item/clothing/S = H.wear_ring
+			var/index = findtext(H.real_name, " ")
+			if(index)
+				index = copytext(H.real_name, 1,index)
+			if(!index)
+				index = H.real_name
+			S.name = " [index]'s dogtag"
+
+
+
 /datum/outfit/job/roguetown/grandknight/pre_equip(mob/living/carbon/human/H)
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/lord
 	shoes = /obj/item/clothing/shoes/roguetown/boots
@@ -36,11 +51,13 @@
 	beltl = /obj/item/flashlight/flare/torch/lantern
 	beltr = /obj/item/storage/belt/rogue/pouch/ammobag
 	backl = /obj/item/rogueweapon/stoneaxe/oath
+	wrists = /obj/item/mattcoin
 	gloves = /obj/item/clothing/gloves/roguetown/plate/iron
+	id = /obj/item/roguekey/perserdun
 	backr = /obj/item/storage/backpack/rogue/backpack/perserdun
 	backpack_contents = list(
 		/obj/item/rogueweapon/huntingknife/idagger/steel,
-		/obj/item/storage/keyring/guardcastle, //temp
+		/obj/item/storage/belt/rogue/pouch/coins/rich,
 	)
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE) //test 2 see if it's broken
 	H.adjust_skillrank(/datum/skill/craft/crafting, 3, TRUE)

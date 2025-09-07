@@ -11,7 +11,7 @@
 	possible_locs = list(BODY_ZONE_CHEST)
 
 /datum/surgery_step/infuse_lux
-	name = "Infuse Lux"
+	name = "Apply REVIVER"
 	implements = list(
 		/obj/item/reagent_containers/lux = 80,
 	)
@@ -33,40 +33,40 @@
 		to_chat(user, "[target] is missing their heart!")
 		return FALSE
 	if(target.mind && !target.mind.active)
-		to_chat(user, "[target]'s heart is inert. Maybe it will respond later?")
+		to_chat(user, "The REVIVER isn't working. Maybe it will root, later.")
 		return FALSE
 	if(HAS_TRAIT(target, TRAIT_NECRAS_VOW))
 		to_chat(user, "[target] has pledged a vow to Necra. This will not work.")
 		return FALSE
 
 /datum/surgery_step/infuse_lux/preop(mob/user, mob/living/target, target_zone, obj/item/tool, datum/intent/intent)
-	display_results(user, target, span_notice("I begin to revive [target]... will their heart respond?"),
-		span_notice("[user] begins to work lux into [target]'s heart."),
-		span_notice("[user] begins to work lux into [target]'s heart."))
+	display_results(user, target, span_notice("I begin to revive [target]... Let's hope the REVIVER takes root."),
+		span_notice("[user] starts to root the REVIVER onto [target]'s heart."),
+		span_notice("[user] starts to root the REVIVER onto [target]'s heart."))
 	return TRUE
 
 /datum/surgery_step/infuse_lux/success(mob/user, mob/living/target, target_zone, obj/item/tool, datum/intent/intent)
 	var/revive_pq = PQ_GAIN_REVIVE
 	if(target.mob_biotypes & MOB_UNDEAD)
 		display_results(user, target, span_notice("You cannot infuse life into the undead! The rot must be cured first."),
-			"[user] works the lux into [target]'s innards.",
-			"[user] works the lux into [target]'s innards.")
+			"[user] roots the REVIVER onto [target]'s heart.",
+			"[user] roots the REVIVER onto [target]'s heart.")
 		return FALSE
 	if (target.mind)
-		if(alert(target, "Are you ready to face the world, once more?", "Revival", "I must go on", "Let me rest") != "I must go on")
+		if(alert(target, "The REVIVER's sucking onto your heart. Live?", "Revival", "The REVIVER is my lifeblood.", "I shall die.") != "The REVIVER is my lifeblood.")
 			display_results(user, target, span_notice("[target]'s heart refuses the lux. They're only in sweet dreams, now."),
-				"[user] works the lux into [target]'s innards, but nothing happens.",
-				"[user] works the lux into [target]'s innards, but nothing happens.")
+				"[user] tries to root the REVIVER onto [target]'s heart, but the body rejects.",
+				"[user] tries to root the REVIVEr onto [target]'s heart, but the body rejects.")
 			return FALSE
 	target.adjustOxyLoss(-target.getOxyLoss()) //Ye Olde CPR
 	if(!target.revive(full_heal = FALSE))
-		display_results(user, target, span_notice("The lux refuses to meld with [target]'s heart. Their damage must be too severe still."),
-			"[user] works the lux into [target]'s innards, but nothing happens.",
-			"[user] works the lux into [target]'s innards, but nothing happens.")
+		display_results(user, target, span_notice("The REVIVER refuses to latch with [target]'s heart. Their damage must be too severe still."),
+			"[user] tries to root the REVIVER onto [target]'s heart, but it can't latch on.",
+			"[user] tries to root the REVIVEr onto [target]'s heart, but it can't latch on.")
 		return FALSE
-	display_results(user, target, span_notice("You succeed in restarting [target]'s heart with the infusion of lux."),
-		"[user] works the lux into [target]'s innards.",
-		"[user] works the lux into [target]'s innards.")
+	display_results(user, target, span_notice("You succeed in restarting [target]'s heart with the REVIVER."),
+		"[user] roots the REVIVER onto [target]'s heart.",
+		"[user] roots the REVIVER onto [target]'s heart.")
 	var/mob/living/carbon/spirit/underworld_spirit = target.get_spirit()
 	if(underworld_spirit)
 		var/mob/dead/observer/ghost = underworld_spirit.ghostize()
@@ -77,7 +77,7 @@
 	target.Jitter(100)
 	GLOB.azure_round_stats[STATS_LUX_REVIVALS]++
 	target.update_body()
-	target.visible_message(span_notice("[target] is dragged back from Necra's hold!"), span_green("I awake from the void."))
+	target.visible_message(span_notice("[target] is dragged back from DEATH!"), span_green("I awake from the void."))
 	qdel(tool)
 	if(target.mind)
 		if(revive_pq && !HAS_TRAIT(target, TRAIT_IWASREVIVED) && user?.ckey)
@@ -90,5 +90,5 @@
 /datum/surgery_step/infuse_lux/failure(mob/user, mob/living/target, target_zone, obj/item/tool, datum/intent/intent, success_prob)
 	display_results(user, target, span_warning("I screwed up!"),
 		span_warning("[user] screws up!"),
-		span_notice("[user] works the lux into [target]'s innards."), TRUE)
+		span_notice("[user] roots the REVIVER onto [target]'s heart."), TRUE)
 	return TRUE

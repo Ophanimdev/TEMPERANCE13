@@ -55,3 +55,15 @@
 	desc = "A kettle helmet. It has the visor of a stolen Knight Commandant's helmet welded onto it."
 	icon_state = "ikettlevisor"
 	item_state = "ikettlevisor"
+
+/obj/item/clothing/head/roguetown/helmet/kettle/iron/oficiro
+	name = "iron ziggurate helmet"
+	desc = "A metal helmet. It kinda looks like a sallet."
+	icon_state = "oficiro"
+	item_state = "oficiro"
+
+/obj/item/clothing/head/roguetown/helmet/kettle/iron/commandant
+	name = "iron ziggurate helmet"
+	desc = "A metal helmet. Custom made. For the Ziggurate!"
+	icon_state = "commandant"
+	item_state = "commandant"

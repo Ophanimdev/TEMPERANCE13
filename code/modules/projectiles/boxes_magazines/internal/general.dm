@@ -6,7 +6,7 @@
 	ammo_type = /obj/item/ammo_casing/a762
 	caliber = "a762"
 	max_ammo = 5
-	multiload = 0
+	multiload = 1
 
 /obj/item/ammo_box/magazine/internal/boltaction/perserdun
 	name = "WTF."
@@ -24,6 +24,38 @@
 	max_ammo = 6
 	multiload = 0
 
+
+/obj/item/ammo_box/magazine/internal/boltaction/rattlesnake
+	name = "snake internal mag."
+	desc = "ahelp if u see me please"
+	ammo_type = /obj/item/ammo_casing/a577
+	caliber = "a577"
+	max_ammo = 1
+	multiload = 0
+
+/obj/item/ammo_box/magazine/internal/boltaction/rattlesnake
+	name = "snake internal mag."
+	desc = "ahelp if u see me please"
+	ammo_type = /obj/item/ammo_casing/a577
+	caliber = "a577"
+	max_ammo = 1
+	multiload = 0
+
+/obj/item/ammo_box/magazine/internal/boltaction/patience
+	name = "patience internal mag"
+	desc = "notify a coder if u see me"
+	ammo_type = /obj/item/ammo_casing/a50
+	caliber = "a50"
+	max_ammo = 5
+	multiload = 0
+
+/obj/item/ammo_box/magazine/internal/boltaction/reaper
+	name = "reaper internal mag"
+	desc = "u shouldnt be seeing this"
+	ammo_type = /obj/item/ammo_casing/a762
+	caliber = "a762"
+	max_ammo = 5
+	multiload = 1
 
 //revolvers
 

@@ -440,6 +440,48 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "Goblin Smith"
 	icon_state = "arrow"
 
+// t13 spawns
+
+/obj/effect/landmark/start/grandmaster
+	name = "Grandmaster"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/grandknight
+	name = "Grandknight"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/knightcommander
+	name = "Knight Commander"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/armsman
+	name = "Armsman"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/auxiliarist
+	name = "Auxiliarist"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/commandant
+	name = "Commandant"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/oficiro
+	name = "Oficiro"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/veterano
+	name = "Veterano"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/soldato
+	name = "Soldato"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/servisto
+	name = "Servisto"
+	icon_state = "arrow"
+
 //Antagonist spawns
 
 /obj/effect/landmark/start/wizard

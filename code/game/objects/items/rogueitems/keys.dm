@@ -546,6 +546,20 @@
 	icon_state = "eyekey"
 	lockid = "porta"
 
+/obj/item/roguekey/risvon
+	name = "nailtag"
+	desc = "This key opens doors to the Ziggurate's outpost. It's also a soldier's identification."
+	icon_state = "risvontag"
+	lockid = "risvontag"
+	slot_flags = ITEM_SLOT_NECK|ITEM_SLOT_RING
+
+/obj/item/roguekey/perserdun
+	name = "dogtag"
+	desc = "This useful little thing provides information on the soldier wearing it. It's also used as a scanning tag for doors."
+	icon_state = "perserduntag"
+	lockid = "perserdun"
+	slot_flags = ITEM_SLOT_NECK|ITEM_SLOT_RING
+
 //Apartment and shop keys
 /obj/item/roguekey/apartments
 	name = ""
