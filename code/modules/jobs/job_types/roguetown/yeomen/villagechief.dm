@@ -2,9 +2,8 @@
 	title = "Town Elder"
 	flag = ELDER
 	department_flag = YEOMEN
-	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS

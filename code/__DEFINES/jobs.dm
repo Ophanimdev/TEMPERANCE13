@@ -217,14 +217,28 @@
 #define KNIGHTCOMMANDER (1<<2) //better armor + sawn down lever-action & a sword
 #define AUXILIARIST	(1<<3) //support role - same w/ servico
 #define ARMSMAN	(1<<4) //standard soldier w/ a rifle
+#define CHIRURGEON (1<<5)
+#define PARTISAN (1<<6)
+#define ENVOY (1<<7)
 
 #define RISVON	(1<<13)
 
-#define COMMANDANT	(1<<0) //1 slot leadership. probably has a heavy smg & great light armor
+#define COMMANDANT (1<<0) //1 slot leadership. probably has a heavy smg & great light armor
 #define OFICIRO (1<<1) //sniper? maybe a semi-auto rifle? + grenades?
 #define VETERANO (1<<2) //veteran w/ a shotgun & grenades instead of a pistol & net
 #define SOLDATO	(1<<3) //standard soldier - high speed, low armor, net + pistol
-#define SERVISTO	(1<<4) //support role - can probably shit meds out the wazoo 
+#define SERVISTO (1<<4) //support role - can probably shit meds out the wazoo 
+#define CURACISTO (1<<5)
+#define CAMPFOLLOWER (1<<6)
+#define CONSULO (1<<7)
+
+#define KINGSROW (1<<14)
+
+#define HIERARCH (1<<0)
+#define BULWARK (1<<2)
+#define PROVISIONER (1<<3)
+#define MORTICIAN (1<<4)
+#define TOWNER (1<<5)
 
 #define JCOLOR_NOBLE "#aa83b9"
 #define JCOLOR_COURTIER "#81adc8"
@@ -237,6 +251,7 @@
 #define JCOLOR_INQUISITION "#FF0000"
 #define JCOLOR_PERSERDUN "#52488b"
 #define JCOLOR_RISVON "#913333"
+#define JCOLOR_KINGSROW "#31437c"
 
 // job display orders //
 
@@ -246,6 +261,9 @@
 #define JDO_KNIGHTCOMMANDER 1.2
 #define JDO_AUXILIARIST 1.3
 #define JDO_ARMSMAN 1.4
+#define JDO_CHIRURGEON 1.5
+#define JDO_PARTISAN 1.6
+#define JDO_ENVOY 1.7
 
 // RISVON
 #define JDO_COMMANDANT 2
@@ -253,17 +271,33 @@
 #define JDO_VETERANO 2.2
 #define JDO_SOLDATO 2.3
 #define JDO_SERVISTO 2.4
+#define JDO_CURACISTO 2.5
+#define JDO_CAMPFOLLOWER 2.6
+#define JDO_CONSULO 2.7
+
+// KINGSROW
+#define JDO_HIERARCH 3
+#define JDO_BULWARK 3.1
+#define JDO_PROVISIONER 3.2
+#define JDO_MORTICIAN 3.3
+#define JDO_TOWNER 3.4
 
 #define PERSERDUN_ROLES \
 	/datum/job/roguetown/grandmaster,\
 	/datum/job/roguetown/grandknight,\
 	/datum/job/roguetown/knightcommander,\
 	/datum/job/roguetown/auxiliar,\
-	/datum/job/roguetown/armsman
+	/datum/job/roguetown/armsman,\
+	/datum/job/roguetown/chirurgeon,\
+	/datum/job/roguetown/partisan,\
+	/datum/job/roguetown/envoy
 
 #define RISVON_ROLES \
 	/datum/job/roguetown/commandant,\
 	/datum/job/roguetown/officaro,\
 	/datum/job/roguetown/veterano,\
 	/datum/job/roguetown/soldato,\
-	/datum/job/roguetown/servicus
+	/datum/job/roguetown/servicus,\
+	/datum/job/roguetown/curacisto,\
+	/datum/job/roguetown/campfollower,\
+	/datum/job/roguetown/consulo

@@ -36,23 +36,10 @@
 	AddComponent(/datum/component/layeredarmor/ebarmor)
 
 
-// light helmets
-
-/obj/item/clothing/head/roguetown/helmet/leather/grandmaster
-	name = "master's cap"
-	desc = "A handcrafted cap, following the fashion style produced by the LOVE MACHINE. Has a metal plate on the front."
-	icon_state = "grandhat"
-	item_state = "grandhat"
-	mob_overlay_icon = 'icons/roguetown/clothing/onmob/32x48/greatcap.dmi'
-	bloody_icon = 'icons/effects/blood64.dmi'
-	worn_x_dimension = 32
-	worn_y_dimension = 44
-	experimental_inhand = FALSE
-	experimental_onhip = FALSE
-
+// medium helmets
 /obj/item/clothing/head/roguetown/helmet/kettle/iron/visored
 	name = "decorated kettle helmet"
-	desc = "A kettle helmet. It has the visor of a stolen Knight Commandant's helmet welded onto it."
+	desc = "A kettle helmet. It has the visor of a stolen Knight Commander's helmet welded onto it."
 	icon_state = "ikettlevisor"
 	item_state = "ikettlevisor"
 
@@ -67,3 +54,29 @@
 	desc = "A metal helmet. Custom made. For the Ziggurate!"
 	icon_state = "commandant"
 	item_state = "commandant"
+
+
+// light helmets
+
+/obj/item/clothing/head/roguetown/helmet/leather/grandmaster
+	name = "master's cap"
+	desc = "A handcrafted cap, following the fashion style produced by the LOVE MACHINE. Has a metal plate on the front."
+	icon_state = "grandhat"
+	item_state = "grandhat"
+	mob_overlay_icon = 'icons/roguetown/clothing/onmob/32x48/greatcap.dmi'
+	bloody_icon = 'icons/effects/blood64.dmi'
+	worn_x_dimension = 32
+	worn_y_dimension = 44
+	experimental_inhand = FALSE
+	experimental_onhip = FALSE
+	flags_inv = HIDE_HEADTOP
+
+/obj/item/clothing/head/roguetown/helmet/leather/envoy
+	name = "envoy's cap"
+	desc = "A handcrafted cap, in line with Perserdunian diplomatic standards. Padded."
+	icon_state = "envoy"
+	item_state = "envoy"
+	experimental_inhand = FALSE
+	experimental_onhip = FALSE
+	sellprice = 200
+	flags_inv = HIDE_HEADTOP

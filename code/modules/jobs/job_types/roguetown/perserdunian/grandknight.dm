@@ -6,7 +6,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	allowed_races = RACES_ALL_KINDS
-	allowed_sexes = list(MALE, FEMALE)
+	allowed_sexes = list(MALE)
 	allowed_ages = list(AGE_ADULT)
 
 	tutorial = "You're the right hand man of the Grandmaster. Essentially a drugged up, combative Lieutenant. \

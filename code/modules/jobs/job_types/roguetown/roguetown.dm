@@ -28,6 +28,15 @@
 		for(var/X in GLOB.mercenary_positions)
 			peopleiknow += X
 			peopleknowme += X
+		for(var/X in GLOB.perserdun_positions)
+			peopleiknow += X
+			peopleknowme += X
+		for(var/X in GLOB.risvon_positions)
+			peopleiknow += X
+			peopleknowme += X
+		for(var/X in GLOB.kingsrow_positions)
+			peopleiknow += X
+			peopleknowme += X
 
 /datum/outfit/job/roguetown
 	uniform = null

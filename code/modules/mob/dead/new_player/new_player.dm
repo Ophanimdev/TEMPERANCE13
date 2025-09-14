@@ -592,15 +592,9 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 	var/column_counter = 0
 
 	var/list/omegalist = list()
-	omegalist += list(GLOB.noble_positions)
-	omegalist += list(GLOB.courtier_positions)
-	omegalist += list(GLOB.garrison_positions)
-	omegalist += list(GLOB.church_positions)
-	omegalist += list(GLOB.inquisition_positions)
-	omegalist += list(GLOB.yeoman_positions)
-	omegalist += list(GLOB.peasant_positions)
-	omegalist += list(GLOB.mercenary_positions)
-	omegalist += list(GLOB.youngfolk_positions)
+	omegalist += list(GLOB.perserdun_positions)
+	omegalist += list(GLOB.risvon_positions)
+	omegalist += list(GLOB.kingsrow_positions)
 
 	for(var/list/category in omegalist)
 		if(!SSjob.name_occupations[category[1]])
@@ -641,6 +635,12 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 					cat_name = "Mercenaries"
 				if (INQUISITION)
 					cat_name = "Inquisition"
+				if (PERSERDUN)
+					cat_name = "Great Empire of Perserdun"
+				if (RISVON)
+					cat_name = "Risvon Ziggurate"
+				if (KINGSROW)
+					cat_name = "King's Row"
 			//	if (GOBLIN)
 			//		cat_name = "Goblins"
 

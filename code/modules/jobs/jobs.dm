@@ -181,18 +181,43 @@ GLOBAL_LIST_INIT(test_positions, list(
 	"Tester",
 ))
 
+GLOBAL_LIST_INIT(perserdun_positions, list(
+	"Grandmaster",
+	"Grand Knight",
+	"Knight Commander",
+	"Armsman",
+	"Auxiliarist",
+	"Chirurgeon",
+	"Partisan",
+	"Envoy",
+))
+
+GLOBAL_LIST_INIT(risvon_positions, list(
+	"Commandant",
+	"Oficiro",
+	"Veterano",
+	"Soldato",
+	"Servisto",
+	"Curacisto",
+	"Camp Follower",
+	"Consulo",
+))
+
+GLOBAL_LIST_INIT(kingsrow_positions, list(
+	"Hierarch",
+	"Guardsman",
+	"Provisioner",
+	"Towner",
+	"Mortician",
+))
+
 GLOBAL_LIST_INIT(job_assignment_order, get_job_assignment_order())
 
 /proc/get_job_assignment_order()
 	var/list/sorting_order = list()
-	sorting_order += GLOB.noble_positions
-	sorting_order += GLOB.courtier_positions
-	sorting_order += GLOB.garrison_positions
-	sorting_order += GLOB.church_positions
-	sorting_order += GLOB.inquisition_positions
-	sorting_order += GLOB.yeoman_positions
-	sorting_order += GLOB.peasant_positions
-	sorting_order += GLOB.youngfolk_positions
+	sorting_order += GLOB.perserdun_positions
+	sorting_order += GLOB.risvon_positions
+	sorting_order += GLOB.kingsrow_positions
 	return sorting_order
 
 GLOBAL_LIST_INIT(exp_jobsmap, list(

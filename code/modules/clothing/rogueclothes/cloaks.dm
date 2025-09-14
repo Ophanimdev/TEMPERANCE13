@@ -1717,3 +1717,29 @@
 	inhand_mod = FALSE
 	slot_flags = ITEM_SLOT_BACK_R|ITEM_SLOT_CLOAK
 	allowed_race = NON_DWARVEN_RACE_TYPES
+
+
+// T13 stuff
+
+/obj/item/clothing/cloak/envoy
+	name = "envoy's cover"
+	desc = "A tabard worn by Perserdunian diplomats. The unique dyes make it pretty expensive."
+	color = null
+	icon_state = "envoy"
+	item_state = "envoy"
+	body_parts_covered = CHEST|GROIN
+	boobed = TRUE
+	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR|ITEM_SLOT_CLOAK
+	flags_inv = HIDECROTCH|HIDEBOOB
+	sellprice = 200
+
+/obj/item/clothing/cloak/apron
+	name = "dirty apron"
+	desc = "It's an apron. Usually worn by butchers. Or doctors."
+	color = null
+	icon_state = "mortician"
+	item_state = "mortician"
+	body_parts_covered = CHEST|GROIN
+	boobed = TRUE
+	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR|ITEM_SLOT_CLOAK
+	flags_inv = HIDECROTCH|HIDEBOOB

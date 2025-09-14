@@ -3,8 +3,8 @@
 	flag = FARMER
 	department_flag = PEASANTS
 	faction = "Station"
-	total_positions = 3
-	spawn_positions = 5
+	total_positions = 0
+	spawn_positions = 0
 	selection_color = JCOLOR_PEASANT
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS

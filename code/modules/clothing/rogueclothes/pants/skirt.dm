@@ -27,3 +27,6 @@
 
 /obj/item/clothing/under/roguetown/skirt/brown
 	color = CLOTHING_BROWN
+
+/obj/item/clothing/under/roguetown/skirt/darkgrey
+	color = CLOTHING_DARK_GREY

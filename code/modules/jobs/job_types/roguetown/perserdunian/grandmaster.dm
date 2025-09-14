@@ -8,6 +8,7 @@
 	allowed_races = RACES_ALL_KINDS
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT)
+	selection_color = JCOLOR_PERSERDUN
 
 	tutorial = "You are the highest ranking Perserdunian officer in the regiment, akin to a Captain. \
 				Your main purpose is the subjugation of the local duchy, and the repelling of the Risvon Empire. \

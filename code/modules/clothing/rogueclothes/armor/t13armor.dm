@@ -129,8 +129,31 @@
 
 /obj/item/clothing/suit/roguetown/armor/leather/grandmaster
 	name = "master's cloak"
-	desc = "A full-body suit. Rather expensive. Comes with a decorative tin shoulder."
+	desc = "A full-body suit, stolen from a WAR MACHINE. Rather expensive. Comes with a decorative tin shoulder."
 	icon_state = "grandmaster"
 	item_state = "grandmaster"
 	body_parts_covered = COVERAGE_FULL
-	sleeved = null
+	sleeved = 'icons/roguetown/clothing/onmob/armor.dmi'
+
+/obj/item/clothing/suit/roguetown/armor/leather/consulo
+	name = "consulo's coat"
+	desc = "One of the few trench coats you'll actually see. Very, very expensive."
+	icon_state = "consulo"
+	item_state = "consulo"
+	body_parts_covered = COVERAGE_FULL
+	sellprice = 800 //kill the enemy's diplomat for insane amounts of money
+
+/obj/item/clothing/suit/roguetown/armor/leather/envoy
+	name = "envoy's coat"
+	desc = "A stylish piece, meant to showcase Perserdun's strong economy."
+	icon_state = "envoy"
+	item_state = "envoy"
+	body_parts_covered = COVERAGE_FULL
+	sellprice = 400
+
+/obj/item/clothing/suit/roguetown/armor/leather/mortician
+	name = "mortici's robes"
+	desc = "A set of clothing that's meant to protect from scalpel nicks."
+	icon_state = "mortician"
+	item_state = "mortician"
+	body_parts_covered = COVERAGE_FULL

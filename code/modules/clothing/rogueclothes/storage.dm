@@ -476,3 +476,9 @@
 	desc = "Product of the Ziggurate's national WAR MACHINE."
 	icon_state = "EB_backpack"
 	item_state = "EB_backpack"
+
+/obj/item/storage/backpack/rogue/satchel/chestrig
+	name = "chest rig"
+	desc = "A funny piece of equipment, made for carrying whatever."
+	icon_state = "chestrig"
+	item_state = "chestrig"

@@ -394,6 +394,12 @@
 	desc = "A long-tube. This one's been hand crafted. Probably a commissioned piece."
 	icon_state = "commandant"
 
+/obj/item/clothing/mask/rogue/gasmask/sgmask/curacisto //it just has a different breathing sound
+	name = "clothed gas mask"
+	desc = "The Risvon Standard. Pretty old."
+	icon_state = "redmask"
+
+
 /obj/item/clothing/mask/rogue/gasmask/eb_gasmask
 	name = "old gas mask"
 	desc = "A locally-produced gas mask. Comes with a tube, and box."
@@ -414,3 +420,20 @@
 	desc = "A long-tube. This one's been hand crafted. Probably a commissioned piece."
 	icon_state = "grandmask"
 
+/obj/item/clothing/mask/rogue/gasmask/perserdunmask/envoy
+	name = "short mask"
+	desc = "A very unique mask. This one has its filters built in, and doesn't have a tube."
+	icon_state = "envoy"
+
+/obj/item/clothing/mask/rogue/sterilemask
+	name = "sterile mask"
+	icon_state = "sterile"
+	flags_inv = HIDEFACE|HIDEFACIALHAIR
+	body_parts_covered = NECK|MOUTH
+	slot_flags = ITEM_SLOT_MASK|ITEM_SLOT_HIP
+	sewrepair = TRUE
+	adjustable = CAN_CADJUST
+	toggle_icon_state = FALSE
+
+/obj/item/clothing/mask/rogue/sterilemask/ComponentInitialize()
+	AddComponent(/datum/component/adjustable_clothing, NECK, null, null, 'sound/foley/equip/rummaging-03.ogg', null, (UPD_HEAD|UPD_MASK))	//Standard mask

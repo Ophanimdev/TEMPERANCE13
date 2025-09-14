@@ -4,8 +4,8 @@
 	flag = PRINCE
 	department_flag = YOUNGFOLK
 	faction = "Station"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	f_title = "Princess"
 	allowed_races = RACES_NO_CONSTRUCT //Maybe a system to force-pick lineage based on king and queen should be implemented. (No it shouldn't.)
 	allowed_sexes = list(MALE, FEMALE)
