@@ -421,12 +421,12 @@ Your names are ash upon my tongue.
 
 @keyframes hoverGradient {
 	0% {
-		color: #2f2d2e
+		color: #a7ad6f
 	}
 	50%{
-		color: #4f5538;
+		color: #616847;
 	}
 	100% {
-		color: linear-gradient(#616847,#7e6e52,#4c5236,#434a3a);
+		color: linear-gradient(#434a3a,#616847,#a7ad6f);
 	}
 }
