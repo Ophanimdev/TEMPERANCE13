@@ -433,7 +433,21 @@
 	slot_flags = ITEM_SLOT_MASK|ITEM_SLOT_HIP
 	sewrepair = TRUE
 	adjustable = CAN_CADJUST
-	toggle_icon_state = FALSE
+	toggle_icon_state = TRUE
 
 /obj/item/clothing/mask/rogue/sterilemask/ComponentInitialize()
+	AddComponent(/datum/component/adjustable_clothing, NECK, null, null, 'sound/foley/equip/rummaging-03.ogg', null, (UPD_HEAD|UPD_MASK))	//Standard mask
+
+/obj/item/clothing/mask/rogue/bulwark //looks like dogshit, if u wanna resprite be my guest - zera
+	name = "ballistic face shield"
+	icon_state = "engineer"
+	flags_inv = HIDEFACE|HIDEFACIALHAIR|HIDESNOUT
+	body_parts_covered = NECK|FACE
+	slot_flags = ITEM_SLOT_MASK|ITEM_SLOT_HIP
+	adjustable = CAN_CADJUST
+	toggle_icon_state = TRUE
+	experimental_onhip = TRUE
+	sewrepair = TRUE
+
+/obj/item/clothing/mask/rogue/bulwark/ComponentInitialize()
 	AddComponent(/datum/component/adjustable_clothing, NECK, null, null, 'sound/foley/equip/rummaging-03.ogg', null, (UPD_HEAD|UPD_MASK))	//Standard mask

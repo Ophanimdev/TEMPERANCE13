@@ -604,3 +604,14 @@
 	if(QDELETED(src))
 		return
 	qdel(src)
+
+/obj/item/clothing/suit/roguetown/shirt/hierarchess
+	name = "black dress"
+	desc = "It's made out of silk, and only reveals a tasteful amount."
+	body_parts_covered = CHEST|GROIN|ARMS|VITALS
+	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR
+	icon_state = "hierarchess"
+	item_state = "hierarchess"
+	sleevetype = null
+	sleeved = null
+	flags_inv = HIDECROTCH|HIDEBOOB

@@ -126,7 +126,7 @@ GLOBAL_LIST_INIT(drowraider_aggro, world.file2list("strings/rt/drowaggrolines.tx
 		wrists = /obj/item/clothing/wrists/roguetown/bracers
 	mask = /obj/item/clothing/mask/rogue/facemask/steel
 	if(prob(50))
-		mask = /obj/item/clothing/mask/rogue/ragmask/black
+		mask = /obj/item/clothing/mask/rogue/ragmask/red
 	head = /obj/item/clothing/head/roguetown/roguehood/black
 	if(prob(50))
 		head = /obj/item/clothing/head/roguetown/helmet/kettle

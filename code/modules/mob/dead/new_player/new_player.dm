@@ -595,6 +595,7 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 	omegalist += list(GLOB.perserdun_positions)
 	omegalist += list(GLOB.risvon_positions)
 	omegalist += list(GLOB.kingsrow_positions)
+	omegalist += list(GLOB.nonaffiliated_positions)
 
 	for(var/list/category in omegalist)
 		if(!SSjob.name_occupations[category[1]])
@@ -641,6 +642,8 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 					cat_name = "Risvon Ziggurate"
 				if (KINGSROW)
 					cat_name = "King's Row"
+				if (UNAFFILIATED)
+					cat_name = "Unaffiliated Nobodies"
 			//	if (GOBLIN)
 			//		cat_name = "Goblins"
 

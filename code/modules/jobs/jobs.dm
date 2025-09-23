@@ -124,7 +124,6 @@ GLOBAL_LIST_INIT(peasant_positions, list(
 	"Hunter",
 	"Fisher",
 	"Lumberjack",
-	"Towner",
 	"Grabber",
 	"Nightmaster",
 	"Tapster",
@@ -205,10 +204,15 @@ GLOBAL_LIST_INIT(risvon_positions, list(
 
 GLOBAL_LIST_INIT(kingsrow_positions, list(
 	"Hierarch",
-	"Guardsman",
+	"Bulwark",
 	"Provisioner",
 	"Towner",
 	"Mortician",
+))
+
+GLOBAL_LIST_INIT(nonaffiliated_positions, list(
+	"Foreigner",
+	"Pioneer",
 ))
 
 GLOBAL_LIST_INIT(job_assignment_order, get_job_assignment_order())
@@ -218,6 +222,7 @@ GLOBAL_LIST_INIT(job_assignment_order, get_job_assignment_order())
 	sorting_order += GLOB.perserdun_positions
 	sorting_order += GLOB.risvon_positions
 	sorting_order += GLOB.kingsrow_positions
+	sorting_order += GLOB.nonaffiliated_positions
 	return sorting_order
 
 GLOBAL_LIST_INIT(exp_jobsmap, list(

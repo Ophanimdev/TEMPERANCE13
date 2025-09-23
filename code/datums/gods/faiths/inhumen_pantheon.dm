@@ -5,3 +5,4 @@
 		So close to the seat of the Holy See, worship of the Four is considered heretical, and they are denounced as the INHUMEN. But we laugh, and spit in their face."
 	worshippers = "Cultists, those spurned by the Ten."
 	godhead = /datum/patron/inhumen/zizo
+	preference_accessible = FALSE

@@ -8,7 +8,7 @@
 	allowed_races = RACES_ALL_KINDS
 	allowed_sexes = list(MALE)
 	allowed_ages = list(AGE_ADULT)
-	selection_color = JCOLOR_PERSERDUN
+	selection_color = JCOLOR_RISVON
 
 	tutorial = "You are the commanding officer of the local Risvon Capitro. Or Chapter, if you're a scrub. \
 				You are aware of the discovery of a new WAR MACHINE in the local area. \

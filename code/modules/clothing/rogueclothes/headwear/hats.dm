@@ -73,8 +73,8 @@
 
 /obj/item/clothing/head/roguetown/flathat
 	name = "flat hat"
-	icon_state = "flathat"
-	item_state = "flathat"
+	icon_state = "brim-hat"
+	item_state = "brim-hat"
 	sewrepair = TRUE
 
 

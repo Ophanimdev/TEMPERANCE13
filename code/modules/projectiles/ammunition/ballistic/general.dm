@@ -41,6 +41,15 @@
 	caliber = "a44"
 	projectile_type = /obj/projectile/bullet/a44
 	bullet_type = RIFLECASING
+
+/obj/item/ammo_casing/a22lr
+	name = ".22LR bullet casing"
+	desc = "A tiny .22LR bullet-piece."
+	icon_state = "spent-casing_QT_pistol"
+	caliber = "a22lr"
+	projectile_type = /obj/projectile/bullet/a22lr
+	bullet_type = RIFLECASING
+
 //shotguns
 
 /obj/item/ammo_casing/shotgun
@@ -61,3 +70,4 @@
 	pellets = 6
 	variance = 18
 	bullet_type = SHOTGUNCASING
+

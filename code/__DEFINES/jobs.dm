@@ -157,7 +157,6 @@
 #define BEGGAR		(1<<11)
 #define ADVENTURER	(1<<12)
 #define PILGRIM		(1<<13)
-#define VILLAGER	(1<<14)
 #define PRISONERR	(1<<15)
 #define PRISONERB	(1<<16)
 #define LUNATIC		(1<<17)
@@ -240,6 +239,12 @@
 #define MORTICIAN (1<<4)
 #define TOWNER (1<<5)
 
+#define UNAFFILIATED (1<<15)
+
+#define FOREIGNER (1<<0)
+#define PIONEER (1<<2)
+
+
 #define JCOLOR_NOBLE "#aa83b9"
 #define JCOLOR_COURTIER "#81adc8"
 #define JCOLOR_CHURCH "#c0ba8d"
@@ -252,6 +257,7 @@
 #define JCOLOR_PERSERDUN "#52488b"
 #define JCOLOR_RISVON "#913333"
 #define JCOLOR_KINGSROW "#31437c"
+#define JCOLOR_UNAFFILIATE "#929159"
 
 // job display orders //
 
@@ -282,6 +288,10 @@
 #define JDO_MORTICIAN 3.3
 #define JDO_TOWNER 3.4
 
+// UNAFFILIATED
+#define JDO_FOREIGNER 4
+#define JDO_PIONEER 4.1
+
 #define PERSERDUN_ROLES \
 	/datum/job/roguetown/grandmaster,\
 	/datum/job/roguetown/grandknight,\
@@ -301,3 +311,14 @@
 	/datum/job/roguetown/curacisto,\
 	/datum/job/roguetown/campfollower,\
 	/datum/job/roguetown/consulo
+
+#define KINGSROW_ROLES \
+	/datum/job/roguetown/hierarch,\
+	/datum/job/roguetown/bulwark,\
+	/datum/job/roguetown/provisioner,\
+	/datum/job/roguetown/mortician,\
+	/datum/job/roguetown/villager
+
+#define UNAFFILIATED_ROLES \
+	/datum/job/roguetown/adventurer,\
+	/datum/job/roguetown/pioneer

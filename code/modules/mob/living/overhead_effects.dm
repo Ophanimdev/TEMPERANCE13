@@ -87,11 +87,11 @@
 	return
 
 /mob/living/proc/play_stress_indicator()
-	play_overhead_indicator('icons/mob/overhead_effects.dmi', "stress", 15, OBJ_LAYER, private = TRAIT_EMPATH, soundin = 'sound/ddstress.ogg')
+	play_overhead_indicator('icons/mob/overhead_effects.dmi', "stress", 15, OBJ_LAYER, private = TRAIT_EMPATH, soundin = 'sound/badmood2.ogg')
 
 /mob/living/proc/play_relief_indicator()
-	play_overhead_indicator('icons/mob/overhead_effects.dmi', "relief", 15, OBJ_LAYER, private = TRAIT_EMPATH, soundin = 'sound/ddrelief.ogg')
+	play_overhead_indicator('icons/mob/overhead_effects.dmi', "relief", 15, OBJ_LAYER, private = TRAIT_EMPATH, soundin = 'sound/ding.ogg')
 
 /mob/living/proc/play_mental_break_indicator()
 	play_overhead_indicator('icons/mob/overhead_effects.dmi', "mentalbreak", 20, OBJ_LAYER)
-	playsound(src, 'sound/stressaffliction.ogg', 100, FALSE, ignore_walls = FALSE)
+	playsound(src, 'sound/badmood1.ogg', 100, FALSE, ignore_walls = FALSE)

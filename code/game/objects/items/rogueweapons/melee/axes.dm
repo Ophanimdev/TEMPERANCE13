@@ -315,10 +315,10 @@
 	reach = 2
 
 /obj/item/rogueweapon/stoneaxe/woodcut/steel/woodcutter
-	name = "woodcutter's axe"
+	name = "breaker's axe"
 	icon = 'icons/roguetown/weapons/64.dmi'
 	icon_state = "woodcutter"
-	desc = "A long-handled axe with a carved grip, made of high quality wood. Perfect for those in the lumber trade."
+	desc = "A long-handled axe with a carved grip, made of high quality wood. Usually used for busting shit open."
 	max_integrity = 300		//100 higher than normal; basically it's main difference.
 	possible_item_intents = list(/datum/intent/axe/cut,/datum/intent/axe/chop, /datum/intent/axe/bash, /datum/intent/sword/peel)
 	gripped_intents = list(/datum/intent/axe/cut/long, /datum/intent/axe/chop/long, /datum/intent/axe/bash, /datum/intent/sword/peel)

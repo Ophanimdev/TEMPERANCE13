@@ -10,14 +10,12 @@
 	classes = list("Battlemaster" = "You are a seasoned weapon specialist, clad in maille, with years of experience in warfare and battle under your belt.",
 					"Duelist"= "You are an esteemed swordsman who foregoes armor in exchange for a more nimble fighting style.",
 					"Barbarian" = "You are a brutal warrior who foregoes armor in order to showcase your raw strength. You specialize in unarmed combat and wrestling.",
-					"Monster Hunter" = "You specialize in hunting down monsters and the undead, carrying two blades - one of silver, one of steel.",
-					"Flagellant" = "You are a pacifistic warrior who embraces suffering, believing pain is the path to enlightenment. You take the suffering of others upon yourself.")
-
+					"Monster Hunter" = "You specialize in hunting down monsters and the undead, carrying two blades - one of silver, one of steel.")
 
 /datum/outfit/job/roguetown/adventurer/sfighter/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.adjust_blindness(-3)
-	var/classes = list("Battlemaster","Duelist","Barbarian","Monster Hunter","Flagellant")
+	var/classes = list("Battlemaster","Duelist","Barbarian","Monster Hunter")
 	var/classchoice = input("Choose your archetypes", "Available archetypes") as anything in classes
 
 	switch(classchoice)
@@ -274,37 +272,4 @@
 				/obj/item/reagent_containers/glass/bottle/alchemical/perpot,
 				/obj/item/reagent_containers/glass/bottle/alchemical/intpot,
 				/obj/item/reagent_containers/glass/bottle/alchemical/lucpot,
-				)
-
-		if("Flagellant")
-			to_chat(H, span_warning("You are a pacifistic warrior who embraces suffering, believing pain is the path to enlightenment."))
-			H.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
-			H.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
-			H.adjust_skillrank(/datum/skill/combat/whipsflails, 4, TRUE)
-			H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
-			H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
-			H.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
-			H.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
-			H.set_blindness(0)
-
-			ADD_TRAIT(H, TRAIT_CRITICAL_RESISTANCE, TRAIT_GENERIC)
-			ADD_TRAIT(H, TRAIT_NOPAINSTUN, TRAIT_GENERIC)
-			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
-			H.cmode_music = 'sound/music/cmode/adventurer/combat_outlander2.ogg'
-			H.change_stat("constitution", 5)
-			H.change_stat("endurance", 5)
-			H.change_stat("speed", 1)
-			H.change_stat("strength", -2)
-			H.change_stat("intelligence", -2)
-
-			pants = /obj/item/clothing/under/roguetown/tights/black
-			shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/black
-			shoes = /obj/item/clothing/shoes/roguetown/boots
-			backl = /obj/item/storage/backpack/rogue/satchel
-			belt = /obj/item/storage/belt/rogue/leather
-			beltr = /obj/item/rogueweapon/whip
-			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
-			backpack_contents = list(
-				/obj/item/recipe_book/survival = 1,
-				/obj/item/flashlight/flare/torch = 1,
 				)

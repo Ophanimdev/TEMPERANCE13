@@ -65,7 +65,7 @@
 	else
 		return chargetime
 
-/////////////  ACTUAL OBJECTS
+/////////////  pistols
 
 
 /obj/item/gun/ballistic/rifle/repeater/pistol 
@@ -81,3 +81,19 @@
 	fire_sound = PISTOLSHOT
 	load_sound = 'sound/combat/ranged/clipload.ogg'
 	recoil = 0.15
+
+/obj/item/gun/ballistic/rifle/repeater/jackal 
+	name = "SPR 'Jackal'"
+	desc = "One of the few semi-automatic designs that's ever been produced. Comes with its own magazine, and fires a weak cartridge."
+	icon_state = "handgun"
+	item_state = "handgun"
+	w_class = WEIGHT_CLASS_SMALL
+	mag_type = /obj/item/ammo_box/magazine/jackal
+	slowdown = 0.15
+	spread = 0.5
+	pump_sound = 'sound/combat/ranged/pistol_cock.ogg'
+	fire_sound = PISTOLSHOT
+	load_sound = 'sound/combat/ranged/pistol_magin.ogg'
+	eject_sound = 'sound/combat/ranged/pistol_magout.ogg'
+	recoil = 0.15
+	semi_auto = TRUE

@@ -4,15 +4,16 @@ GLOBAL_VAR_INIT(adventurer_hugbox_duration, 40 SECONDS)
 GLOBAL_VAR_INIT(adventurer_hugbox_duration_still, 3 MINUTES)
 
 /datum/job/roguetown/adventurer
-	title = "Adventurer"
-	flag = ADVENTURER
-	department_flag = PEASANTS
+	title = "Foreigner"
+	flag = FOREIGNER
+	department_flag = UNAFFILIATED
 	faction = "Station"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 20
+	spawn_positions = 20
 	allowed_races = RACES_ALL_KINDS
-	tutorial = "Hero of nothing, a wanderer in foreign lands in search of fame and riches. Whatever led you to this fate is up to the wind to decide, and you've never fancied yourself for much other than the thrill. Some day your pride is going to catch up to you, and you're going to find out why most men don't end up in the annals of history."
-
+	tutorial = "You're a complete nobody, with a sword - or a gun. Try to make a name for yourself, or just survive. I guess."
+	selection_color = JCOLOR_UNAFFILIATE
+	display_order = JDO_FOREIGNER
 
 	outfit = null
 	outfit_female = null
@@ -31,7 +32,7 @@ GLOBAL_VAR_INIT(adventurer_hugbox_duration_still, 3 MINUTES)
 	job_reopens_slots_on_death = TRUE
 	same_job_respawn_delay = 1 MINUTES
 
-	cmode_music = 'sound/music/cmode/adventurer/combat_outlander2.ogg'
+	cmode_music = 'sound/music/cmode/adventurer/combat_foreigner.ogg'
 
 /datum/job/roguetown/adventurer/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	..()

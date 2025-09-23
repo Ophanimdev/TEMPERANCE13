@@ -1,8 +1,8 @@
 /datum/patron/godless
-	name = "Science"
-	domain = "Ontological Reality"
-	desc = "No gods or kings, only man! Gods exist but you give them the finger."
-	worshippers = "Madmen, beasts and some dwarves"
+	name = "NONE"
+	domain = "You do not follow a god."
+	desc = "Other faiths may exist, but they're largely shadowed by the ever-encroaching arms race."
+	worshippers = "You."
 	associated_faith = /datum/faith/godless
 	preference_accessible = FALSE
 	undead_hater = FALSE
@@ -14,5 +14,6 @@
 	)
 
 /datum/patron/godless/can_pray(mob/living/follower)
-	to_chat(follower, span_danger("Zarlz Zarwin and psyvolution cannot hear my prayer!"))
+	to_chat(follower, span_danger("You cannot pray to nothing."))
 	return FALSE	//heathen
+

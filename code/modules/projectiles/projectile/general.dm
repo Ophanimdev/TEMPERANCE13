@@ -24,6 +24,11 @@
 	icon_state = "bullet_proj"
 	damage = 60
 
+/obj/projectile/bullet/a22lr
+	name = ".22LR bullet"
+	icon_state = "bullet_proj"
+	damage = 30
+
 // shotgun
 
 /obj/projectile/bullet/shotgun_slug

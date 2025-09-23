@@ -157,3 +157,21 @@
 	icon_state = "mortician"
 	item_state = "mortician"
 	body_parts_covered = COVERAGE_FULL
+
+/obj/item/clothing/suit/roguetown/armor/leather/heavy/bulwark
+	name = "heavy coat"
+	desc = "It feels weird to walk around in. There's plates sewn into the inside of this piece, so it's suseptible to being cut."
+	icon_state = "bulwark"
+	item_state = "bulwark"
+	body_parts_covered = COVERAGE_FULL
+	max_integrity = ARMOR_INT_CHEST_LIGHT_MEDIUM
+	equip_delay_self = 40
+
+/obj/item/clothing/suit/roguetown/armor/gambeson/heavy/bulwark
+	name = "YKT-34 'Heart'"
+	desc = "It's a padded uniform."
+	icon = 'icons/roguetown/clothing/shirts.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/onmob/shirts.dmi' // sorry for this shit code, i just cant be fucked
+	sleeved = 'icons/roguetown/clothing/onmob/helpers/sleeves_shirts.dmi'
+	icon_state = "bulwark"
+	item_state = "bulwark"

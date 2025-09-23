@@ -6,3 +6,4 @@
 		PSYDON YET LIVES, AND PSYDON YET ENDURES. Unanswered prayers and impotent miracles - they are TESTS."
 	worshippers = "People of Naledi, Otavan Orthodoxists and Inquisitors, religious extremists, zealotry-filled fools."
 	godhead = /datum/patron/old_god
+	preference_accessible = FALSE

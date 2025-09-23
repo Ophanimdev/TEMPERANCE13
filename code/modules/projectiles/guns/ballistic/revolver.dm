@@ -99,9 +99,43 @@
 	icon_state = "revolver"
 	item_state = "revolver"
 	slowdown = 0.15
-	spread = 0.5
 	empty_indicator = TRUE
 	fire_sound = REVOLVERSHOT
 	load_sound = REVOLVERINSERT
 	recoil = 0.15
+	experimental_inhand = FALSE
+
+/obj/item/gun/ballistic/revolver/pace
+	name = "'Pace' Prarie Revolver"
+	desc = "A relatively cheap revolver, similar to the Garland. Doesn't handle, as well."
+	w_class = WEIGHT_CLASS_SMALL
+	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/revolver
+	force = 10
+	spread = 6
+	icon_state = "pace"
+	item_state = "pace"
+	slowdown = 0.15
+	empty_indicator = TRUE
+	fire_sound = REVOLVERSHOT
+	load_sound = REVOLVERINSERT
+	recoil = 0.30
+	experimental_inhand = FALSE
+
+
+//dogshit double barrel shotgun code
+
+/obj/item/gun/ballistic/revolver/doublebarrel
+	name = "'Ranger' Double Barrel Shotgun"
+	desc = "A cheap, double barrel shotgun. Usually made by the guy that's holding it."
+	w_class = WEIGHT_CLASS_BULKY
+	mag_type = /obj/item/ammo_box/magazine/internal/shot/risvon
+	force = 10
+	spread = 0.5
+	icon_state = "dshotgun"
+	item_state = "dshotgun"
+	slowdown = 0.15
+	empty_indicator = TRUE
+	fire_sound = SHOTGUNSHOT
+	load_sound = SHOTGUNINSERT
+	recoil = 0.30
 	experimental_inhand = FALSE

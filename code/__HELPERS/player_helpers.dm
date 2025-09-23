@@ -3,6 +3,7 @@
 	valid_positions += GLOB.perserdun_positions
 	valid_positions += GLOB.risvon_positions
 	valid_positions += GLOB.kingsrow_positions
+	valid_positions += GLOB.nonaffiliated_positions
 
 	var/list/reopened_jobs = list()
 	for(var/X in GLOB.suicided_mob_list)

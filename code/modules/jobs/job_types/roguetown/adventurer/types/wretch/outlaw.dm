@@ -32,7 +32,7 @@
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 			neck = /obj/item/clothing/neck/roguetown/gorget
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
-			mask = /obj/item/clothing/mask/rogue/ragmask/black
+			mask = /obj/item/clothing/mask/rogue/ragmask/red
 			beltr = /obj/item/quiver/bolts
 			r_hand = /obj/item/rogueweapon/mace/cudgel //From thief PR
 			backpack_contents = list(
@@ -92,7 +92,7 @@
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 			neck = /obj/item/clothing/neck/roguetown/gorget 
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
-			mask = /obj/item/clothing/mask/rogue/ragmask/black
+			mask = /obj/item/clothing/mask/rogue/ragmask/red
 			r_hand = /obj/item/rogueweapon/mace/cudgel //From thief PR
 			backpack_contents = list(
 				/obj/item/storage/belt/rogue/pouch/coins/poor = 1,

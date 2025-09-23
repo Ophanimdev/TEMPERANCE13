@@ -201,6 +201,9 @@
 /obj/item/clothing/suit/roguetown/armor/leather/vest/white
 	color = CLOTHING_WHITE
 
+/obj/item/clothing/suit/roguetown/armor/leather/vest/black
+	color = CLOTHING_BLACK
+
 /obj/item/clothing/suit/roguetown/armor/leather/vest/sailor/nightman
 	name = "silk jacket"
 	desc = "A soft and comfortable jacket."

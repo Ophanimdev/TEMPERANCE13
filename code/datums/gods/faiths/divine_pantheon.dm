@@ -6,3 +6,4 @@
 		But it is only through faith of the TRUE DIVINE that hope can be found in this world."
 	worshippers = "Citizens of Azure Peak, conservative religious-folk, many commonfolk."
 	godhead = /datum/patron/divine/astrata
+	preference_accessible = FALSE

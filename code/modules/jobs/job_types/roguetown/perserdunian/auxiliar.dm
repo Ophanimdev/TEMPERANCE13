@@ -22,7 +22,7 @@
 	cmode_music = 'sound/music/combat_auxiliar.ogg'
 
 /datum/job/roguetown/auxiliar/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
-	..()
+	. = ..()
 	if(ishuman(L))
 		var/mob/living/carbon/human/H = L
 		if(istype(H.wear_ring, /obj/item/roguekey/perserdun))

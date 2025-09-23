@@ -128,7 +128,7 @@
 	name = "Rifles"
 	desc = "Influences how fast you can aim a rifle."
 	dreams = list(
-	"...the rifle is completely foreign. He tells you to pull the bolt back...",
+	"...the rifle is foreign. He tells you to pull the bolt back...",
 	"...you lock the bolt forward, and aim towards the next soldier. You don't feel right...",
 	"...you load in another round. When will the nightmare end?"
 	)

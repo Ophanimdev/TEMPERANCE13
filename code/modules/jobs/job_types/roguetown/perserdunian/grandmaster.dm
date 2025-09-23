@@ -6,7 +6,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	allowed_races = RACES_ALL_KINDS
-	allowed_sexes = list(MALE, FEMALE)
+	allowed_sexes = list(MALE) //until a female armor sprite is made
 	allowed_ages = list(AGE_ADULT)
 	selection_color = JCOLOR_PERSERDUN
 

@@ -536,7 +536,7 @@
 	icon_state = "rwall-b"
 	smooth = SMOOTH_MORE
 	blade_dulling = DULLING_BASH
-	max_integrity = 5000 // good lucj
+	max_integrity = 5000 // good luck
 	sheet_type = /obj/item/natural/stone
 	break_sound = 'sound/combat/hits/onstone/stonedeath.ogg'
 	attacked_sound = list('sound/combat/hits/onmetal/attackpipewall (1).ogg', 'sound/combat/hits/onmetal/attackpipewall (2).ogg', 'sound/combat/hits/onmetal/grille (2).ogg')

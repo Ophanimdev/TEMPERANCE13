@@ -430,8 +430,9 @@ GLOBAL_LIST_EMPTY(round_join_times)
 #define CTAG_GUILDSMEN 		"CAT_GUILDSMEN"		// Guildsmen class - Handles Guildsmen class selector
 #define CTAG_NIGHTMAIDEN	"CAT_NIGHTMAIDEN"	// Bathhouse Attendant's aesthetic choices.
 
-#define CTAG_AUXILIARIST 	"CAT_AUXILIARIST"		// Auxiliary classes - Handles Auxiliar class selector
+#define CTAG_AUXILIARIST 	"CAT_AUXILIARIST"		// Auxiliary classes
 #define CTAG_SERVICU 	"CAT_SERVICUS"		// Servicus classes 
+#define CTAG_BULWARK 	"CAT_BULWARK"		// Bulwark guns
 
 /*
 	Defines for the triumph buy datum categories

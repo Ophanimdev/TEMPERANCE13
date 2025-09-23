@@ -37,6 +37,9 @@
 		for(var/X in GLOB.kingsrow_positions)
 			peopleiknow += X
 			peopleknowme += X
+		for(var/X in GLOB.nonaffiliated_positions)
+			peopleiknow += X
+			peopleknowme += X
 
 /datum/outfit/job/roguetown
 	uniform = null
