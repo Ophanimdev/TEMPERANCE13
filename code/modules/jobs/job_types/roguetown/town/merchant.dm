@@ -6,14 +6,14 @@
 	total_positions = 1
 	spawn_positions = 1
 	allowed_races = RACES_ALL_KINDS
-	tutorial = "You weren't exactly born into wealth, but you have a sharp mind. The recent surfacing of the War Machine's presence has turned you from a simple merchant into a ruthless arms dealer. Use your Explorers to fish out high quality guns, and sell them to the highest bidder."
+	tutorial = "Money, money, money! Fuck, it's so good! Even better, with this War Machine - and those filthy fuckin' foreigners. Scam some idiots, make cash. Grab your Explorers and make bank."
 
 
 	outfit = /datum/outfit/job/roguetown/provisioner
 	give_bank_account = TRUE
 	min_pq = 0
 	max_pq = null
-	cmode_music = 'sound/music/combat_maniac2.ogg'
+	cmode_music = 'sound/music/combat_metalface.ogg'
 
 /datum/outfit/job/roguetown/provisioner/pre_equip(mob/living/carbon/human/H)
 	..()

@@ -200,31 +200,31 @@
 
 //GOLD
 /obj/item/roguecoin/gold
-	name = "zenar"
-	desc = "A gold coin bearing the symbol of the Taurus and the pre-kingdom psycross. These were in the best condition of the provincial gold mints, the rest were melted down."
+	name = "bullar"
+	desc = "A gold coin bearing the symbol of the Taurus and some other, unimportant symbol. Originally seen as ornaments, a ton of them has been spat out by the LIFE MACHINE."
 	icon_state = "g1"
 	sellprice = 10
 	base_type = CTYPE_GOLD
-	plural_name = "zenarii"
+	plural_name = "bullarii"
 
 
 // SILVER
 /obj/item/roguecoin/silver
-	name = "ziliqua"
+	name = "culiqua"
 	desc = "An ancient silver coin still in use due to their remarkable ability to last the ages."
 	icon_state = "s1"
 	sellprice = 5
 	base_type = CTYPE_SILV
-	plural_name = "ziliquae"
+	plural_name = "culiquae"
 
 // COPPER
 /obj/item/roguecoin/copper
-	name = "zenny"
-	desc = "A brand-new bronze coin minted by the capital in an effort to be rid of the financial use of silver."
+	name = "qenny"
+	desc = "A brand-new bronze coin minted by Risvonian capital in an effort to be rid of the financial use of silver."
 	icon_state = "c1"
 	sellprice = 1
 	base_type = CTYPE_COPP
-	plural_name = "zennies"
+	plural_name = "qennies"
 
 // Ancient - Valueless
 /obj/item/roguecoin/aalloy

@@ -107,15 +107,15 @@
 	var/datum/vine_controller/controller
 
 /obj/structure/flora/roguetree/wise
-	name = "sacred tree"
+	name = "wise tree"
 	desc = "A blessed primordial tree, ancient beyond years. Said to be the very embodiment of the Tree Father himself—whose presence alone imbues druids with wild energies."
 	icon_state = "mystical"
 	max_integrity = 400
 	var/activated = FALSE
 	var/cooldown = FALSE
 	var/retaliation_messages = list(
-		"LEAVE FOREST ALONE!",
-		"DENDOR PROTECTS!",
+		"LEAVE MY FOREST ALONE!",
+		"I HATE YOU.",
 		"NATURE'S WRATH!",
 		"BEGONE, INTERLOPER!"
 	)
