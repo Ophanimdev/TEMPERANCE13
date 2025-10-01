@@ -131,14 +131,14 @@
 
 	log_game("The round has ended.")
 
-	to_chat(world, "<BR><BR><BR><span class='reallybig'>So ends this tale on Azure Peak.</span>")
+	to_chat(world, "<BR><BR><BR><span class='reallybig'>So ends this war story.</span>")
 	get_end_reason()
 
 	var/list/key_list = list()
 	for(var/client/C in GLOB.clients)
 		if(C.mob)
 			SSdroning.kill_droning(C)
-			C.mob.playsound_local(C.mob, 'sound/music/roundend.ogg', 100, FALSE)
+			C.mob.playsound_local(C.mob, 'sound/music/dreamer_is_still_asleep.ogg', 100, FALSE)
 		if(isliving(C.mob) && C.ckey)
 			key_list += C.ckey
 //	if(key_list.len)
@@ -218,13 +218,13 @@
 	var/end_reason
 
 	if(!check_for_lord())
-		end_reason = pick("Without a Monarch, they were doomed to become slaves of Zizo.",
-						"Without a Monarch, they were doomed to be eaten by nite creachers.",
-						"Without a Monarch, they were doomed to become victims of Gehenna.",
-						"Without a Monarch, they were doomed to enjoy a mass-suicide.",
-						"Without a Monarch, the Lich made them his playthings.",
-						"Without a Monarch, some jealous rival reigned in tyranny.",
-						"Without a Monarch, the town was abandoned.")
+		end_reason = pick("The increased presence of both nations soon brings ruin to King's Row.",
+						"Soon, the land will become scarred with death.",
+						"Salt festers in the soil. Gas leaks from the artillery shell.",
+						"Hopeless! Cling to each other, love is the only way out of this.",
+						"Hopeless! Cling to each other, patience is the only way out of this.",
+						"Death.",
+						"Decay.")
 
 	if(vampire_werewolf() == "vampire")
 		end_reason = "When the Vampires finished sucking the town dry, they moved on to the next one."
@@ -238,7 +238,7 @@
 	if(end_reason)
 		to_chat(world, span_bigbold("[end_reason]."))
 	else
-		to_chat(world, span_bigbold("The town has managed to survive another week."))
+		to_chat(world, span_bigbold("King's Row is still alive."))
 
 /datum/controller/subsystem/ticker/proc/gamemode_report()
 	var/list/all_teams = list()

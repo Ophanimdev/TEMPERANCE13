@@ -15,19 +15,19 @@
 		return the_pq
 	else
 		if(the_pq >= 100)
-			return "<span style='color: #74cde0;'>TRUE AZUREAN</span>"
+			return "<span style='color: #8a0404;'>BELOVED</span>"
 		if(the_pq >= 70)
-			return "<span style='color: #00ff00;'>Magnificent!</span>"
+			return "<span style='color: #00ff00;'>Influential!</span>"
 		if(the_pq >= 50)
-			return "<span style='color: #00ff00;'>Exceptional!</span>"
+			return "<span style='color: #00ff00;'>Notable!</span>"
 		if(the_pq >= 30)
-			return "<span style='color: #47b899;'>Great!</span>"
+			return "<span style='color: #47b899;'>Worthwhile!</span>"
 		if(the_pq >= 10)
-			return "<span style='color: #69c975;'>Good!</span>"
+			return "<span style='color: #69c975;'>Decent!</span>"
 		if(the_pq >= 5)
-			return "<span style='color: #58a762;'>Nice</span>"
+			return "<span style='color: #58a762;'>Fine</span>"
 		if(the_pq >= -4)
-			return "Normal"
+			return "Acceptable"
 		if(the_pq >= -30)
 			return "<span style='color: #be6941;'>Poor</span>"
 		if(the_pq >= -70)
