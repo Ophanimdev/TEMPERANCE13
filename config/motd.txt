@@ -1,0 +1,5 @@
+<!-- Most valid html will work in here, excluding images. -->
+Temperance 13 Discord Server: <a href="https://discord.gg/9uYTPsRMKa">discord.gg/TEMPERANCE</a>
+Temperance 13 Patreon: <a href="https://www.patreon.com/user?u=58204426">patreon.com/TEMPERANCE</a>
+<center>* Unstable Playtest - Expect Restarts & Bugs *</center>
+<center>* READ THE LORE PRIMER - MEMORY TAB *</center>
