@@ -27,8 +27,8 @@
 #define STORYTELLERS_ALL (DIVINE_STORYTELLERS + INHUMEN_STORYTELLERS)
 
 /datum/storyteller/psydon
-	name = "Psydon"
-	desc = "Psydon will do little, events will be common as he takes a hands-off approach to the world. Consider this the 'extended' experience."
+	name = "STANDARD"
+	desc = "You have been given the right to vote for.. NOTHING! The standard Temperance 13 experience."
 	weight = 6
 	always_votable = TRUE
 	color_theme = "#80ced8"
@@ -46,7 +46,7 @@
 	name = "Astrata"
 	desc = "Astrata will provide a balanced and varied experience. Consider this the default experience."
 	weight = 6
-	always_votable = TRUE
+	always_votable = FALSE
 	follower_modifier = LOWER_FOLLOWER_MODIFIER
 	color_theme = "#FFD700"
 
@@ -63,7 +63,7 @@
 	desc = "Noc will try to send more magical events."
 	welcome_text = "The veil between realms shimmers in your presence."
 	weight = 4
-	always_votable = TRUE
+	always_votable = FALSE
 	color_theme = "#F0F0F0"
 
 	tag_multipliers = list(
@@ -84,7 +84,7 @@
 	desc = "Ravox will cause raids to happen naturally instead of only when people are dying a lot."
 	welcome_text = "The drums of battle grow louder."
 	weight = 4
-	always_votable = TRUE
+	always_votable = FALSE
 	color_theme = "#228822"
 
 	tag_multipliers = list(
@@ -113,7 +113,7 @@
 	desc = "Abyssor likes to send water and trade-related events."
 	welcome_text = "The tides of fate shift in your favor."
 	weight = 4
-	always_votable = TRUE
+	always_votable = FALSE
 	color_theme = "#3366CC"
 
 	tag_multipliers = list(
@@ -134,7 +134,7 @@
 	desc = "Xylix is a wildcard, spinning the wheels of fate."
 	welcome_text = "The dice have been cast, let fate decide your destiny."
 	weight = 4
-	always_votable = TRUE
+	always_votable = FALSE
 	event_repetition_multiplier = 0
 	forced = TRUE
 	color_theme = "#AA8888"
@@ -161,7 +161,7 @@
 	desc = "Necra takes things very slow, rarely bringing in newcomers."
 	welcome_text = "The grave whispers, patience is virtue."
 	weight = 4
-	always_votable = TRUE
+	always_votable = FALSE
 	color_theme = "#888888"
 
 	tag_multipliers = list(
@@ -265,7 +265,7 @@
 	desc = "Dendor likes to send nature-themed events."
 	welcome_text = "The wilds whisper your name."
 	weight = 4
-	always_votable = TRUE
+	always_votable = FALSE
 	color_theme = "#664422"
 
 	tag_multipliers = list(
@@ -296,7 +296,7 @@
 	desc = "Zizo thrives on risk and reward, favoring the daring and unpredictable."
 	welcome_text = "You will kneel."
 	weight = 4
-	always_votable = TRUE
+	always_votable = FALSE
 	color_theme = "#CC4444"
 
 	tag_multipliers = list(
@@ -331,7 +331,7 @@
 	desc = "Baotha revels in chaos, making events and reality unpredictable."
 	welcome_text = "The world bends to my whims."
 	weight = 4
-	always_votable = TRUE
+	always_votable = FALSE
 	color_theme = "#9933FF"
 
 	tag_multipliers = list(
@@ -364,7 +364,7 @@
 	desc = "Graggar encourages war and conquest, making combat the solution to all."
 	welcome_text = "Victory or death!"
 	weight = 4
-	always_votable = TRUE
+	always_votable = FALSE
 	color_theme = "#8B3A3A"
 
 	tag_multipliers = list(
@@ -397,7 +397,7 @@
 	desc = "Matthios manipulates wealth and corruption, rewarding those who make deals."
 	welcome_text = "Fortune favors the cunning."
 	weight = 4
-	always_votable = TRUE
+	always_votable = FALSE
 	color_theme = "#8B4513"
 
 	tag_multipliers = list(

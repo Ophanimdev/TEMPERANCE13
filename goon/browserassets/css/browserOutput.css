@@ -419,6 +419,9 @@ h1.alert, h2.alert	{color: #c9c1ba;font-family: Pterra, TrueType;}
 .beautifulmasc			{color: #083eab;}
 .beautifulfem			{color: #d70a74;}
 .beautifulnb			{color: #9656c9;}
+.quote 					{color: #5f1c1c;}
+.quoteauthor			{color: #404040;}
+.roundquote				{color: #691616;}
 
 .revennotice			{color: #1d2953;	font-size: 85%;}
 .revenboldnotice		{color: #1d2953;	font-weight: bold;}

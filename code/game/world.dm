@@ -68,6 +68,9 @@ GLOBAL_VAR(restart_counter)
 	if(CONFIG_GET(string/channel_announce_new_game_message))
 		send2chat(new /datum/tgs_message_content(CONFIG_GET(string/channel_announce_new_game_message)), CONFIG_GET(string/chat_announce_new_game))
 
+	if(!GLOB.round_quote) //Set the round quote!
+		round_quote()
+
 #ifndef USE_CUSTOM_ERROR_HANDLER
 	world.log = file("[GLOB.log_directory]/dd.log")
 #else
@@ -107,6 +110,7 @@ GLOBAL_VAR(restart_counter)
 		HandleTestRun()
 
 	update_status()
+
 
 
 /world/proc/HandleTestRun()
@@ -271,11 +275,8 @@ GLOBAL_VAR(restart_counter)
 //	to_chat(world, span_boldannounce("<b><u><a href='byond://winset?command=.reconnect'>CLICK TO RECONNECT</a></u></b>"))
 
 	var/round_end_sound = pick(
-		'sound/roundend/knave.ogg',
-		'sound/roundend/twohours.ogg',
-		'sound/roundend/rest.ogg',
-		'sound/roundend/gather.ogg',
-		'sound/roundend/dwarfs.ogg',
+		'sound/roundend/breach.ogg',
+		'sound/roundend/suffering.ogg',
 	)
 	for(var/client/thing in GLOB.clients)
 		if(!thing)

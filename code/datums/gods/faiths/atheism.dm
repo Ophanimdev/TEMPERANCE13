@@ -1,6 +1,6 @@
 /datum/faith/godless
-	name = "Godless"
-	desc = "The people in TEMPERANCE do not have religion that dictates their choices. Individuals may have their own religions, but they remain largely unknown."
+	name = "TEMPERANCE"
+	desc = "The people in TEMPERANCE generally don't follow a religion, Perserdunians aside."
 	worshippers = "You."
 	godhead = /datum/patron/godless
 	preference_accessible = TRUE

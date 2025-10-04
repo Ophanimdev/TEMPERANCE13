@@ -16,6 +16,10 @@
 	if(motd)
 		to_chat(src, "<div class=\"motd\">[motd]</div>", handle_whitespace=FALSE)
 
+	if(GLOB.round_quote)
+		var/list/quote_authors = list("Unknown Soldat", "Forgotten Armsman", "Perserdunian Slave", "STRANGER", "Ugly Commadant", "Irrelevant Grandmaster")
+		to_chat(src, span_quote("\"[GLOB.round_quote]\"") + span_quoteauthor("\n\t - [pick(quote_authors)]"))
+
 	if(GLOB.rogue_round_id)
 		to_chat(src, span_info("ROUND ID: [GLOB.rogue_round_id]"))
 

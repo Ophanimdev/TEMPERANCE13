@@ -1330,8 +1330,6 @@
 
 	emote("squint", intentional = TRUE)
 
-		return
-
 /datum/emote/living/snap
 	key = "snap"
 	key_third_person = "finger snaps!"

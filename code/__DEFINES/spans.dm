@@ -161,3 +161,6 @@
 #define span_beautiful_masc(str) ("<span class='beautifulmasc'>" + str + "</span>")
 #define span_beautiful_fem(str) ("<span class='beautifulfem'>" + str + "</span>")
 #define span_beautiful_nb(str) ("<span class='beautifulnb'>" + str + "</span>")
+#define span_quote(str) ("<span class='quote'>" + str + "</span>")
+#define span_quoteauthor(str) ("<span class='quoteauthor'>" + str + "</span>")
+#define span_roundquote(str) ("<span class='roundquote'>" + str + "</span>")

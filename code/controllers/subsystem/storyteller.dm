@@ -23,7 +23,7 @@ SUBSYSTEM_DEF(gamemode)
 	/// Our storyteller. They progresses our trackboards and picks out events
 	var/datum/storyteller/current_storyteller
 	/// Result of the storyteller vote/pick. Defaults to Astrata.
-	var/selected_storyteller = /datum/storyteller/astrata
+	var/selected_storyteller = /datum/storyteller/psydon
 	/// List of all the storytellers. Populated at init. Associative from type
 	var/list/storytellers = list()
 	/// Next process for our storyteller. The wait time is STORYTELLER_WAIT_TIME

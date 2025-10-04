@@ -15,6 +15,7 @@
 #include "_maps\templates\smalldungeons.dm"
 #include "code\__byond_version_compat.dm"
 #include "code\_compile_options.dm"
+#include "code\quotes.dm"
 #include "code\rt.dm"
 #include "code\unit_tests.dm"
 #include "code\world.dm"
