@@ -413,6 +413,35 @@ ul.sparse {
 }
 
 /*
+Loreblurb Style Stuff, Lovely!
+These could actually be used elsewhere now that I think of it...
+Roll successes, fails... hm
+*/
+
+.loreblurb {
+	display: inline-block;
+	text-align: center;
+	margin: 0.5em;
+	background: url('lore_bg.png') no-repeat center/cover;
+}
+
+.loreblurb-title {
+	display: block;
+	font-family: Rubik, TrueType;
+	font-size: 3;
+	animation: tremble 0.4s ease-in-out infinite;
+	margin-bottom: 0.25em;
+}
+
+.loreblurb-desc {
+	display: block;
+	font-family: Federo, TrueType;
+	font-size: 1;
+	animation: tremble 0.4s ease-in-out infinite;
+}
+
+
+/*
 All my cute animations!!!
 Those who stood with me, may benefits be upon you.
 And those who stood against? Die alone and turn to ash.
@@ -430,3 +459,13 @@ Your names are ash upon my tongue.
 		color: linear-gradient(#434a3a,#616847,#a7ad6f);
 	}
 }
+
+@keyframes tremble {
+	0% {transform: translate(0, 0); }
+	25% {transform: translate(1px, 1px); }
+	50% {transform: translate(0, 1px); }
+	75% {transform: translate(1px, 0); }
+	100% {transform: translate(0, 0);}
+}
+	
+
