@@ -1,26 +1,12 @@
 /// Divine pantheon storytellers
 #define DIVINE_STORYTELLERS list( \
-	/datum/storyteller/astrata, \
-	/datum/storyteller/noc, \
-	/datum/storyteller/ravox, \
-	/datum/storyteller/abyssor, \
-	/datum/storyteller/xylix, \
-	/datum/storyteller/necra, \
-	/datum/storyteller/pestra, \
-	/datum/storyteller/malum, \
-	/datum/storyteller/eora, \
-	/datum/storyteller/dendor, \
 	/datum/storyteller/psydon, \
 )
 
-//Yeah-yeah, he's not the same pantheon but suck it up, buttercup. We not makin' more defines.
 
 /// Inhumen pantheon storytellers
 #define INHUMEN_STORYTELLERS list( \
 	/datum/storyteller/zizo, \
-	/datum/storyteller/baotha, \
-	/datum/storyteller/graggar, \
-	/datum/storyteller/matthios, \
 )
 
 /// All storytellers
