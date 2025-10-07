@@ -99,6 +99,16 @@ body {
 	src: url('aavnic.ttf');
 }
 
+@font-face {
+	font-family: "Federo";
+	src: url('federo.ttf');
+}
+
+@font-face {
+	font-family: "Rubik";
+	src: url('rubik.ttf');
+}
+
 /* */
 
 em {
@@ -541,6 +551,43 @@ h1.alert, h2.alert	{color: #c9c1ba;font-family: Pterra, TrueType;}
     100% {
         color: #cc0f0f;
     }
+}
+
+/*
+Tenatively putting loreblurb stuff here???
+That works. Good.
+*/
+
+.loreblurb {
+	display: inline-block;
+	text-align: center;
+	margin: 0.5em;
+	background: url('lore_bg.png') no-repeat center/cover;
+}
+
+.loreblurb-title {
+	display: block;
+	font-family: Rubik;
+	color: #cbc1ab;
+	font-size: 3;
+	animation: tremble 0.4s ease-in-out infinite;
+	margin-bottom: 0.25em;
+}
+
+.loreblurb-desc {
+	display: block;
+	font-family: Federo;
+	color: #cbc1ab;
+	font-size: 1;
+	animation: tremble 0.4s ease-in-out infinite;
+}
+
+@keyframes tremble {
+	0% {transform: translate(0, 0); }
+	25% {transform: translate(1px, 1px); }
+	50% {transform: translate(0, 1px); }
+	75% {transform: translate(1px, 0); }
+	100% {transform: translate(0, 0);}
 }
 
 .connectionClosed, .fatalError {background: red;	color: white;	padding: 5px;}

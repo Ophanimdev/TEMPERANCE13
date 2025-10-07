@@ -3,6 +3,17 @@
   src: url('~roguefont/pterra.ttf');
 }
 
+@font-face {
+	font-family: "Federo";
+	src: url('~roguefont/federo.ttf');
+}
+
+@font-face {
+	font-family: "Rubik";
+	src: url('~roguefont/rubik.ttf');
+}
+
+
 .theme-azure_default:root {
   --color-base: #141b15;
   --color-base-start: #141b15;
@@ -73,4 +84,36 @@
 
   // Input
   --input-border-color: #56853e;
+
+.loreblurb {
+	display: inline-block;
+	text-align: center;
+	margin: 0.5em;
+	background: url('../assets/azure_default/lore_bg.png') no-repeat center/cover;
+}
+
+.loreblurb-title {
+	display: block;
+	font-family: Rubik, TrueType;
+	font-size: 3em;
+	animation: tremble 0.4s ease-in-out infinite;
+	margin-bottom: 0.25em;
+}
+
+.loreblurb-desc {
+	display: block;
+	font-family: Federo, TrueType;
+	font-size: 1em;
+	animation: tremble 0.4s ease-in-out infinite;
+}
+
+@keyframes tremble {
+	0% {transform: translate(0, 0); }
+	25% {transform: translate(1px, 1px); }
+	50% {transform: translate(0, 1px); }
+	75% {transform: translate(1px, 0); }
+	100% {transform: translate(0, 0);}
+}
+
+
 }
