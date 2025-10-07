@@ -8,8 +8,6 @@
 //    #define ROGUEWORLD
 #endif
 
-#define FASTLOAD
-
 #ifdef FASTLOAD
     #define FORCE_MAP "_maps/roguetest.json"
 #else
