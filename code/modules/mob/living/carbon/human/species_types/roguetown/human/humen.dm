@@ -5,15 +5,10 @@
 	name = "Humen"
 	id = "humen"
 	desc = "<b>Humen</b><br>\
-	Humens (or \"Humans\") are the eldest of the Weeping God's creations. Noted for their \
-	tenacity and overwhelming population, humens are the most commonly seen race across the lands, \
-	at a rate of about ten to one in regions such as Grenzelhoft. However, to the west \
-	the opposite is true. Humens come from a vast swathe of cultures and ethnicities, most of which \
-	have historically been at odds with one another. Being the eldest creations of the Weeping God, humens \
-	tend to find fortune easier than the other races, and are so diverse that no other racial traits \
-	are dominant in their species.<br>\
-	(+1 Endurance, +1 Intelligence)"
-
+	Humens are probably the oldest race in the world, aside from elves.\
+	They're noted to be the forefront of most technological advancements of the modern age,\
+	though it's obvious they're not behind the recent rise of the MACHINES. They typically form their own nations, city-states, and empires.\
+	The most prominent examples of conquest would be the Great Empire of Perserdun, and the Risvon Ziggurate."
 	skin_tone_wording = "Ancestry"
 
 	default_color = "FFFFFF"
@@ -79,20 +74,15 @@
 
 /datum/species/human/northern/get_skin_list()
 	return list(
-		"Grenzelhoft" = SKIN_COLOR_GRENZELHOFT,
-		"Hammerhold" = SKIN_COLOR_HAMMERHOLD,
-		"Avar" = SKIN_COLOR_AVAR,
-		"Rockhill" = SKIN_COLOR_ROCKHILL,
-		"Otava" = SKIN_COLOR_OTAVA,
-		"Etrusca" = SKIN_COLOR_ETRUSCA,
-		"Gronn" = SKIN_COLOR_GRONN,
-		"North Raneshen (Chorodiaki)" = SKIN_COLOR_GIZA,
-		"West Raneshen (Vrdaqnan)" = SKIN_COLOR_SHALVISTINE,
-		"East Raneshen (Nshkormh)" = SKIN_COLOR_LALVESTINE,
-		"Naledi" = SKIN_COLOR_NALEDI,
-		"Naledi South" = SKIN_COLOR_NALEDI_LIGHT,
-		"Kazengun" = SKIN_COLOR_KAZENGUN
+		"Perserdun" = SKIN_COLOR_ETRUSCA,
+		"Yun" = SKIN_COLOR_GRONN,
+		"King's Row" = SKIN_COLOR_GIZA,
+		"Kalarian Commoner" = SKIN_COLOR_SHALVISTINE,
+		"Kalarian Export" = SKIN_COLOR_LALVESTINE,
+		"Risvonian Commoner" = SKIN_COLOR_NALEDI,
+		"Risvonian Conscript" = SKIN_COLOR_NALEDI_LIGHT,
 	)
+
 
 /datum/species/human/northern/get_hairc_list()
 	return sortList(list(

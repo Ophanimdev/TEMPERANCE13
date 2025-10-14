@@ -147,7 +147,7 @@
 	damage += 40/severity
 
 /obj/item/organ/ears/anthro
-	name = "wild-kin ears"
+	name = "beastman's ears"
 
 /obj/item/organ/ears/lupian
 	name = "lupian ears"

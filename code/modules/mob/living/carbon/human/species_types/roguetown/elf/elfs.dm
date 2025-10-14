@@ -5,21 +5,12 @@
 	name = "Elf"
 	id = "elfw"
 	desc = "<b>Elf</b><br>\
-	\"Elf\" is a catch-all term used for tall, pointy-eared humanoids who can trace \
-	their heritage to the ancient and mysterious Snow Elves. This particular species \
-	of elf are what most imagine when they hear the word, and are also known among \
-	the elder races as \"Wood-Elves\". Considering their diverse history, it is extremely \
-	difficult for other mortals to even conceive the various intricacies found in elven \
-	society, thanks in no small part to the hundreds if not thousands of tribes that exist \
-	within their culture. Although ancient and complex, Elves tend to be looked poorly upon by \
-	Humens, as historically the two races have been rivals in various conflicts and \
-	territorial disputes. This, however, does not stop many Humens and Elves from forming \
-	relationships, which are capable of producing half-elven children. Elves are known for \
-	their intelligence and sharp eyes, but their graceful nature typically leaves their bodies \
-	more frail and fagile than most. In these lands, only a handful of the many Elvish tribes are seen.<br>\
+	Elves were once known to be a mystical race that stemmed exclusively from the ethnostate of Perdere for over a thousand years.\
+	Though, the nation has recently collapsed underneath the advent of the \"Gomium War,\" a six-month campaign initiated by the Great Empire in order to force the trade of Gumium, a highly addictive painkiller.\
+	Most elves now find themselves scattered across the continent, and have roles within the Great Empire itself, the Ziggurate, or other unclaimed city-states.\
 	(+1 Speed)"
 
-	skin_tone_wording = "Tribal Identity"
+	skin_tone_wording = "Origin"
 
 	default_color = "FFFFFF"
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,OLDGREY)
@@ -107,20 +98,15 @@
 
 /datum/species/elf/wood/get_skin_list()
 	return list(
-		"Grenzel Woods" = SKIN_COLOR_GRENZEL_WOODS,
-		"Dandelion Creek" = SKIN_COLOR_DANDELION_CREEK,
-		"Roseveil" = SKIN_COLOR_ROSEVEIL,
-		"Azuregrove" = SKIN_COLOR_AZUREGROVE,
-		"Arborshome" = SKIN_COLOR_ARBORSHOME,
-		"Almondvalle" = SKIN_COLOR_ALMONDVALLE,
-		"Walnut Woods" = SKIN_COLOR_WALNUT_WOODS,
-		"Timberborn" = SKIN_COLOR_TIMBERBORN,
-		"Lotus Coast" = SKIN_COLOR_LOTUS_COAST,
-		"Grenzel Woods" = SKIN_COLOR_GRENZEL_WOODS,
-		"Etruscan Swamps" = SKIN_COLOR_ETRUSCAN_SWAMPS,
-		"Shalvine Forests" = SKIN_COLOR_SHALVINE_FORESTS,
-		"Lalvestine Thickets" = SKIN_COLOR_LALVE_STEPPES,
-		"Naledi Coverts"	= SKIN_COLOR_NALEDI_COAST
+		"Perdere" = SKIN_COLOR_GRENZEL_WOODS,
+		"Yun" = SKIN_COLOR_ARBORSHOME,
+		"King's Row" = SKIN_COLOR_ALMONDVALLE,
+		"Perserdunian Commoner" = SKIN_COLOR_WALNUT_WOODS,
+		"Perserdunian Conscript" = SKIN_COLOR_ETRUSCAN_SWAMPS,
+		"Kalarian Commoner" = SKIN_COLOR_SHALVINE_FORESTS,
+		"Kalarian Export" = SKIN_COLOR_LALVE_STEPPES,
+		"Risvonian Conscript" = SKIN_COLOR_TIMBERBORN,
+		"Risvonian Commoner"	= SKIN_COLOR_NALEDI_COAST
 	)
 
 /datum/species/elf/wood/get_hairc_list()

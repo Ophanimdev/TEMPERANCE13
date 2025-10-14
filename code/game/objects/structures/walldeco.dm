@@ -106,7 +106,7 @@
 	icon_state = "sparrow"
 
 /obj/structure/fluff/walldeco/xavo
-	name = "xavo flag"
+	name = "xavo"
 	desc = ""
 	icon_state = "xavo"
 
@@ -347,3 +347,99 @@
 		playsound(loc, 'sound/misc/gold_license.ogg', 100, TRUE, -1)
 		say("UNKNOWN CREATURE IN SECURE AREA- ARRETZ-VOUS!!")
 		next_yap = world.time + 6 SECONDS
+
+/obj/structure/fluff/walldeco/freud
+	name = "odd man"
+	desc = "You have to fuck your mum."
+	icon_state = "freud"
+	layer = ABOVE_MOB_LAYER
+
+/obj/structure/fluff/walldeco/terdun
+	name = "patriotism"
+	desc = "Terdun - shorthand for Perserdun. Glory to the Great Empire!"
+	icon_state = "terdun"
+	layer = ABOVE_MOB_LAYER
+
+/obj/structure/fluff/walldeco/murder
+	name = "valor"
+	desc = "An image depicting a Risvonian Oficiro digging into some poor insurrectionist."
+	icon_state = "murder"
+	layer = ABOVE_MOB_LAYER
+
+/obj/structure/fluff/walldeco/pray
+	name = "hands"
+	desc = "A poster depicting proper form when praying to Venerable-Master Rab."
+	icon_state = "poster_pray"
+	layer = ABOVE_MOB_LAYER
+
+/obj/structure/fluff/walldeco/compromise
+	name = "hate"
+	desc = "Peace is never an option."
+	icon_state = "poster_compromise"
+	layer = ABOVE_MOB_LAYER
+
+/obj/structure/fluff/walldeco/weird
+	name = "yuri"
+	desc = "What does this even mean?"
+	icon_state = "poster_triangle"
+	layer = ABOVE_MOB_LAYER
+
+/obj/structure/fluff/walldeco/ugly
+	name = "human"
+	desc = "Rab, that's an ugly skull."
+	icon_state = "ugly"
+	layer = ABOVE_MOB_LAYER
+
+/obj/structure/fluff/walldeco/commandant
+	name = "trenchman"
+	desc = "A depiction of your beloved Commandant."
+	icon_state = "inq1"
+	layer = ABOVE_MOB_LAYER
+
+/obj/structure/fluff/walldeco/grandmaster
+	name = "greatman"
+	desc = "A depiction of your glorious Grandmaster."
+	icon_state = "inq"
+	layer = ABOVE_MOB_LAYER
+
+/obj/structure/fluff/walldeco/sad
+	name = "joy"
+	desc = "That's her."
+	icon_state = "sad"
+	layer = ABOVE_MOB_LAYER
+
+/obj/structure/fluff/walldeco/happy
+	name = "mania"
+	desc = "That's him."
+	icon_state = "happiness"
+	layer = ABOVE_MOB_LAYER
+
+/obj/structure/fluff/walldeco/spoiler
+	name = "?????"
+	desc = "What the fuck is this?"
+	icon_state = "colony"
+	layer = ABOVE_MOB_LAYER
+
+/obj/structure/fluff/walldeco/blindfolds
+	name = "love"
+	desc = "I miss her."
+	icon_state = "blindfolds"
+	layer = ABOVE_MOB_LAYER
+
+/obj/structure/fluff/walldeco/spoiler2
+	name = "?????"
+	desc = "It looks like a colored picture. Why is it so bright?"
+	icon_state = "knowledge"
+	layer = ABOVE_MOB_LAYER
+
+/obj/structure/fluff/walldeco/ubk
+	name = "signia"
+	desc = "The Mark of the Ziggurate."
+	icon_state = "ubk"
+	layer = ABOVE_MOB_LAYER
+
+/obj/structure/fluff/walldeco/doom
+	name = "skull"
+	desc = "The text reads: 'SHITHOLE.'"
+	icon_state = "doom"
+	layer = ABOVE_MOB_LAYER

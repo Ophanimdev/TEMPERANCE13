@@ -2,20 +2,15 @@
 	race = /datum/species/tieberian
 
 /datum/species/tieberian
-	name = "Tiefling"
+	name = "Tiletian"
 	id = "tiefling"
-	desc = "<b>Tiefling</b><br>\
-	The offspring of demons with mortal races, a consequence of demonic incursions into the mortal realm and dark pacts. \
-	Their origins dating back to the demonic invasion of Archdevil Vheslyn who pillaged and ravaged the mortal lands and its people before being stopped by Psydon. \
-	These offspring of demon and mortal races came to be known as 'Tieflings', largely despised by most people for centuries for their unnatural origins and appearances. \
-	It was only recently that they became more tolerated, even if the Church still watches them with a weary eye. \
-	When a Tiefling has offspring, no matter the race of their partner, the child would always be a pureblooded Tiefling. \
-	The taint of their very being going back generations, and no amount of cleansing can be rid of it. \
-	As over a millennium a simple handful of Tieflings have created extended bloodlines linking back to their infernal progenitors. Some Tieflings embrace their demonic origin, while other shun it. \
-	No matter if they embrace their demonic ancestors or not, Tieflings have formed an importance upon their bloodline and family due to often being shunned and hunted through out time in which only those of their blood and kin they could truly trust. <br>\
+	desc = "<b>Tiletian</b><br>\
+	Tiletians are products of alchemical processes stemming from the advent of the MACHINE. \
+	They aren't naturally made, and are rarely seen in the civilian world due to their status as a kind of 'experimental soldier.'\
+	Note that each major nation usually has their own batch of home-made Tiletians, though they're usually traded around like cattle.<br>\
 	(+1 Constitution, +1 Intelligence)"
 
-	skin_tone_wording = "Progenitor"
+	skin_tone_wording = "Alchemical Mix"
 
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,STUBBLE,OLDGREY)
 	inherent_traits = list(TRAIT_NOMOBSWAP)
@@ -97,7 +92,7 @@
 		/datum/language/hellspeak,
 	)
 	stress_examine = TRUE
-	stress_desc = span_red("Helldweller... better stay away.")
+	stress_desc = span_red("Alchemical freak!")
 
 /datum/species/tieberian/on_species_gain(mob/living/carbon/C, datum/species/old_species)
 	..()

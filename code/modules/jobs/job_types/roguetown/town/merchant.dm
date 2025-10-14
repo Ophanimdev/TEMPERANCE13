@@ -5,11 +5,12 @@
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = RACES_TEMPERANCE
 	tutorial = "Money, money, money! Fuck, it's so good! Even better, with this War Machine - and those filthy fuckin' foreigners. Scam some idiots, make cash. Grab your Explorers and make bank."
 
 
 	outfit = /datum/outfit/job/roguetown/provisioner
+	display_order = JDO_PROVISIONER
 	give_bank_account = TRUE
 	min_pq = 0
 	max_pq = null

@@ -6,9 +6,10 @@
 	total_positions = 3
 	spawn_positions = 3
 
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = RACES_TEMPERANCE
 	allowed_sexes = list(MALE, FEMALE)
-	tutorial = "TBD."
+	tutorial = "You're one of the few intelligent enough to understand the new gifts of medicine provided by the MACHINES. \
+				Your job is to handle the dead and wounded of your town - or whoever happens to pay for your services."
 
 	outfit = /datum/outfit/job/roguetown/mortician
 	display_order = JDO_MORTICIAN

@@ -2,14 +2,13 @@
 	race = /datum/species/anthromorph
 
 /datum/species/anthromorph
-	name = "Wild-Kin"
+	name = "Black Beast"
 	id = "anthromorph"
-	desc = "A product of Dendor's enigmatic meddling in mortals races. The average wild-kin suffers from animalistic urges that vary in severity, \
-	from simply avoiding certain foods to smoldering desires to howl at the moon or chase prey. Usually these urges are tied to the animal that the wild-kin is melded with, \
-	making them rather predictable. Despite this, the way each wild-kin approaches their bizarre physiology and psychology varies, \
-	creating a diverse race of people who may not even empathise with one another. And whilst Dendor is considered the main culprit for Wild-kin, there are those created through other means, \
-	akin to Noc's stolen knowledge that created lupians and other abstract experimentation or circumstance. \
-	(Wild-kin are not a template race to play your own custom race. If you play a wild-kin, you are expected to roleplay to the setting and the race's lore.)<br>\
+	desc = "The progenitor of Beastmen, Black Beasts were once human beings. \
+	Captured and forced into strange alchemical experiments by the Jade Empire of Xiyuan, \
+	they've been sold off by the Empire to act purely as slave-soldiers. Both Risvon and Perserdun actively use them.\
+	They're usually identified as second-class citizens - though some escape their servitude and have made families.\
+	All Black Beasts share the characteristics of the Twelve Great Animals - a zodiac table that contains things such as tigers, rabbits, dogs, and so on.\
 	(+1 Constitution, +1 Perception)"
 	default_color = "444"
 	species_traits = list(
@@ -74,8 +73,6 @@
 		/datum/customizer/organ/ears/anthro,
 		/datum/customizer/organ/horns/anthro,
 		/datum/customizer/organ/frills/anthro,
-		/datum/customizer/organ/wings/anthro,
-		/datum/customizer/organ/neck_feature/anthro,
 		/datum/customizer/organ/testicles/anthro,
 		/datum/customizer/organ/penis/anthro,
 		/datum/customizer/organ/breasts/animal,

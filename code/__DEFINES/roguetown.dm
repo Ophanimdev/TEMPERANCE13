@@ -225,6 +225,23 @@
 #define RACES_CONSTRUCT \
 	/datum/species/construct/metal,\
 
+#define RACES_TEMPERANCE list(\
+	/datum/species/human/northern,\
+	/datum/species/human/halfelf,\
+	/datum/species/elf/wood,\
+	/datum/species/demihuman,\
+	/datum/species/tieberian,\
+)
+
+#define RACES_CONSCRIPT list(\
+	/datum/species/human/northern,\
+	/datum/species/human/halfelf,\
+	/datum/species/elf/wood,\
+	/datum/species/demihuman,\
+	/datum/species/tieberian,\
+	/datum/species/anthromorph,\
+)
+
 #define RACES_ALL_KINDS list(RACES_DESPISED, RACES_SHUNNED, RACES_TOLERATED, RACES_RESPECTED, RACES_CONSTRUCT)
 
 #define RACES_NO_CONSTRUCT list(RACES_DESPISED, RACES_SHUNNED, RACES_TOLERATED, RACES_RESPECTED)

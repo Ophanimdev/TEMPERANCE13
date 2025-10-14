@@ -1217,46 +1217,14 @@ SUBSYSTEM_DEF(gamemode)
 			// Races - proper alive checking (We have so fucking many, kill me..)
 			if(ishumannorthern(human_mob))
 				GLOB.azure_round_stats[STATS_ALIVE_NORTHERN_HUMANS]++
-			if(isdwarf(human_mob))
-				GLOB.azure_round_stats[STATS_ALIVE_DWARVES]++
-			if(isdarkelf(human_mob))
-				GLOB.azure_round_stats[STATS_ALIVE_DARK_ELVES]++
 			if(iswoodelf(human_mob))
 				GLOB.azure_round_stats[STATS_ALIVE_WOOD_ELVES]++
 			if(ishalfelf(human_mob))
 				GLOB.azure_round_stats[STATS_ALIVE_HALF_ELVES]++
-			if(ishalforc(human_mob))
-				GLOB.azure_round_stats[STATS_ALIVE_HALF_ORCS]++
-			if(isgoblinp(human_mob))
-				GLOB.azure_round_stats[STATS_ALIVE_GOBLINS]++
-			if(iskobold(human_mob))
-				GLOB.azure_round_stats[STATS_ALIVE_KOBOLDS]++
-			if(islizard(human_mob))
-				GLOB.azure_round_stats[STATS_ALIVE_LIZARDS]++
-			if(isaasimar(human_mob))
-				GLOB.azure_round_stats[STATS_ALIVE_AASIMAR]++
 			if(istiefling(human_mob))
 				GLOB.azure_round_stats[STATS_ALIVE_TIEFLINGS]++
 			if(ishalfkin(human_mob))
 				GLOB.azure_round_stats[STATS_ALIVE_HALFKIN]++
-			if(iswildkin(human_mob))
-				GLOB.azure_round_stats[STATS_ALIVE_WILDKIN]++
-			if(isconstruct(human_mob))
-				GLOB.azure_round_stats[STATS_ALIVE_CONSTRUCTS]++
-			if(isvermin(human_mob))
-				GLOB.azure_round_stats[STATS_ALIVE_VERMINFOLK]++
-			if(isdracon(human_mob))
-				GLOB.azure_round_stats[STATS_ALIVE_DRACON]++
-			if(isaxian(human_mob))
-				GLOB.azure_round_stats[STATS_ALIVE_AXIAN]++
-			if(istabaxi(human_mob))
-				GLOB.azure_round_stats[STATS_ALIVE_TABAXI]++
-			if(isvulp(human_mob))
-				GLOB.azure_round_stats[STATS_ALIVE_VULPS]++
-			if(islupian(human_mob))
-				GLOB.azure_round_stats[STATS_ALIVE_LUPIANS]++
-			if(ismoth(human_mob))
-				GLOB.azure_round_stats[STATS_ALIVE_MOTHS]++
 
 
 /// Returns total follower influence for the given storyteller

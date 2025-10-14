@@ -78,29 +78,10 @@ GLOBAL_LIST_INIT(our_forest_sex, typecacheof(list(
 
 //RT species
 #define ishumannorthern(A) (is_species(A, /datum/species/human/northern))
-#define isdwarf(A) (is_species(A, /datum/species/dwarf))
-#define isdwarfmountain(A) (is_species(A, /datum/species/dwarf/mountain))
-#define iself(A) (is_species(A, /datum/species/elf))
-#define isdarkelf(A) (is_species(A, /datum/species/elf/dark))
 #define iswoodelf(A) (is_species(A, /datum/species/elf/wood))
 #define ishalfelf(A) (is_species(A, /datum/species/human/halfelf))
 #define istiefling(A) (is_species(A, /datum/species/tieberian))
-#define ishalforc(A) (is_species(A, /datum/species/halforc))
-#define islizard(A) (is_species(A, /datum/species/lizardfolk))
-#define isgoblinp(A) (is_species(A, /datum/species/goblinp))
-#define iskobold(A) (is_species(A, /datum/species/kobold))
-#define isaasimar(A) (is_species(A, /datum/species/aasimar))
 #define ishalfkin(A) (is_species(A, /datum/species/demihuman))
-#define iswildkin(A) (is_species(A, /datum/species/anthromorph))
-#define isconstruct(A) (is_species(A, /datum/species/construct/metal))	//Specified 'M' due to redefine lower
-#define isvermin(A) (is_species(A, /datum/species/anthromorphsmall))
-#define isaxian(A) (is_species(A, /datum/species/akula))
-#define isdracon(A) (is_species(A, /datum/species/dracon))
-#define islupian(A) (is_species(A, /datum/species/lupian))
-#define ismoth(A) (is_species(A, /datum/species/moth))
-#define istabaxi(A) (is_species(A, /datum/species/tabaxi))
-#define isvulp(A) (is_species(A, /datum/species/vulpkanin))
-
 
 //more carbon mobs
 #define ismonkey(A) (istype(A, /mob/living/carbon/monkey))
