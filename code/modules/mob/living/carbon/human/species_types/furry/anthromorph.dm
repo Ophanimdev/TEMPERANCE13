@@ -4,12 +4,13 @@
 /datum/species/anthromorph
 	name = "Black Beast"
 	id = "anthromorph"
-	desc = "The progenitor of Beastmen, Black Beasts were once human beings. \
+	desc = "The progenitor of Beastmen, Black Beasts were once human beings. They were around before the MACHINES appeared. \
 	Captured and forced into strange alchemical experiments by the Jade Empire of Xiyuan, \
 	they've been sold off by the Empire to act purely as slave-soldiers. Both Risvon and Perserdun actively use them.\
-	They're usually identified as second-class citizens - though some escape their servitude and have made families.\
+	They're usually identified as second-class citizens. As a result, they rarely receive proper education.\
+	Noticeably, they tend to be subservient to authority figures. Most chalk this up to the trauma inflicted by the Xiyuanese.\
 	All Black Beasts share the characteristics of the Twelve Great Animals - a zodiac table that contains things such as tigers, rabbits, dogs, and so on.\
-	(+1 Constitution, +1 Perception)"
+	(+1 Constitution, +1 Perception, -2 Intelligence)"
 	default_color = "444"
 	species_traits = list(
 		MUTCOLORS,
@@ -39,7 +40,7 @@
 		OFFSET_NECK_F = list(0,-1), OFFSET_MOUTH_F = list(0,-1), OFFSET_PANTS_F = list(0,0), \
 		OFFSET_SHIRT_F = list(0,0), OFFSET_ARMOR_F = list(0,0), OFFSET_UNDIES_F = list(0,-1), \
 		)
-	race_bonus = list(STAT_PERCEPTION = 1, STAT_CONSTITUTION = 1)
+	race_bonus = list(STAT_PERCEPTION = 1, STAT_CONSTITUTION = 1, STAT_INTELLIGENCE = -2)
 	enflamed_icon = "widefire"
 	organs = list(
 		ORGAN_SLOT_BRAIN = /obj/item/organ/brain,

@@ -83,7 +83,7 @@
 	allows_disabling = TRUE
 
 /datum/customizer_choice/organ/tail/tiefling
-	name = "Tiefling Tail"
+	name = "Tiletian Tail"
 	organ_type = /obj/item/organ/tail/tiefling
 	generic_random_pick = TRUE
 	sprite_accessories = list(

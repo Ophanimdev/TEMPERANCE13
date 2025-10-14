@@ -178,7 +178,7 @@
 	allows_disabling = FALSE
 
 /datum/customizer_choice/organ/ears/tiefling
-	name = "Tiefling Ears"
+	name = "Tiletian Ears"
 	organ_type = /obj/item/organ/ears
 	sprite_accessories = list(
 		/datum/sprite_accessory/ears/elf,
