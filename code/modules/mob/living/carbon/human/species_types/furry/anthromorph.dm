@@ -4,12 +4,13 @@
 /datum/species/anthromorph
 	name = "Black Beast"
 	id = "anthromorph"
-	desc = "The progenitor of Beastmen, Black Beasts were once human beings. They were around before the MACHINES appeared. \
+	desc = "<b>Black Beast</b><br>\
+	The progenitor of Beastmen, Black Beasts were once human beings. They were around before the MACHINES appeared. \
 	Captured and forced into strange alchemical experiments by the Jade Empire of Xiyuan, \
-	they've been sold off by the Empire to act purely as slave-soldiers. Both Risvon and Perserdun actively use them.\
-	They're usually identified as second-class citizens. As a result, they rarely receive proper education.\
-	Noticeably, they tend to be subservient to authority figures. Most chalk this up to the trauma inflicted by the Xiyuanese.\
-	All Black Beasts share the characteristics of the Twelve Great Animals - a zodiac table that contains things such as tigers, rabbits, dogs, and so on.\
+	they've been sold off by the Empire to act purely as slave-soldiers. Both Risvon and Perserdun actively use them. \
+	They're usually identified as second-class citizens. As a result, they rarely receive proper education. \
+	Noticeably, they tend to be subservient to authority figures. Most chalk this up to the trauma inflicted by the Xiyuanese. \
+	All Black Beasts share the characteristics of the Twelve Great Animals - a zodiac table that contains things such as tigers, rabbits, dogs, and so on. \
 	(+1 Constitution, +1 Perception, -2 Intelligence)"
 	default_color = "444"
 	species_traits = list(

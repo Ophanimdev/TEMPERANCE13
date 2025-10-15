@@ -5,9 +5,9 @@
 	name = "Humen"
 	id = "humen"
 	desc = "<b>Humen</b><br>\
-	Humens are probably the oldest race in the world, aside from elves.\
-	They're noted to be the forefront of most technological advancements of the modern age,\
-	though it's obvious they're not behind the recent rise of the MACHINES. They typically form their own nations, city-states, and empires.\
+	Humens are probably the oldest race in the world, aside from elves. \
+	They're noted to be the forefront of most technological advancements of the modern age, \
+	though it's obvious they're not behind the recent rise of the MACHINES. They typically form their own nations, city-states, and empires. \
 	The most prominent examples of conquest would be the Great Empire of Perserdun, and the Risvon Ziggurate."
 	skin_tone_wording = "Ancestry"
 

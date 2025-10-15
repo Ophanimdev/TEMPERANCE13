@@ -5,9 +5,9 @@
 	name = "Elf"
 	id = "elfw"
 	desc = "<b>Elf</b><br>\
-	Elves were once known to be a mystical race that stemmed exclusively from the ethnostate of Perdere for over a thousand years.\
-	Though, the nation has recently collapsed underneath the advent of the \"Gomium War,\" a six-month campaign initiated by the Great Empire in order to force the trade of Gumium, a highly addictive painkiller.\
-	Most elves now find themselves scattered across the continent, and have roles within the Great Empire itself, the Ziggurate, or other unclaimed city-states.\
+	Elves were once known to be a mystical race that stemmed exclusively from the ethnostate of Perdere for over a thousand years. \
+	Though, the nation has recently collapsed underneath the advent of the \"Gomium War,\" a six-month campaign initiated by the Great Empire in order to force the trade of gomium, a highly addictive painkiller. \
+	Most elves now find themselves scattered across the continent, and have roles within the Great Empire itself, the Ziggurate, or other unclaimed city-states. \
 	(+1 Speed)"
 
 	skin_tone_wording = "Origin"
