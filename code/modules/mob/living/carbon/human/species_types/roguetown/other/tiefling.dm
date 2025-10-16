@@ -5,12 +5,12 @@
 	name = "Tiletian"
 	id = "tiefling"
 	desc = "<b>Tiletian</b><br>\
-	Tiletians are products of alchemical processes stemming from the advent of the MACHINE. \
-	They aren't naturally made, and are rarely seen in the civilian world due to their status as a kind of 'experimental soldier.'\
-	Note that each major nation usually has their own batch of home-made Tiletians, though they're usually traded around like cattle.<br>\
-	(+1 Constitution, +1 Intelligence)"
+	Tiletians are products of chemical processes stemming from the advent of the MACHINE. \
+	They aren't naturally made, and are rarely seen in the civilian world due to their status as a kind of 'experimental soldier.' \
+	Note that each major nation usually has their own batch of home-made Tiletians, though they're usually traded around like cattle.<br> \
+	(+1 Endurance, +1 Intelligence)"
 
-	skin_tone_wording = "Alchemical Mix"
+	skin_tone_wording = "Chemical Mix"
 
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,STUBBLE,OLDGREY)
 	inherent_traits = list(TRAIT_NOMOBSWAP)
@@ -38,7 +38,7 @@
 		OFFSET_NECK_F = list(0,-1), OFFSET_MOUTH_F = list(0,-1), OFFSET_PANTS_F = list(0,0), \
 		OFFSET_SHIRT_F = list(0,0), OFFSET_ARMOR_F = list(0,0), OFFSET_UNDIES_F = list(0,-1), \
 		)
-	race_bonus = list(STAT_INTELLIGENCE = 1, STAT_CONSTITUTION = 1)
+	race_bonus = list(STAT_INTELLIGENCE = 1, STAT_ENDURANCE = 1)
 	enflamed_icon = "widefire"
 	organs = list(
 		ORGAN_SLOT_BRAIN = /obj/item/organ/brain,
@@ -111,20 +111,20 @@
 
 /datum/species/tieberian/get_skin_list()
 	return list(
-		"Jehoel" = SKIN_COLOR_JEHOEL,
-		"Urvix" = SKIN_COLOR_URVIX,
-		"Sarvyra" = SKIN_COLOR_SARVYRA,
-		"Vheslyn" = SKIN_COLOR_VHESLYN,
-		"Arlenneth" = SKIN_COLOR_ARLENNETH,
-		"Nessyss" = SKIN_COLOR_NESSYSS,
-		"Helixia" = SKIN_COLOR_HELIXIA,
-		"Nymsea" = SKIN_COLOR_NYMSEA,
+		"Sildenafil" = SKIN_COLOR_JEHOEL,
+		"Ziggurate Blue" = SKIN_COLOR_URVIX,
+		"Cyclohexyl" = SKIN_COLOR_SARVYRA,
+		"Mephedrone" = SKIN_COLOR_VHESLYN,
+		"Novichok" = SKIN_COLOR_ARLENNETH,
+		"Kolokol" = SKIN_COLOR_NESSYSS,
+		"Silane" = SKIN_COLOR_HELIXIA,
+		"Dimethyltryptamine" = SKIN_COLOR_NYMSEA,
 		"Vodyanev" = SKIN_COLOR_ABYSS,
-		"Calvus" = SKIN_COLOR_CALVUS,
-		"Voibion" = SKIN_COLOR_VOIBION,
-		"Chyerno" = SKIN_COLOR_CHYERNO,
-		"Drema"	= SKIN_COLOR_DREMA,
-		"Chir"	= SKIN_COLOR_CHIR
+		"Mesothilioma" = SKIN_COLOR_CALVUS,
+		"Propofol" = SKIN_COLOR_VOIBION,
+		"Formaldehyde" = SKIN_COLOR_CHYERNO,
+		"Diazepam"	= SKIN_COLOR_DREMA,
+		"Phosgene"	= SKIN_COLOR_CHIR
 	)
 
 /datum/species/tieberian/get_hairc_list()

@@ -142,7 +142,6 @@ GLOBAL_LIST_EMPTY(chosen_names)
 	var/list/exp = list()
 	var/list/menuoptions
 
-	var/datum/migrant_pref/migrant
 	var/next_special_trait = null
 
 	var/action_buttons_screen_locs = list()
@@ -183,7 +182,6 @@ GLOBAL_LIST_EMPTY(chosen_names)
 
 /datum/preferences/New(client/C)
 	parent = C
-	migrant  = new /datum/migrant_pref(src)
 
 	for(var/custom_name_id in GLOB.preferences_custom_names)
 		custom_names[custom_name_id] = get_default_name(custom_name_id)
@@ -721,11 +719,7 @@ GLOBAL_LIST_EMPTY(chosen_names)
 					dat += "<a href='byond://?src=[REF(N)];ready=[PLAYER_NOT_READY]'>UNREADY</a> <b>READY</b>"
 					log_game("([user || "NO KEY"]) readied as ([real_name])")
 		else
-			if(!is_active_migrant())
-				dat += "<a href='byond://?src=[REF(N)];late_join=1'>JOINLATE</a>"
-			else
-				dat += "<a class='linkOff' href='byond://?src=[REF(N)];late_join=1'>JOINLATE</a>"
-			dat += " - <a href='?_src_=prefs;preference=migrants'>MIGRATION</a>"
+			dat += "<a class='linkOff' href='byond://?src=[REF(N)];late_join=1'>JOINLATE</a>"
 			dat += "<br><a href='?_src_=prefs;preference=manifest'>ACTORS</a>"
 			dat += " - <a href='?_src_=prefs;preference=observe'>VOYEUR</a>"
 	else
@@ -2255,10 +2249,6 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 					else
 						to_chat(user, span_warning("You are no longer a voice."))
 
-				if("migrants")
-					migrant.show_ui()
-					return
-
 				if("manifest")
 					parent.view_actors_manifest()
 					return
@@ -2274,7 +2264,6 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 					user << browse(null, "window=preferences") //closes job selection
 					user << browse(null, "window=mob_occupation")
 					user << browse(null, "window=latechoices") //closes late job selection
-					user << browse(null, "window=migration") // Closes migrant menu
 
 					SStriumphs.remove_triumph_buy_menu(user.client)
 
@@ -2534,12 +2523,6 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 		return FALSE
 	return TRUE
 
-/datum/preferences/proc/is_active_migrant()
-	if(!migrant)
-		return FALSE
-	if(!migrant.active)
-		return FALSE
-	return TRUE
 
 /datum/preferences/proc/process_virtue_text(datum/virtue/V)
 	var/dat
