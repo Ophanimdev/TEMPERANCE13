@@ -11,7 +11,7 @@
 	They are noticeably rarer than humans and elves, due to inherited genetic defects that make them incapable of crossbreeding with other races. \
 	Along with that, Beastmen typically have chronic bouts of pain, and are usually medicated on morphine or some other type of painkiller. \
 	(+1 Endurance, +1 Perception, -2 Intelligence)"
-	skin_tone_wording = "Origin"
+	skin_tone_wording = "Ancestry"
 	default_color = "FFFFFF"
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,STUBBLE,OLDGREY,MUTCOLORS_PARTSONLY)
 	default_features = MANDATORY_FEATURE_LIST
