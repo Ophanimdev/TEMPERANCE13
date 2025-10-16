@@ -10,7 +10,7 @@
 	This typically manifests in the form of impulsiveness, violent mood swings, and a noticeable lack of critical thinking. \
 	They are noticeably rarer than humans and elves, due to inherited genetic defects that make them incapable of crossbreeding with other races. \
 	Along with that, Beastmen typically have chronic bouts of pain, and are usually medicated on morphine or some other type of painkiller. \
-	(+1 Endurance, +1 Perception, -2 Intelligence)"
+	(+1 Constitution, +1 Perception, -2 Intelligence)"
 	skin_tone_wording = "Ancestry"
 	default_color = "FFFFFF"
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,STUBBLE,OLDGREY,MUTCOLORS_PARTSONLY)
@@ -38,7 +38,7 @@
 		OFFSET_NECK_F = list(0,-1), OFFSET_MOUTH_F = list(0,-1), OFFSET_PANTS_F = list(0,0), \
 		OFFSET_SHIRT_F = list(0,0), OFFSET_ARMOR_F = list(0,0), OFFSET_UNDIES_F = list(0,-1), \
 		)
-	race_bonus = list(STAT_PERCEPTION = 1, STAT_ENDURANCE = 1, STAT_INTELLIGENCE = -2)
+	race_bonus = list(STAT_PERCEPTION = 1, STAT_CONSTITUTION = 1, STAT_INTELLIGENCE = -2)
 	enflamed_icon = "widefire"
 	organs = list(
 		ORGAN_SLOT_BRAIN = /obj/item/organ/brain,

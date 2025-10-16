@@ -4,7 +4,7 @@
 	department_flag = UNAFFILIATED
 	faction = "Station"
 	total_positions = 20
-	spawn_positions = 20 //disables round-start spawn of pilgrims but allows migrant waves
+	spawn_positions = 20
 	allowed_races = RACES_ALL_KINDS
 	tutorial = "Maybe you're a victim of war - having your town ripped apart by artillery shells and guns. Maybe you're just some random bum, with skills. Either way, you're here! The possibilities are endless."
 	display_order = JDO_PIONEER

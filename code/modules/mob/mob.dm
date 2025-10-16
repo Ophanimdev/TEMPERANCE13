@@ -803,7 +803,7 @@ GLOBAL_VAR_INIT(mobids, 1)
 			stat(null, "IC Time: [station_time_timestamp()] [station_time()]")
 			stat(null, "Time Dilation: [round(SStime_track.time_dilation_current,1)]% AVG:([round(SStime_track.time_dilation_avg_fast,1)]%, [round(SStime_track.time_dilation_avg,1)]%, [round(SStime_track.time_dilation_avg_slow,1)]%)")
 			if(check_rights(R_ADMIN,0))
-				stat(null, SSmigrants.get_status_line())
+				stat(null)
 
 	if(client)
 		if(statpanel("RoundInfo"))

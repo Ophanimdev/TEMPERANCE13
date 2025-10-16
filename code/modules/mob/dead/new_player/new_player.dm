@@ -193,10 +193,6 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 			to_chat(usr, span_boldwarning("The game is starting. You cannot join yet."))
 			return
 
-		if(client && client.prefs.is_active_migrant())
-			to_chat(usr, span_boldwarning("You are in the migrant queue."))
-			return
-
 		if(href_list["late_join"] == "override")
 			LateChoices()
 			return
@@ -257,10 +253,6 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 			if((living_player_count() >= relevant_cap) || (src != SSticker.queued_players[1]))
 				to_chat(usr, span_warning("Server is full."))
 				return
-
-		if(client && client.prefs.is_active_migrant())
-			to_chat(usr, span_boldwarning("You are in the migrant queue."))
-			return
 
 		if(length(client.prefs.flavortext) < MINIMUM_FLAVOR_TEXT)
 			to_chat(usr, span_boldwarning("You need a minimum of [MINIMUM_FLAVOR_TEXT] characters in your flavor text in order to play."))
@@ -773,7 +765,6 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 	src << browse(null, "window=preferences") //closes job selection
 	src << browse(null, "window=mob_occupation")
 	src << browse(null, "window=latechoices") //closes late job selection
-	src << browse(null, "window=migration") // Closes migrant menu
 
 	SStriumphs.remove_triumph_buy_menu(client)
 

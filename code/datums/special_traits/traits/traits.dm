@@ -448,11 +448,6 @@
 	greet_text = span_boldwarning("I don't remember what I did last night, and now I'm lost!")
 	weight = 200
 
-/datum/special_trait/wild_night/on_apply(mob/living/carbon/human/character, silent)
-	var/turf/location = get_spawn_turf_for_job("Pilgrim")
-	character.forceMove(location)
-	grant_lit_torch(character)
-
 /datum/special_trait/atrophy
 	name = "Atrophy"
 	greet_text = span_boldwarning("When growing up I could barely feed myself... this left me weak and fragile")

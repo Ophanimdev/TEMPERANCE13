@@ -188,22 +188,6 @@ GLOBAL_LIST_INIT(capstone_pool, list(
 			sleep(30)
 			user.flash_fullscreen("redflash3")
 
-//all goes dark. tp them over. give them their stats.
-			user.emote("agony", forced = TRUE)
-			user.SetSleeping(10 SECONDS)
-			to_chat(user, span_reallybig("THE WORLD GOES DARK!"))
-			var/turf/location = get_spawn_turf_for_job("Pilgrim")
-			user.forceMove(location)
-			user.Stun(50)
-			user.cmode_music = 'sound/music/combat_ascended.ogg'
-			user.STASTR += 10
-			user.STAPER += 10
-			user.STAINT += 10
-			user.STACON += 10
-			user.STAEND += 10
-			user.STASPD += 10
-			user.STALUC += 6
-
 			heavensaysdanger() //Roger, our deal is honored; you will be rewarded in heaven.
 			addomen(ASCEND_ASCENDANT)
 			sleep(15 SECONDS)

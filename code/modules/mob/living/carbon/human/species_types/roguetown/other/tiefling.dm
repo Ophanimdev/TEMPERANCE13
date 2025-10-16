@@ -8,7 +8,7 @@
 	Tiletians are products of chemical processes stemming from the advent of the MACHINE. \
 	They aren't naturally made, and are rarely seen in the civilian world due to their status as a kind of 'experimental soldier.' \
 	Note that each major nation usually has their own batch of home-made Tiletians, though they're usually traded around like cattle.<br> \
-	(+1 Constitution, +1 Intelligence)"
+	(+1 Endurance, +1 Intelligence)"
 
 	skin_tone_wording = "Chemical Mix"
 
@@ -38,7 +38,7 @@
 		OFFSET_NECK_F = list(0,-1), OFFSET_MOUTH_F = list(0,-1), OFFSET_PANTS_F = list(0,0), \
 		OFFSET_SHIRT_F = list(0,0), OFFSET_ARMOR_F = list(0,0), OFFSET_UNDIES_F = list(0,-1), \
 		)
-	race_bonus = list(STAT_INTELLIGENCE = 1, STAT_CONSTITUTION = 1)
+	race_bonus = list(STAT_INTELLIGENCE = 1, STAT_ENDURANCE = 1)
 	enflamed_icon = "widefire"
 	organs = list(
 		ORGAN_SLOT_BRAIN = /obj/item/organ/brain,
