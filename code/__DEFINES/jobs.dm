@@ -224,6 +224,7 @@
 #define PARTISAN (1<<11)
 #define ENVOY (1<<12)
 #define RADIOTROOPER (1<<13)
+#define ZEALOT (1<<14)
 
 #define RISVON	(1<<13)
 
@@ -287,6 +288,7 @@
 #define JDO_PARTISAN 1.91
 #define JDO_ENVOY 1.92
 #define JDO_RADIOTROOPER 1.93
+#define JDO_ZEALOT 1.94
 
 // RISVON
 #define JDO_COMMANDANT 2.0

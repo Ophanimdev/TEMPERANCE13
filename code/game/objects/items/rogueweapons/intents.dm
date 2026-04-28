@@ -232,6 +232,10 @@
 	if(mob_charge_effect)
 		mastermob?.vis_contents -= mob_charge_effect
 
+//Do this while the mouse is being held down. This is for the chainsaw.
+/datum/intent/proc/on_mouse_down()
+	return
+
 
 /datum/intent/use
 	name = "use"
